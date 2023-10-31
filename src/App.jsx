@@ -1,10 +1,16 @@
 import "./App.css";
+import Footer from "./components/footer/Footer";
+import Galery from "./components/galery/Galery";
+import Home from "./components/home/Home";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
 	return (
 		<>
-			<h1>Be Living</h1>
-			<h2>Prueba git hub</h2>
+			<Navbar />
+			<Home />
+			<Galery />
+			<Footer />
 		</>
 	);
 }
