@@ -1,5 +1,9 @@
-const Galery = () => {
-	return <div>Galery</div>;
-};
+import React from 'react'
 
-export default Galery;
+const Galery = () => {
+  return (
+	<div>Gallery</div>
+  )
+}
+
+export default Galery
