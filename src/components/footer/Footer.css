@@ -1,0 +1,32 @@
+footer {
+	background-color: var(--light-gray);
+	font-size: 14px;
+	width: 100%;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.footer-item {
+	display: inline-flex;
+	align-items: flex-start;
+	flex: 0 0 auto;
+	gap: 2px;
+}
+
+.footer-phone {
+	align-items: center;
+}
+
+.footer-social-media {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 0 0 auto;
+	gap: 4px;
+	margin-top: 16px;
+}

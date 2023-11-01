@@ -1,0 +1,1 @@
+export { IconLocation } from "./IconLocation";
