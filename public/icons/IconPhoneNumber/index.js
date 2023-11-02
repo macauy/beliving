@@ -1,1 +1,0 @@
-export { IconPhoneNumber } from "./IconPhoneNumber";
