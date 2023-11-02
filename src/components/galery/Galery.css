@@ -1,0 +1,9 @@
+#galleyConteiner{
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    
+}
+.photos{
+    margin: .2rem;
+}
