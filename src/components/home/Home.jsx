@@ -1,5 +1,6 @@
 import "./Home.css";
 import Button from "../../icons/Button/Button";
+import Galery from "../galery/Galery";
 
 const Home = () => {
 	return (

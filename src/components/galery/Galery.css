@@ -1,9 +1,65 @@
-#galleyConteiner{
-    display: flex;
-   justify-content: space-around;
-    align-items: center;
+.galeyconteiner{
+  background-color: rgb(255, 255, 255);
+}
+
+ul, li{
+  list-style: none;
+  display: flex;
+  align-self: center;
+}
+
+li {
+  display: inline;
+  align-items: center;
+}
+img {
+  margin-top: 10px;
+}
+
+#imagina {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.575rem; 
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.slider-container {
+  display: flex;
+  padding: 0rem 1rem;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#conteinerimages{
+  border-radius: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+#listimages li{
+  background-color: rgb(233, 226, 226);
+  display: flex;
+  padding: 0rem .5rem 1rem;
+  align-items: flex-start;
+  gap: .5rem;
+  justify-content: center;
+	align-items: center;
+	text-align: center;
     
 }
-.photos{
-    margin: .2rem;
+
+.leftArrow{
+  position: absolute;
+  transform: translate(0, 350%);
+  left: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+.rightArrow{
+  position: absolute;
+  transform: translate(0, 350%);
+  right: 30px;
+  cursor: pointer;
+  z-index: 1; /*todo -----para que quede en la imagen-----*/
 }
