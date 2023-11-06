@@ -1,5 +1,6 @@
 .galeyconteiner{
   background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
 ul, li{
@@ -35,10 +36,9 @@ img {
 #conteinerimages{
   border-radius: 20px;
   border: 1px solid black;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 #listimages li{
-  background-color: rgb(233, 226, 226);
   display: flex;
   padding: 0rem .5rem 1rem;
   align-items: flex-start;
