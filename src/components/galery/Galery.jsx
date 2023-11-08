@@ -3,7 +3,18 @@ import { useEffect, useRef, useState } from "react";
 import { data } from "../data";
 
 const Galery = () => {
-  //----------- HOOKS ----------
+  
+  return (
+    <div>
+      <h4 id="imagina">Imaginá tu evento</h4>
+    </div>
+  );
+};
+
+export default Galery;
+
+/*
+//----------- HOOKS ----------
   const listImages = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -31,10 +42,10 @@ const Galery = () => {
     }
   };
 
-  return (
-    <div>
-      <h4 id="imagina">Imaginá tu evento</h4>
-      <div id="galeryconteiner" className="galeyconteiner">
+
+
+width={200} height={250}
+<div id="galeryconteiner" className="galeyconteiner">
         <div id="sliderconteiner" className="sliderconteiner">
           <div className="leftArrow" onClick={() => scrollToImage("prev")}>
             <img src="../../../public/left.svg" alt="" />
@@ -55,12 +66,4 @@ const Galery = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Galery;
-
-/*
-width={200} height={250}
 */

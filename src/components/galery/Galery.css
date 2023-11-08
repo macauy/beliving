@@ -41,7 +41,6 @@ img {
 #listimages li{
   display: flex;
   padding: 0rem .5rem 1rem;
-  align-items: flex-start;
   gap: .5rem;
   justify-content: center;
 	align-items: center;
@@ -51,6 +50,7 @@ img {
 
 .leftArrow{
   position: absolute;
+  /*todo -----para que quede en la imagen-----*/
   transform: translate(0, 350%);
   left: 30px;
   cursor: pointer;
@@ -61,5 +61,5 @@ img {
   transform: translate(0, 350%);
   right: 30px;
   cursor: pointer;
-  z-index: 1; /*todo -----para que quede en la imagen-----*/
+  z-index: 1; 
 }
