@@ -31,6 +31,7 @@ const Slider = () => {
         <SwiperSlide><img src="../../../public/gallery/7a.png" alt="" /></SwiperSlide>
         <SwiperSlide><img src="../../../public/gallery/8a.png" alt="" /></SwiperSlide>
         <SwiperSlide><img src="../../../public/gallery/9a.png" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="" alt="" /></SwiperSlide>
       </Swiper>
     </div>
   )
