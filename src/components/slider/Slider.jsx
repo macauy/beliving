@@ -4,9 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import 'swiper/css/navigation';// para poner o quitar flechas de navegacion o ya en return en navegation lo dejamos en false (navigation={false})
-
 import './Slider.css';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
@@ -16,7 +14,7 @@ const Slider = () => {
     <div className="conteinerslider">
         <Swiper
         slidesPerView={3}
-        spaceBetween={10}
+        spaceBetween={15}
         loop={true}
         pagination={{
         clickable: true,
