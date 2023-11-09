@@ -20,7 +20,7 @@ const Slider = () => {
         clickable: true,
         }}
         navigation={false}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation,]}
         className="mySwiper"
       >
         <SwiperSlide><img src="../../../public/gallery/7a.png" alt="" /></SwiperSlide>
