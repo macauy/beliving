@@ -20,6 +20,9 @@ const Home = () => {
 			<section className="home-button-container">
 				<Button type="default"></Button>
 			</section>
+			<section>
+				<Galery></Galery>
+			</section>
 		</main>
 	);
 };

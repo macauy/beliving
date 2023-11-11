@@ -11,13 +11,13 @@ footer {
 
 .footer-item {
 	display: inline-flex;
-	align-items: flex-start;
+	align-items: center;
 	flex: 0 0 auto;
 	gap: 2px;
 }
 
-.footer-phone {
-	align-items: center;
+.footer-location {
+	align-items: flex-start;
 }
 
 .footer-social-media {

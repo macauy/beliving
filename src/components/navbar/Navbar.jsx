@@ -1,40 +1,45 @@
-import './Navbar.css';
-import { Link, NavLink} from 'react-router-dom';
-import { useState } from 'react';
-
+import "./Navbar.css";
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+	const [MenuOpen, setMenuOpen] = useState(false);
 
-const[MenuOpen,setMenuOpen]= useState(false);
-
-  return (
-	<header>
-		<nav id='navbar'>
-			<Link to={'/'}>
-				<div id='logoBeliving' className='logoBeliving'><img src="/public/BL.svg" alt="" /></div>
-			</Link>
-			<div className='menu' onClick={()=>{setMenuOpen(!MenuOpen)}}>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
+	return (
+		<header>
+			<nav id="navbar">
+				<Link to={"/"}>
+					<div id="logoBeliving" className="logoBeliving">
+						<img src="/public/BL.svg" alt="" />
+					</div>
+				</Link>
+				<div
+					className="menu"
+					onClick={() => {
+						setMenuOpen(!MenuOpen);
+					}}
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<ul className={MenuOpen ? "open" : ""}>
 					<li>
-						<NavLink to={'/Galeria'}>Galería</NavLink>
+						<NavLink to={"/Catalogo"}>Catálogo</NavLink>
 					</li>
 					<li>
-						<NavLink to={'/PreguntasFrecuentes'}>Preguntas frecuentes</NavLink>
+						<NavLink to={"/PreguntasFrecuentes"}>Preguntas frecuentes</NavLink>
 					</li>
 					<li>
-						<NavLink to={'Contacto'}>Contacto</NavLink>
+						<NavLink to={"Contacto"}>Contacto</NavLink>
 					</li>
 				</ul>
-		</nav>
-	</header>
-  )
-}
+			</nav>
+		</header>
+	);
+};
 
-export default Navbar
+export default Navbar;
 /*
 <li> 
 	<Link>Inicio</Link>
