@@ -1,25 +1,43 @@
 import './Navbar.css';
+import { Link, NavLink} from 'react-router-dom';
+import { useState } from 'react';
+
 
 const Navbar = () => {
 
+const[MenuOpen,setMenuOpen]= useState(false);
 
-	//! las imagenes del header o navbar son estaticas solo por presentaciòn, a cambio de alguna modificaciòn hasta saber cual sera el navbar final que mdoulso llevara.
   return (
-	<nav id='navbar'>
-			<div id='logoBeliving' className='logo'><img src="/public/BL.svg" alt="" /></div>
-			<div id='menuHambur' className='logo'><img src="/public/imgHamburguesa.svg" alt="" /></div>
-	</nav>
+	<header>
+		<nav id='navbar'>
+			<Link to={'/'}>
+				<div id='logoBeliving' className='logoBeliving'><img src="/public/BL.svg" alt="" /></div>
+			</Link>
+			<div className='menu' onClick={()=>{setMenuOpen(!MenuOpen)}}>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+				<ul className={MenuOpen ? "open" : ""}>
+					<li>
+						<NavLink to={'/Galeria'}>Galería</NavLink>
+					</li>
+					<li>
+						<NavLink to={'/PreguntasFrecuentes'}>Preguntas frecuentes</NavLink>
+					</li>
+					<li>
+						<NavLink to={'Contacto'}>Contacto</NavLink>
+					</li>
+				</ul>
+		</nav>
+	</header>
   )
 }
 
 export default Navbar
 /*
-	<nav>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</nav>
+<li> 
+	<Link>Inicio</Link>
+</li>
+<div id='menuHambur' className='logo'><img src="/public/imgHamburguesa.svg" alt="" /></div>
 */

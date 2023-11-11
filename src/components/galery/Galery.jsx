@@ -1,12 +1,14 @@
 import "./Galery.css";
 import { useEffect, useRef, useState } from "react";
 import { data } from "../data";
+import Slider from "../slider/Slider";
 
 const Galery = () => {
   
   return (
     <div>
       <h4 id="imagina">Imaginá tu evento</h4>
+      <Slider/>
     </div>
   );
 };
