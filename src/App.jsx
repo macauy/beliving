@@ -1,5 +1,5 @@
 import Footer from "./components/footer/Footer";
-// import Galery from "./components/galery/Galery";
+// import Galery from "./components/galery/Galery";//? es parte del home
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Preguntasfrecuentes from "./components/preguntasfrecuentes/Preguntasfrecuentes";
@@ -10,7 +10,7 @@ import Catalogo from "./components/catalogo/Catalogo";
 function App() {
 	return (
 		<>
-			<BrowserRouter>
+			<BrowserRouter> 
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />

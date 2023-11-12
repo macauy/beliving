@@ -4,26 +4,25 @@ import { useState } from "react";
 
 const Navbar = () => {
 	const [MenuOpen, setMenuOpen] = useState(false);
-
+	
 	return (
-		<header>
-			<nav id="navbar">
+			<nav>
 				<Link to={"/"}>
 					<div id="logoBeliving" className="logoBeliving">
 						<img src="/public/BL.svg" alt="" />
 					</div>
 				</Link>
-				<div
-					className="menu"
-					onClick={() => {
+				<div 
+					className="menu" 
+					onClick={()=>{
 						setMenuOpen(!MenuOpen);
-					}}
-				>
+					}}>
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-				<ul className={MenuOpen ? "open" : ""}>
+				
+				<ul className= {MenuOpen ? "open" : " "}>
 					<li>
 						<NavLink to={"/Catalogo"}>Catálogo</NavLink>
 					</li>
@@ -35,7 +34,6 @@ const Navbar = () => {
 					</li>
 				</ul>
 			</nav>
-		</header>
 	);
 };
 
