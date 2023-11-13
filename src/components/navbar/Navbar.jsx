@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
+	
 	const [MenuOpen, setMenuOpen] = useState(false);
 	
 	return (
@@ -13,16 +14,15 @@ const Navbar = () => {
 					</div>
 				</Link>
 				<div 
-					className="menu" 
-					onClick={()=>{
-						setMenuOpen(!MenuOpen);
-					}}>
+					className= "menu" 
+						onClick={ () =>
+						setMenuOpen(!MenuOpen)
+					}>
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-				
-				<ul className= {MenuOpen ? "open" : " "}>
+				<ul className= {!MenuOpen ? "open" : " "}>
 					<li>
 						<NavLink to={"/Catalogo"}>Catálogo</NavLink>
 					</li>
