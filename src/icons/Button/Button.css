@@ -1,13 +1,17 @@
 .button {
-	height: 48px;
+	height: 50px;
 	padding: 8px 24px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
 	border: 0px;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	box-shadow: 2px 2px 2px 1px rgba(1, 26, 23, 0.4);
+	transform: skew(-20deg);
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
 }
 
 .button .button-text {
@@ -18,6 +22,10 @@
 	position: relative;
 	white-space: nowrap;
 	width: fit-content;
+	transform: skew(20deg);
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
 }
 
 .button.default {

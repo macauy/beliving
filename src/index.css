@@ -1,6 +1,7 @@
 :root {
 	--black: #011a17;
 	--primary: #45a196;
+	--light-green: #dbf0ed;
 	--light-gray: #d6e8e6;
 	--white: #f9fffe;
 }
@@ -18,4 +19,8 @@ body {
 	font-size: 1rem;
 	font-style: normal;
 	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
 }

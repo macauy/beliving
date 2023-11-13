@@ -22,11 +22,12 @@ footer {
 
 .footer-social-media {
 	width: 100%;
+
 	text-align: center;
-	display: flex;
-	flex-direction: column;
+	display: inline-flex;
+	justify-content: center;
 	align-items: center;
-	flex: 0 0 auto;
-	gap: 4px;
+	gap: 8px;
 	margin-top: 16px;
+	/* margin: 16px auto; */
 }
