@@ -92,8 +92,11 @@ nav .menu span {
     }
 }
 
-
+nav ul li a:not(.activate):hover{
+    background-color: #45A196;
+}
 .active {
     
     border-bottom:3px solid var(--Primary, #45A196);
+    
 }
