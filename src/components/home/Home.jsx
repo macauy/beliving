@@ -7,8 +7,10 @@ const Home = () => {
 		<main>
 			<div className="hero">
 				<section className="home-main">
-					<div className="home-logo-container">
-						<img className="home-logo" src="/logo.svg" alt="Logo" />
+					<div className="home-image-container">
+						<div className="home-logo-container">
+							<img className="home-logo" src="/logo.svg" alt="Logo" />
+						</div>
 					</div>
 				</section>
 				<section className="home-description">

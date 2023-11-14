@@ -1,0 +1,46 @@
+.card {
+	background: var(--light-gray);
+	border-radius: 4px;
+	box-shadow: 2px 3px 4px 1px rgba(1, 26, 23, 0.2);
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	overflow: hidden;
+}
+
+.card-picture {
+	width: 100%;
+	height: 40%;
+	min-height: 160px;
+	border-radius: 4px 4px 0px 0px;
+	background: url("/back.jpg") center / cover, lightgray 50% / cover no-repeat;
+}
+
+.card-description {
+	padding: 8px;
+}
+
+.card-description h3 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.card-description p {
+	margin-top: 2px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0.12px;
+}
+
+.card-price {
+	background: var(--primary, #45a196);
+	color: var(--white, #f9fffe);
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	padding: 6px 0px;
+}
