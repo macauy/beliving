@@ -2,12 +2,21 @@ import { IconInstagram } from "../../icons/IconInstagram/IconInstagram";
 import { IconLocation } from "../../icons/IconLocation/IconLocation";
 import { IconMail } from "../../icons/IconMail/IconMail";
 import { IconPhoneNumber } from "../../icons/IconPhoneNumber/IconPhoneNumber";
-
+import logo1 from "../../../public/logo1.svg";
+import logo2 from "../../../public/logo2.svg";
 import "./Footer.css";
 
 const Footer = () => {
 	return (
 		<footer>
+			<div className="footer-logo">
+				<img src={logo1} alt="Logo Be Living" />
+
+				<div className="footer-logo-detail">
+					<img src={logo2} alt="Be Living" />
+					<p className="footer-slogan">Alquiler de mobiliario para eventos</p>
+				</div>
+			</div>
 			<div className="footer-item">
 				<IconPhoneNumber className="footer-icons" />
 				0351 255-0936

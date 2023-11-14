@@ -1,6 +1,7 @@
 import "./Home.css";
 import Button from "../../icons/Button/Button";
 import Galery from "../galery/Galery";
+import Productos from "../productos/Productos";
 
 const Home = () => {
 	return (
@@ -26,6 +27,9 @@ const Home = () => {
 			</div>
 			<section>
 				<Galery></Galery>
+			</section>
+			<section>
+				<Productos />
 			</section>
 		</main>
 	);
