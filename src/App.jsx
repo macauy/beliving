@@ -6,11 +6,12 @@ import Preguntasfrecuentes from "./components/preguntasfrecuentes/Preguntasfrecu
 import Contacto from "./components/contacto/Contacto";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Catalogo from "./components/catalogo/Catalogo";
+import ProductoDetalle from "./components/productDetail/ProductoDetalle";
 
 function App() {
 	return (
 		<>
-			<BrowserRouter> 
+			<BrowserRouter>
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -20,6 +21,7 @@ function App() {
 						element={<Preguntasfrecuentes />}
 					/>
 					<Route path="/Contacto" element={<Contacto />} />
+					<Route path="/ProductoDetalle" element={<ProductoDetalle />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

@@ -2,6 +2,7 @@ import "./Home.css";
 import Button from "../../icons/Button/Button";
 import Galery from "../galery/Galery";
 import Productos from "../productos/Productos";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	return (
@@ -22,7 +23,9 @@ const Home = () => {
 					</p>
 				</section>
 				<section className="home-button-container">
-					<Button type="default"></Button>
+					<Link to={"catalogo"}>
+						<Button type="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
+					</Link>
 				</section>
 			</div>
 			<section>

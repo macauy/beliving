@@ -1,0 +1,6 @@
+.producto-detalle {
+	display: flex;
+	padding: 32px 0px;
+	flex-direction: column;
+	align-items: center;
+}

@@ -4,6 +4,7 @@
 	padding: 24px 16px;
 	flex-direction: column;
 	align-items: flex-start;
+	gap: 12px;
 }
 
 .products-cards-container {
@@ -21,4 +22,11 @@
 	overflow-x: scroll;
 	overscroll-behavior-x: contain;
 	scroll-snap-type: x proximity;
+}
+
+.productos-button-container {
+	padding: 16px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }

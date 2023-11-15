@@ -1,6 +1,7 @@
 import Button from "../../icons/Button/Button";
 import Card from "../card/Card";
 import "./Productos.css";
+import { Link } from "react-router-dom";
 
 const Productos = () => {
 	return (
@@ -14,8 +15,10 @@ const Productos = () => {
 					<Card />
 				</div>
 			</section>
-			<section className="productos-action">
-				<Button />
+			<section className="productos-button-container">
+				<Link to={"catalogo"}>
+					<Button type="variant-2" text="VER TODOS"></Button>
+				</Link>
 			</section>
 		</div>
 	);
