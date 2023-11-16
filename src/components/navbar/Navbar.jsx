@@ -1,28 +1,26 @@
-import "./Navbar.css";
-import { Link, NavLink } from "react-router-dom";
+import { Fade as Hamburger } from 'hamburger-react'
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
-	
-	const [MenuOpen, setMenuOpen] = useState(false);
-	
+
+  const [isOpen, setOpen] = useState(false)
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
+
 	return (
 			<nav>
 				<Link to={"/"}>
-					<div id="logoBeliving" className="logoBeliving">
+					<div id="logo" className="logo">
 						<img src="/public/BL.svg" alt="" />
 					</div>
 				</Link>
-				<div 
-					className= "menu" 
-						onClick={ () =>
-						setMenuOpen(!MenuOpen)
-					}>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<ul className= {!MenuOpen ? "open" : " "}>
+					<div  id='botonburguer' className='botonburguer'>
+          <Hamburger color='#45a196' toggled={isOpen} toggle={setOpen} />
+          </div>
+				<ul className={`menu-container ${isOpen ? 'open' : ''}`}>
 					<li>
 						<NavLink to={"/Catalogo"}>Catálogo</NavLink>
 					</li>
