@@ -6,8 +6,9 @@ import "./Navbar.css";
 const Navbar = () => {
 
   const [isOpen, setOpen] = useState(false)
-  const toggleMenu = () => {
-    setOpen(!isOpen);
+
+  const toggleMenu = () => { 
+    setOpen(!isOpen); // sin terminar
   };
 
 	return (
