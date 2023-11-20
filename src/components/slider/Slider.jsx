@@ -24,23 +24,39 @@ const Slider = ({ slides }) => {
 				className="mySwiper"
 			>
 				<SwiperSlide>
-					<img src="../../../public/gallery/7a.png" alt="" />
+					<img src="../../../public/gallery/1.jpg" alt="" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src="../../../public/gallery/8a.png" alt="" />
+					<img src="../../../public/gallery/2.webp" alt="" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src="../../../public/gallery/9a.png" alt="" />
+					<img src="../../../public/gallery/3.webp" alt="" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src="../../../public/gallery/7a.png" alt="" />
+					<img src="../../../public/gallery/4.jpg" alt="" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src="../../../public/gallery/8a.png" alt="" />
+					<img src="../../../public/gallery/5.jpg" alt="" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src="../../../public/gallery/9a.png" alt="" />
+					<img src="../../../public/gallery/7.webp" alt="" />
 				</SwiperSlide>
+				<SwiperSlide>
+					<img src="../../../public/gallery/8.webp" alt="" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<img src="../../../public/gallery/9.webp" alt="" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<img src="../../../public/gallery/10.webp" alt="" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<img src="../../../public/gallery/11.webp" alt="" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<img src="" alt="" />
+				</SwiperSlide>
+
 			</Swiper>
 		</div>
 	);

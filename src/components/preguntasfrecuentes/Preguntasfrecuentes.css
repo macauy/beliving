@@ -1,7 +1,7 @@
 
 .tituleConteiner{
     color: var(--Black, #011A17);
-    font-family: Montserrat; /*checar si esta tomando la tipografìa*/
+    font-family: "Montserrat", sans-serif; /*checar si esta tomando la tipografìa*/
     font-size: 2.125rem;
     font-style: normal;
     font-weight: 500;
@@ -40,24 +40,19 @@
     
 }
 
-
-
 .msjNoEncontrar{
     color: var(--Black, #011A17);
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: .9rem;
     font-style: normal;
     font-weight: 100;
-    line-height: 1.75rem; /* 175% */
+    line-height: 1.75rem;
     padding-bottom: 1rem;
 
   }
 
-  /* wts 
-color: var(--Black, #011A17);
-font-family: Montserrat;
-font-size: 1rem;
-font-style: normal;
-font-weight: 600;
-line-height: 1.75rem;
-*/
+@media (min-width: 480px) {
+    
+    
+    
+}
