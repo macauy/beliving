@@ -14,7 +14,7 @@ const Navbar = () => {
 	  };
 	  // Función handler para el clic en el botón de toggle
   	const toggleMenu = () => {
-    	setOpen(!menuVisible);
+    	setOpen();
   	};
 
 	return (
