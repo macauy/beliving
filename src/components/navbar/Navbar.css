@@ -13,7 +13,7 @@ nav {
     align-items: center;
     background-color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: small;
+    font-size: smaller;
     margin-bottom: .3rem;
     
 }
@@ -30,32 +30,35 @@ nav ul li a {
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.2rem;
+
 }
 nav .botonburguer {
     display: none;
     position: absolute;
     top: 0.75rem;
     right: 0.5rem;
-   
 }
 .menu-container {
-    display: none;
+    display: flex;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .menu-container.open {
+}
+
+.menu-container.open {
     display: flex;
     transform: translateX(0);
-  }
-  
+}
 
-/*? ---------------------------------- MEDIA QUERRY ---------------------------------
-    EL MAX-WIDTH , ESTÁ BIEN A ESOS PX ??????*/
+
+/*? ---------------------------------- MEDIA QUERRY ---------------------------------*/
 
 @media (max-width: 480px) {
     nav .botonburguer {
         display:flex;
         align-items: center;
+    }
+    .menu-container {
+        display: none;
+        transition: transform 0.3s ease-in-out;
     }
     nav {
         display: flex;
@@ -63,24 +66,22 @@ nav .botonburguer {
         align-items: flex-start;
     }
     nav ul {
-        display: none;
+        display: flex;
         align-items: center;
         flex-direction: column;
         width: 100%;
         margin-bottom: 0.25rem;
     }
     nav ul li {
-        width: 30%;
         text-align: center;
     }
     nav ul li a {
-        margin: 0.1rem 0.2rem;
+        align-items: center;
     }
+  
 }
+
 .active {
     
     border-bottom:3px solid var(--Primary, #45A196);
-    
 }
-
-

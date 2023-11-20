@@ -5,41 +5,42 @@ import "./Navbar.css";
 
 const Navbar = () => {
 
-  const [isOpen, setOpen] = useState(false)
-
-  const toggleMenu = () => { 
-    setOpen(!isOpen); // sin terminar
-  };
+	// Hace que elmenu hamburguesa abre y cierre
+	const [isOpen, setOpen] = useState(false)
+	
+// Estado para controlar la visibilidad del menú
+	const cerrarMenu = () => {
+		setOpen(false);
+	  };
+	  // Función handler para el clic en el botón de toggle
+  	const toggleMenu = () => {
+    	setOpen(!menuVisible);
+  	};
 
 	return (
 			<nav>
 				<Link to={"/"}>
-					<div id="logo" className="logo">
+					<div  id="logo" className="logo">
 						<img src="/public/BL.svg" alt="" />
 					</div>
 				</Link>
+					
 					<div  id='botonburguer' className='botonburguer'>
-          <Hamburger color='#45a196' toggled={isOpen} toggle={setOpen} />
-          </div>
-				<ul className={`menu-container ${isOpen ? 'open' : ''}`}>
-					<li>
-						<NavLink to={"/Catalogo"}>Catálogo</NavLink>
-					</li>
-					<li>
-						<NavLink to={"/PreguntasFrecuentes"}>Preguntas frecuentes</NavLink>
-					</li>
-					<li>
-						<NavLink to={"Contacto"}>Contacto</NavLink>
-					</li>
+    					<Hamburger color='#45a196' toggled={isOpen} toggle={setOpen} />
+					</div>
+					<ul  onClick={toggleMenu} className={`menu-container ${isOpen ? 'open' : ' '}`}>
+						<li onClick={cerrarMenu}>
+							<NavLink to={"/Catalogo"}>Catálogo</NavLink>
+						</li>
+						<li onClick={cerrarMenu}>
+							<NavLink to={"/PreguntasFrecuentes"}>Preguntas frecuentes</NavLink>
+						</li>
+						<li onClick={cerrarMenu}>
+							<NavLink to={"Contacto"}>Contacto</NavLink>
+						</li>
 				</ul>
 			</nav>
 	);
 };
 
 export default Navbar;
-/*
-<li> 
-	<Link>Inicio</Link>
-</li>
-<div id='menuHambur' className='logo'><img src="/public/imgHamburguesa.svg" alt="" /></div>
-*/
