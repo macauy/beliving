@@ -17,13 +17,15 @@ const Footer = () => {
 					<p className="footer-slogan">Alquiler de mobiliario para eventos</p>
 				</div>
 			</div>
-			<div className="footer-item">
-				<IconPhoneNumber className="footer-icons" />
-				0351 255-0936
-			</div>
-			<div className="footer-item">
-				<IconMail className="footer-icons" />
-				belivingalquiler@gmail.com
+			<div className="footer-inline">
+				<div className="footer-item">
+					<IconPhoneNumber className="footer-icons" />
+					0351 255-0936
+				</div>
+				<div className="footer-item">
+					<IconMail className="footer-icons" />
+					belivingalquiler@gmail.com
+				</div>
 			</div>
 			<div className="footer-item footer-location">
 				<IconLocation className="footer-icons" />
@@ -33,7 +35,7 @@ const Footer = () => {
 				</span>
 			</div>
 			<div className="footer-item footer-social-media">
-				VISITÁ NUESTRO INSTAGRAM
+				<span>VISITÁ NUESTRO INSTAGRAM</span>
 				<IconInstagram className="instagram-icon" />
 			</div>
 		</footer>

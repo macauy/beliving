@@ -1,13 +1,7 @@
 import "./Card.css";
 import { Link } from "react-router-dom";
 
-const Card = () => {
-	const producto = {
-		name: "Moderno",
-		description: "Juego de muebles para 10 personas",
-		price: "$ 10.000",
-	};
-	console.log(producto);
+const Card = ({ producto }) => {
 	return (
 		<Link to={"/ProductoDetalle"} state={producto}>
 			<div className="card">
