@@ -3,6 +3,7 @@
 	--primary: #45a196;
 	--light-green: #dbf0ed;
 	--light-gray: #f4fafa;
+	--gray: ##eef0f0;
 	--white: #f9fffe;
 }
 
@@ -16,11 +17,17 @@ body {
 	color: var(--black);
 	background-color: white;
 	font-family: "Montserrat", sans-serif;
-	font-size: 1rem;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 }
 
 a {
 	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 1rem;
+	}
 }

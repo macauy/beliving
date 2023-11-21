@@ -33,11 +33,11 @@
 
 .home-image-container:after {
 	display: block;
-	content: "ACA";
+	content: "";
 	position: absolute;
 	top: 90%;
 	left: -10%;
-	height: 25%;
+	height: 30%;
 	width: 150%;
 	background: var(--light-green);
 	-webkit-transform: rotate(5deg);
@@ -51,7 +51,6 @@
 
 .home-description {
 	padding: 16px 28px;
-	font-size: 14px;
 	line-height: 19.6px;
 }
 
@@ -61,4 +60,53 @@
 	justify-content: center;
 	gap: 10px;
 	position: relative;
+}
+
+.home-desktop-logo-container {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.hero {
+		display: flex;
+		align-items: center;
+		height: calc(80vh - 74px);
+		min-height: 600px;
+	}
+
+	.home-main {
+		height: 100%;
+		min-width: 60%;
+		background: url("/back.jpg") center / cover,
+			lightgray -30.29px -205.692px / 107.557% 168.057% no-repeat;
+	}
+
+	.home-image-container:after {
+		display: block;
+		position: absolute;
+		top: 30%;
+		left: 45%;
+		height: 75%;
+		width: 130%;
+		background: var(--light-green);
+		-webkit-transform: rotate(104deg);
+		-moz-transform: rotate(104deg);
+		transform: rotate(104deg);
+	}
+
+	.home-desktop {
+		padding: 40px;
+	}
+
+	.home-description {
+		padding: 16px;
+		text-align: center;
+		line-height: 28px; /* 175% */
+	}
+
+	.home-desktop-logo-container {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 16px;
+	}
 }

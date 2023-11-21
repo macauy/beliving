@@ -15,17 +15,22 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				<section className="home-description">
-					<p>
-						Más que un <b>servicio de alquiler de muebles para eventos,</b>{" "}
-						somos creadores de experiencias únicas. Ofrecemos una amplia gama de
-						livings y muebles versátiles para tu evento.
-					</p>
-				</section>
-				<section className="home-button-container">
-					<Link to={"catalogo"}>
-						<Button type="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
-					</Link>
+				<section className="home-desktop">
+					<section className="home-desktop-logo-container">
+						<img className="home-logo" src="/logo_desktop.svg" alt="Logo" />
+					</section>
+					<section className="home-description">
+						<p>
+							Más que un <b>servicio de alquiler de muebles para eventos,</b>{" "}
+							somos creadores de experiencias únicas. Ofrecemos una amplia gama
+							de livings y muebles versátiles para tu evento.
+						</p>
+					</section>
+					<section className="home-button-container">
+						<Link to={"catalogo"}>
+							<Button type="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
+						</Link>
+					</section>
 				</section>
 			</div>
 			<section>
