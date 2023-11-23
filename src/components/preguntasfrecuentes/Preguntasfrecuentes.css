@@ -48,11 +48,14 @@
     font-weight: 100;
     line-height: 1.75rem;
     padding-bottom: 1rem;
+    padding: .6rem;
 
   }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
     
-    
+    .respuesta{
+        
+    }
     
 }
