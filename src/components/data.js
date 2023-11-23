@@ -46,3 +46,42 @@ export const livings = [
 		url: "/productos/LivingInfantil.webp",
 	},
 ];
+
+export const otrosProductos = [
+	{
+		name: "Barra para tragos",
+		description: "Barra móvil reforzada",
+		price: "$ 8.000",
+		url: "/productos/BarraTragos.webp",
+	},
+	{
+		name: "Barritas altas y banquetas",
+		description: "Barra alta con 4 banquetas",
+		price: "$ 7.000",
+		url: "/productos/BarraAlta.webp",
+	},
+	{
+		name: "Sillas Country",
+		description: "Sillas tipo country plegables",
+		price: "$ 300",
+		url: "/productos/SillasCountry.webp",
+	},
+	{
+		name: "Tablones y manteles",
+		description: "Tablones y manteles blancos o negros",
+		price: "$ 300",
+		url: "/productos/MesasManteles.webp",
+	},
+	{
+		name: "Jenga gigante",
+		description: "Juego de madera",
+		price: "$ 10.000",
+		url: "/productos/JengaGigante.webp",
+	},
+	{
+		name: "Mesa civil",
+		description: "Mesa para ceremonia",
+		price: "$ 5.000",
+		url: "/productos/MesaCivil.webp",
+	},
+];

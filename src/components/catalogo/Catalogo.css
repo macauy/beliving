@@ -22,6 +22,8 @@
 .catalogo-otros {
 	width: 100%;
 	padding: 16px;
+	/* max-width: 1440px; */
+	margin: 0 auto;
 }
 
 .cards-container {
@@ -32,6 +34,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
 	justify-content: center;
 	margin: 0 auto;
+	max-width: 1440px;
 }
 
 @media (min-width: 768px) {
@@ -51,5 +54,13 @@
 	.catalogo-otros {
 		width: 100%;
 		padding: 40px;
+	}
+
+	.cards-container {
+		gap: 24px;
+		/* grid-template-columns: repeat(auto-fit, minmax(156px, 315px)); */
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		max-width: 1440px;
+		width: 100%;
 	}
 }

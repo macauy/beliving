@@ -25,7 +25,7 @@ const Slider = ({ slides }) => {
 				modules={[Pagination, Navigation]}
 				className="mySwiper"
 				style={{
-					"--swiper-navigation-size": "16px",
+					"--swiper-navigation-size": "18px",
 					"--swiper-pagination-color": "var(--primary)",
 					// "--swiper-pagination-bullet-inactive-color": "#999999",
 					// "--swiper-pagination-bullet-inactive-opacity": "1",
