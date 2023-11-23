@@ -1,6 +1,6 @@
 import Button from "../../icons/Button/Button";
 import Card from "../card/Card";
-// import "./Productos.css";
+import "./Productos.css";
 import { Link } from "react-router-dom";
 
 const Productos = () => {
