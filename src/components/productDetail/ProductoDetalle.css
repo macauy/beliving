@@ -11,13 +11,13 @@
 
 .producto-detalle-container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 30px;
 	padding: 16px 40px;
 }
 
 .producto-detalle-galery {
-	width: 40%;
+	width: 100%;
 	min-height: 100%;
 }
 
@@ -48,6 +48,10 @@
 	justify-content: space-between;
 }
 
+.producto-price-button {
+	display: none;
+}
+
 .producto-price h3 {
 	font-size: 24px;
 	font-weight: 400;
@@ -59,4 +63,22 @@
 	padding: 20px;
 	text-align: center;
 	background: var(--Gray, #eef0f0);
+}
+
+@media (min-width: 768px) {
+	.producto-detalle-galery {
+		width: 40%;
+		min-height: 100%;
+	}
+
+	.producto-detalle-container {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		padding: 16px 40px;
+	}
+
+	.producto-price-button {
+		display: block;
+	}
 }

@@ -51,7 +51,7 @@ nav .botonburguer {
 
 /*? ---------------------------------- MEDIA QUERRY ---------------------------------*/
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	nav .botonburguer {
 		display: flex;
 		align-items: center;

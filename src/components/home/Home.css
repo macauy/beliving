@@ -70,13 +70,18 @@
 	.hero {
 		display: flex;
 		align-items: center;
-		height: calc(80vh - 74px);
+		height: calc(60vh - 74px);
 		min-height: 600px;
 	}
 
 	.home-main {
 		height: 100%;
-		min-width: 60%;
+		min-width: 55%;
+		/* background: url("/back.jpg") center / cover,
+			lightgray -30.29px -205.692px / 107.557% 168.057% no-repeat; */
+	}
+
+	.home-image-container {
 		background: url("/back.jpg") center / cover,
 			lightgray -30.29px -205.692px / 107.557% 168.057% no-repeat;
 	}
@@ -108,5 +113,9 @@
 		display: flex;
 		justify-content: center;
 		margin-bottom: 16px;
+	}
+
+	.home-logo-container {
+		display: none;
 	}
 }

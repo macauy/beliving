@@ -10,11 +10,11 @@ const Navbar = () => {
 	// Estado para controlar la visibilidad del menú
 	const cerrarMenu = () => {
 		setOpen(false);
-	  };
-	  // Función handler para el clic en el botón de toggle
-  	const toggleMenu = () => {
-    	setOpen();
-  	};
+	};
+	// Función handler para el clic en el botón de toggle
+	const toggleMenu = () => {
+		setOpen();
+	};
 
 	return (
 		<nav>

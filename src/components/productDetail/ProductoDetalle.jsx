@@ -1,7 +1,7 @@
 import Button from "../../icons/Button/Button";
 import Slider from "../slider/Slider";
 import "./ProductoDetalle.css";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const ProductoDetalle = () => {
 	const location = useLocation();
@@ -38,14 +38,16 @@ const ProductoDetalle = () => {
 							<h3>{price} *</h3>
 							<p>*No incluye costo de envío</p>
 						</div>
-
-						<Button type="default" text="COTIZAR"></Button>
+						<div className="producto-price-button">
+							<Button type="default" text="COTIZAR"></Button>
+						</div>
 					</div>
 				</section>
 			</div>
 			<section className="producto-detalle-footer">
 				<p>
-					Si tenés alguna duda, visitá nuestra sección de preguntas frecuentes.
+					Si tenés alguna duda, visitá nuestra sección de{" "}
+					<NavLink to={"/PreguntasFrecuentes"}>preguntas frecuentes</NavLink>.
 				</p>
 			</section>
 		</div>
