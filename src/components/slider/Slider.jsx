@@ -20,7 +20,7 @@ const Slider = ({ slides }) => {
 				pagination={{
 					clickable: true,
 				}}
-				navigation={false}
+				navigation={true}
 				modules={[Pagination, Navigation]}
 				className="mySwiper"
 			>
@@ -54,9 +54,9 @@ const Slider = ({ slides }) => {
 				<SwiperSlide>
 					<img src="/gallery/11.webp" alt="" />
 				</SwiperSlide>
-				<SwiperSlide>
+				{/* <SwiperSlide>
 					<img src="" alt="" />
-				</SwiperSlide>
+				</SwiperSlide> */}
 			</Swiper>
 		</div>
 	);
