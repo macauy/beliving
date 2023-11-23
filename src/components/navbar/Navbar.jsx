@@ -21,7 +21,7 @@ const Navbar = () => {
 			<div className="nav-title">
 				<Link to={"/"}>
 					<div id="logo" className="logo">
-						<img src="/public/BL.svg" alt="" />
+						<img src="/BL.svg" alt="" />
 					</div>
 				</Link>
 				<div id="botonburguer" className="botonburguer">
