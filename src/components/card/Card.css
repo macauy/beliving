@@ -17,7 +17,7 @@
 	height: 40%;
 	min-height: 160px;
 	border-radius: 4px 4px 0px 0px;
-	background: url("/back.jpg") center / cover, lightgray 50% / cover no-repeat;
+	background: center / cover, lightgray 50% / cover no-repeat;
 }
 
 .card-description {

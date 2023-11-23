@@ -3,6 +3,10 @@
 	overflow-x: hidden;
 }
 
+.galery {
+	padding: 16px;
+}
+
 .galery ul,
 li {
 	list-style: none;
@@ -62,4 +66,10 @@ li {
 	right: 30px;
 	cursor: pointer;
 	z-index: 1;
+}
+
+@media (min-width: 768px) {
+	.galery {
+		padding: 40px;
+	}
 }

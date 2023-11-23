@@ -8,13 +8,14 @@ import "swiper/css/navigation"; // para poner o quitar flechas de navegacion o y
 import "./Slider.css";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import { pictures } from "../data.js";
 
 const Slider = ({ slides }) => {
 	return (
 		<div className="conteinerslider">
 			<Swiper
 				slidesPerView={slides}
-				spaceBetween={15}
+				spaceBetween={20}
 				centeredSlides={true}
 				loop={true}
 				pagination={{
@@ -23,40 +24,22 @@ const Slider = ({ slides }) => {
 				navigation={true}
 				modules={[Pagination, Navigation]}
 				className="mySwiper"
+				style={{
+					"--swiper-navigation-size": "16px",
+					"--swiper-pagination-color": "var(--primary)",
+					// "--swiper-pagination-bullet-inactive-color": "#999999",
+					// "--swiper-pagination-bullet-inactive-opacity": "1",
+					// "--swiper-pagination-bullet-size": "16px",
+					// "--swiper-pagination-bullet-horizontal-gap": "6px",
+				}}
 			>
-				<SwiperSlide>
-					<img src="/gallery/1.jpg" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/2.webp" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/3.webp" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/4.jpg" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/5.jpg" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/7.webp" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/8.webp" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/9.webp" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/10.webp" alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="/gallery/11.webp" alt="" />
-				</SwiperSlide>
-				{/* <SwiperSlide>
-					<img src="" alt="" />
-				</SwiperSlide> */}
+				{pictures.map((item) => (
+					// <Card producto={item} key={item.name} />
+
+					<SwiperSlide key={item.id}>
+						<img src={item.imgUrl} alt="" />
+					</SwiperSlide>
+				))}
 			</Swiper>
 		</div>
 	);
