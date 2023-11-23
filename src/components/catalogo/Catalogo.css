@@ -34,7 +34,6 @@
 	grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
 	justify-content: center;
 	margin: 0 auto;
-	max-width: 1440px;
 }
 
 @media (min-width: 768px) {
@@ -54,6 +53,7 @@
 	.catalogo-otros {
 		width: 100%;
 		padding: 40px;
+		max-width: 1440px;
 	}
 
 	.cards-container {

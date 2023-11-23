@@ -19,9 +19,9 @@
 	/* display: flex; */
 	padding: 0 10px;
 	/* height: 316px; */
-	overflow-x: scroll;
+	/* overflow-x: scroll;
 	overscroll-behavior-x: contain;
-	scroll-snap-type: x proximity;
+	scroll-snap-type: x proximity; */
 }
 
 .productos-button-container {
