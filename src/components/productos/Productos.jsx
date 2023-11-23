@@ -5,29 +5,6 @@ import { Link } from "react-router-dom";
 import { livings } from "../data.js";
 
 const Productos = () => {
-	// const livings = [
-	// 	{
-	// 		name: "Moderno",
-	// 		description: "Juego de muebles para 10 personas",
-	// 		price: "$ 10.000",
-	// 	},
-	// 	{
-	// 		name: "Industrial",
-	// 		description: "Juego de muebles para 10 personas",
-	// 		price: "$ 9.000",
-	// 	},
-	// 	{
-	// 		name: "Rústico",
-	// 		description: "Juego de muebles para 10 personas",
-	// 		price: "$ 10.000",
-	// 	},
-	// 	{
-	// 		name: "Infantil",
-	// 		description: "Mini living para 10 niños",
-	// 		price: "$ 5.000",
-	// 	},
-	// ];
-	console.log(livings);
 	return (
 		<div className="productos">
 			<h1 className="catalogo-title">Conocé nuestras opciones</h1>

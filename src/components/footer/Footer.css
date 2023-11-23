@@ -41,6 +41,10 @@ footer {
 	margin-top: 8px;
 }
 
+.footer-social-media span {
+	text-align: center;
+}
+
 .footer-logo {
 	display: flex;
 	justify-content: flex-start;

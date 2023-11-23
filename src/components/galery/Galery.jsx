@@ -7,7 +7,7 @@ const Galery = () => {
 	return (
 		<div className="galery">
 			<h4 id="imagina">Imaginá tu evento</h4>
-			<Slider slides={4} />
+			<Slider slides={0} />
 		</div>
 	);
 };

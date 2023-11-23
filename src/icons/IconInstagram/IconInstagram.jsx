@@ -1,6 +1,10 @@
 export const IconInstagram = ({ className }) => {
 	return (
-		<a href="" style={{ display: "flex" }}>
+		<a
+			href="https://www.instagram.com/belivingcba/"
+			style={{ display: "flex" }}
+			target="blank"
+		>
 			<svg
 				className={className}
 				width="24"

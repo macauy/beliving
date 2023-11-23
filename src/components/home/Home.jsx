@@ -3,6 +3,7 @@ import Button from "../../icons/Button/Button";
 import Galery from "../galery/Galery";
 import Productos from "../productos/Productos";
 import { Link } from "react-router-dom";
+import IconWhatsapp from "../../icons/IconWhatsapp/IconWhatsapp";
 
 const Home = () => {
 	return (
@@ -39,6 +40,7 @@ const Home = () => {
 			<section>
 				<Productos />
 			</section>
+			<IconWhatsapp />
 		</main>
 	);
 };

@@ -1,4 +1,4 @@
-// import React, { useRef, useState } from "react";
+import { useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -6,15 +6,37 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation"; // para poner o quitar flechas de navegacion o ya en return en navegation lo dejamos en false (navigation={false})
 import "./Slider.css";
-// import required modules
-import { Pagination, Navigation } from "swiper/modules";
 import { pictures } from "../data.js";
 
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
+
 const Slider = ({ slides }) => {
+	const slidesSmall = 2;
+	const slidesLarge = 4;
+	let slidesToView = slides;
+
+	// const screenWidth = window.innerWidth;
+
+	const [width, setWidth] = useState(window.innerWidth);
+	// const breakpoint = 768;
+
+	useEffect(() => {
+		const handleWindowResize = () => setWidth(window.innerWidth);
+		window.addEventListener("resize", handleWindowResize);
+
+		// Return a function from the effect that removes the event listener
+		return () => window.removeEventListener("resize", handleWindowResize);
+	}, []);
+
+	if (slides == 0) {
+		slidesToView = width < 768 ? slidesSmall : slidesLarge;
+	}
+
 	return (
 		<div className="conteinerslider">
 			<Swiper
-				slidesPerView={slides}
+				slidesPerView={slidesToView}
 				spaceBetween={20}
 				centeredSlides={true}
 				loop={true}
@@ -29,7 +51,8 @@ const Slider = ({ slides }) => {
 					"--swiper-pagination-color": "var(--primary)",
 					// "--swiper-pagination-bullet-inactive-color": "#999999",
 					// "--swiper-pagination-bullet-inactive-opacity": "1",
-					// "--swiper-pagination-bullet-size": "16px",
+					// "--swiper-pagination-bullet-size": "10px",
+
 					// "--swiper-pagination-bullet-horizontal-gap": "6px",
 				}}
 			>

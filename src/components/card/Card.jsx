@@ -2,9 +2,6 @@ import "./Card.css";
 import { Link } from "react-router-dom";
 
 const Card = ({ producto }) => {
-	console.log(producto.url);
-	const imgUrl = `url(${producto.url})`;
-	console.log(imgUrl);
 	return (
 		<Link to={"/ProductoDetalle"} state={producto}>
 			<div className="card">
