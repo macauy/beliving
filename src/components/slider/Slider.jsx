@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import {  Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation"; // para poner o quitar flechas de navegacion o ya en return en navegation lo dejamos en false (navigation={false})
 import "./Slider.css";
 import { pictures } from "../data.js";
-
+//------------------ZOOM-----------------
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import {  Pagination, Navigation } from "swiper/modules";
 
 const Slider = ({ slides }) => {
 	const slidesSmall = 2;
@@ -43,6 +45,7 @@ const Slider = ({ slides }) => {
 				pagination={{
 					clickable: true,
 				}}
+				
 				navigation={true}
 				modules={[Pagination, Navigation]}
 				className="mySwiper"
@@ -60,7 +63,10 @@ const Slider = ({ slides }) => {
 					// <Card producto={item} key={item.name} />
 
 					<SwiperSlide key={item.id}>
+						<Zoom>
 						<img src={item.imgUrl} alt="" />
+						</Zoom>
+						
 					</SwiperSlide>
 				))}
 			</Swiper>
