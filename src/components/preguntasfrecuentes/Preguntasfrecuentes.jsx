@@ -8,37 +8,30 @@ const Preguntasfrecuentes = () => {
     <div className='preguntasfrecuentesConteiner'>
       <div className='tituleConteiner'>Preguntas frecuentes</div>
 
-      <div className='preguntasrespuestas'>
-      <PreguntaFrecuente pregunta="¿Cómo realizo una reserva?" 
-      respuesta="Esta es la respuesta Abonando una seña del 50% del valor del alquiler por medio de transferencia. El 50% restante se abona en el momento de la entrega. No te olvides de enviarnos el comprobante.." />
+        <div className='preguntasrespuestas'>
+          <PreguntaFrecuente pregunta="¿Cómo realizo una reserva?" 
+            respuesta="La reserva se realiza con una seña equivalente al 50% del presupuesto acordado, generalmente mediante transferencia. También podés abonar en efectivo, con tarjeta o por Mercado Pago (estos dos últimos llevan un recargo del 10%)." />
 
-      <PreguntaFrecuente pregunta="¿La seña congela el precio?" 
-      respuesta="No, tiene validez por 15 días. Los valores de alquiler pueden modificarse sin previo aviso. " /> 
+          <PreguntaFrecuente pregunta="¿La seña congela el precio?" 
+            respuesta="No, la seña es al solo efecto de reservar la fecha de tu evento. El día de entrega del mobiliario se abonará el saldo y el ajuste de precios que pudiera corresponder. " /> 
 
-      <PreguntaFrecuente pregunta="¿Dónde se encuentran?" 
-      respuesta="Estamos en Cuyo 1665, barrio San Martín, ciudad de Córdoba, Argentina." /> 
+          <PreguntaFrecuente pregunta="¿Qué incluye el flete?" 
+            respuesta="El flete incluye envío y retiro, tené en cuenta que el costo del mismo varía según la cantidad de mobiliario, la distancia, el día y la hora de prestación del servicio. En caso de envíos y retiros los días sábados después de las 18hs y los días domingo, se cobrará un cargo adicional. También es importante que sepas que el armado no está incluido y que, en caso de que tu evento sea en un edificio, la entrega del mobiliario se realizará en planta baja." /> 
 
-      <PreguntaFrecuente pregunta="¿Se puede ver el mobiliario?" 
-      respuesta="Si. Coordiná con nosotros una cita." /> 
+          <PreguntaFrecuente pregunta="¿Dónde se encuentran?" 
+            respuesta="Estamos en Cuyo 1665, barrio San Martín, ciudad de Córdoba, Argentina." /> 
 
-      <PreguntaFrecuente pregunta="¿Puedo ocuparme del traslado?" 
-      respuesta="Si, ya sea en flete o en tu vehículo particular, podés coordinar con nosotros el retiro y regreso del mobiliario." /> 
-      <PreguntaFrecuente pregunta="¿Emiten factura?" 
-      respuesta="Si, factura C. ¡Solicitala!" /> 
+          <PreguntaFrecuente pregunta="¿Se puede ver el mobiliario?" 
+            respuesta="Sí, concertando una cita previa." /> 
 
-      <PreguntaFrecuente pregunta="¿Se puede pagar con tarjeta?" 
-      respuesta="Si, te enviamos un link de pago, tené en cuenta que tiene un 10% adicional (comisión de Mercado pago)." />
+          <PreguntaFrecuente pregunta="¿Puedo hacerme cargo del flete o traslado?" 
+            respuesta="Sí, siempre que cuentes con un vehículo en condiciones para resguardo de la carga o bien contratando el servicio de flete en forma directa." /> 
 
-      <PreguntaFrecuente pregunta="¿Cuál es la pregunta 7?" 
-      respuesta="Esta es la respuesta 8." />
+          <PreguntaFrecuente pregunta="¿Emiten factura?" 
+            respuesta='Sí, actualmente somos contribuyentes del Régimen Simplificado (Monotributo), por lo que el tipo de factura que emitimos es Tipo "C"."'/>
 
-      <PreguntaFrecuente pregunta="¿Cuál es la pregunta 7?" 
-      respuesta="Esta es la respuesta 9." />
-
-      <PreguntaFrecuente pregunta="¿Cuál es la pregunta 7?" 
-      respuesta="Esta es la respuesta 10." />
-
-      
+          <PreguntaFrecuente pregunta="¿Se puede pagar con tarjeta?" 
+            respuesta="Sí, tené en cuenta que en estos casos, al total de presupuesto acordado se le adicionará un 10% para cubrir los gastos asociados a este medio de pago (comisión de Mercado Pago)." />
       </div>
     
       <div className='msjNoEncontrar'>
