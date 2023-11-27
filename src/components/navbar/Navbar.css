@@ -47,6 +47,29 @@ nav .botonburguer {
 .menu-container.open {
 	display: flex;
 	transform: translateX(0);
+	padding: 10px;
+}
+
+.navbar-button {
+	border: 2px solid var(--primary);
+	padding: 8px 16px;
+	transform: skew(-20deg);
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+}
+
+.navbar-button-text {
+	color: var(--primary);
+	transform: skew(20deg);
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 19.6px; /* 140% */
+	letter-spacing: 1.25px;
 }
 
 /*? ---------------------------------- MEDIA QUERRY ---------------------------------*/

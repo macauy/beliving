@@ -1,7 +1,8 @@
+import QuestionBar from "../../common/questionBar/QuestionBar";
 import Button from "../../icons/Button/Button";
 import Slider from "../slider/Slider";
 import "./ProductoDetalle.css";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const ProductoDetalle = () => {
 	const location = useLocation();
@@ -45,10 +46,7 @@ const ProductoDetalle = () => {
 				</section>
 			</div>
 			<section className="producto-detalle-footer">
-				<p>
-					Si tenés alguna duda, visitá nuestra sección de{" "}
-					<NavLink to={"/PreguntasFrecuentes"}>preguntas frecuentes</NavLink>.
-				</p>
+				<QuestionBar />
 			</section>
 		</div>
 	);

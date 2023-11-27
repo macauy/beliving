@@ -60,9 +60,6 @@
 
 .producto-detalle-footer {
 	margin: 16px 40px 40px 40px;
-	padding: 20px;
-	text-align: center;
-	background: var(--Gray, #eef0f0);
 }
 
 @media (min-width: 768px) {

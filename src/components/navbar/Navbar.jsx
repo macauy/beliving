@@ -39,7 +39,11 @@ const Navbar = () => {
 					<NavLink to={"/PreguntasFrecuentes"}>Preguntas frecuentes</NavLink>
 				</li>
 				<li onClick={cerrarMenu}>
-					<NavLink to={"Contacto"}>Contacto</NavLink>
+					<NavLink to={"Contacto"}>
+						<div className="navbar-button">
+							<div className="navbar-button-text">CONTACTO</div>
+						</div>
+					</NavLink>
 				</li>
 			</ul>
 		</nav>
