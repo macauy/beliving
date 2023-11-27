@@ -1,5 +1,7 @@
 // PreguntasFrecuentes.jsx
 import React, { useState } from 'react';
+import './PeguntaFrecuente.css'
+
 
 // comp funcional de PreguntaFrecuente
 const PreguntaFrecuente = ({ pregunta, respuesta }) => {
@@ -13,10 +15,15 @@ const PreguntaFrecuente = ({ pregunta, respuesta }) => {
 
   // renderiza el componente de PreguntaFrecuente
   return (
-    <div className="respuesta " onClick={toggleRespuesta}>
+    <div>
+      <div className='respuesta' onClick={toggleRespuesta}>
       <div className="pregunta">{pregunta}</div>
       {abierta && <div className="">{respuesta}</div>}
+      <div className={`respuesta-desktop ${abierta ? 'abierta' : ''}`}>{respuesta}</div>
     </div>
+  
+    </div>
+    
   );
 };
 export default PreguntaFrecuente;
