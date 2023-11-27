@@ -2,8 +2,10 @@
     padding: .25rem 2.5rem;
     max-width: 85%;
     margin: auto;
+    justify-content: space-between; 
    
   }
+
   
   /* etiquetas de los inputs */
   .formulario label {
@@ -22,9 +24,7 @@
     border-radius: 0.25rem;
     border:  0.125rem solid #45A196;
     box-sizing: border-box;
-  
   }
-  
   #mensaje-conteiner{
     display: flex;
     height: 12.5rem;
@@ -35,12 +35,29 @@
     font-size: 15px;
   }
   /*  botón de enviar */
-  .formulario button {
+
+  .contacto-button {
     background-color: #45a196;
-    color: #fff;
-    padding: 0.63rem 0.940rem;
-    border: none;
-    cursor: pointer;
+    border: 2px solid var(--primary, );
+    padding: 8px 16px;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    box-shadow: 2px 2px 2px 1px rgba(1, 26, 23, 0.4);
+  }
+
+  .contacto-button-text {
+    color: var(--primary-3, #F4FAFA);
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px; /* 140% */
+    letter-spacing: 1.25px;
+    
   }
   
   @media (max-width: 768px) {
@@ -48,12 +65,9 @@
     ::placeholder{
         font-size: 11px;
     }
-
-    .formulario button {
+    .contacto-button {
         background-color: #45a196;
-        color: #fff;
       }
-    
   }
 
   
