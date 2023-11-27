@@ -13,11 +13,10 @@ const PreguntaFrecuente = ({ pregunta, respuesta }) => {
 
   // renderiza el componente de PreguntaFrecuente
   return (
-    <div className="respuesta" onClick={toggleRespuesta}>
+    <div className="respuesta " onClick={toggleRespuesta}>
       <div className="pregunta">{pregunta}</div>
       {abierta && <div className="">{respuesta}</div>}
     </div>
   );
 };
-
 export default PreguntaFrecuente;

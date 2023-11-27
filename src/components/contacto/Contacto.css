@@ -1,0 +1,60 @@
+.conteiner-contacto {
+    padding: .25rem 2.5rem;
+    max-width: 85%;
+    margin: auto;
+  }
+  
+  /* etiquetas de los inputs */
+  .formulario label {
+    display: block;
+    margin-bottom: .5rem;
+  }
+  
+  /* inputs */
+  .formulario input {
+    width: 100%;
+    height: 3rem;
+    padding: 0.8rem;
+    margin-bottom: 0.98rem;
+    background-color: var(--primary-3, #F4FAFA);
+    border-radius: 0.25rem;
+    border:  0.125rem solid #45A196;
+    box-sizing: border-box;
+  }
+  
+  #mensaje-conteiner{
+    display: flex;
+    height: 12.5rem;
+    padding: 0.4375rem 0.625rem;
+    align-content: start flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+  }
+  ::placeholder {
+    font-size: 15px;
+  }
+  /*  botón de enviar */
+  .formulario button {
+    background-color: #45a196;
+    color: #fff;
+    padding: 0.63rem 0.940rem;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  
+  @media (max-width: 768px) {
+
+    ::placeholder{
+        font-size: 11px;
+    }
+
+    .formulario button {
+        background-color: #45a196;
+        color: #fff;
+      }
+    
+  }
+
+  

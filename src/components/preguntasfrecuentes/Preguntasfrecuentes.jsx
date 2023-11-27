@@ -31,10 +31,10 @@ const Preguntasfrecuentes = () => {
             respuesta='Sí, actualmente somos contribuyentes del Régimen Simplificado (Monotributo), por lo que el tipo de factura que emitimos es Tipo "C"."'/>
 
           <PreguntaFrecuente pregunta="¿Se puede pagar con tarjeta?" 
-            respuesta="Sí, tené en cuenta que en estos casos, al total de presupuesto acordado se le adicionará un 10% para cubrir los gastos asociados a este medio de pago (comisión de Mercado Pago)." />
+          respuesta="Sí, tené en cuenta que en estos casos, al total de presupuesto acordado se le adicionará un 10% para cubrir los gastos asociados a este medio de pago (comisión de Mercado Pago)." />
       </div>
     
-      <div className='msjNoEncontrar'>
+      <div className='mensajes-texto'>
         <p>Si no encontraste la información que necesitabas, podés consultarnos directamente por <b>WhatsApp.</b> </p>
       </div>
     </div>

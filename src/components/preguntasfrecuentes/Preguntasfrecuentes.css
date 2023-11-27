@@ -39,7 +39,8 @@
     
 }
 
-.msjNoEncontrar{
+
+.mensajes-texto{
     color: var(--Black, #011A17);
     font-family: "Montserrat", sans-serif;
     font-size: .9rem;
@@ -49,10 +50,9 @@
     padding-bottom: 1rem;
     padding: .6rem;
 
-  }
 
-@media (min-width: 768px) {
+
+  }
+  @media  (max-width: 768px) {
     
-    
-    
-}
+  }
