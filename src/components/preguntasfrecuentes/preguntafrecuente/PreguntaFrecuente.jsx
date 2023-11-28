@@ -1,31 +1,29 @@
 // PreguntasFrecuentes.jsx
-import React, { useState } from 'react';
-import './PeguntaFrecuente.css'
-
+import { useState } from "react";
+import "./PeguntaFrecuente.css";
 
 // comp funcional de PreguntaFrecuente
 const PreguntaFrecuente = ({ pregunta, respuesta }) => {
-  // Estado para controlar la visibilidad de la respuesta
-  const [abierta, setAbierta] = useState(false);
+	// Estado para controlar la visibilidad de la respuesta
+	const [abierta, setAbierta] = useState(false);
 
-  // función para manejar el clic en la pregunta y cambiar la visibilidad de la respuesta
-  const toggleRespuesta = () => {
-    setAbierta(!abierta);
-  };
+	// función para manejar el clic en la pregunta y cambiar la visibilidad de la respuesta
+	const toggleRespuesta = () => {
+		setAbierta(!abierta);
+	};
 
-  // renderiza el componente de PreguntaFrecuente
-  return (
-    <div className='respuestaConteiner'>
-      <div className='respuesta' onClick={toggleRespuesta}>
-      <div className="pregunta">{pregunta}</div>
-      {abierta && <div className="">{respuesta}</div>}
-      <div className={`respuesta-desktop ${abierta ? 'abierta' : ''}`}>{respuesta}</div>
-    </div>
-  
-    </div>
-    
-  );
+	// renderiza el componente de PreguntaFrecuente
+	return (
+		<div className="pregunta-container" onClick={toggleRespuesta}>
+			<div className="pregunta">
+				{pregunta}
+				<img src="/down.svg" alt="" className="pregunta-arrow" />
+			</div>
+			{abierta && <div className="respuesta-mobile">{respuesta}</div>}
+			<div className={`respuesta-desktop ${abierta ? "abierta" : ""}`}>
+				{respuesta}
+			</div>
+		</div>
+	);
 };
 export default PreguntaFrecuente;
-
-
