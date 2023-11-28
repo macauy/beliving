@@ -38,8 +38,8 @@ const handlerForm =(e)=>{
         <input type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Ingresá tu e-mail'/>
 
         <label htmlFor="telefono"><b>Telefono*</b></label>
-        <input type="text" id="telefono" value={telefono} onChange={(e)=>setTelefono(e.target.value)}  placeholder='Ingresá tu teléfono (o WhatsApp)'/>
-
+        <input type="number" id="telefono" value={telefono} onChange={(e)=>setTelefono(e.target.value)}  placeholder='Ingresá tu teléfono (o WhatsApp)'/>
+        
         <ul className='mensajes-texto'>
             <p><b>En el siguiente espacio nos gustaría que nos cuentes: </b></p>
               <li> - qué mobiliario te interesa.</li>
@@ -49,8 +49,8 @@ const handlerForm =(e)=>{
         </ul>
 
         <label htmlFor="mensaje"><b>Mensaje*</b></label>
-        <input type="text" id="mensaje-conteiner"  className='mensaje-conteiner 'value={mensaje} onChange={(e)=>setMensaje(e.target.value)} placeholder='Contanos sobre tu evento'/>
-       
+        <textarea className='mensaje-conteiner 'value={mensaje} onChange={(e)=>setMensaje(e.target.value)} placeholder='Contanos sobre tu evento'/>
+        
         <button className="contacto-button" type='submit'> 
           <div className="contacto-button-text">ENVIAR</div>
         </button>
