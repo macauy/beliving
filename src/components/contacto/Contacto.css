@@ -4,14 +4,17 @@
     margin: auto;
     justify-content: space-between; 
     
+    
   }
   /* etiquetas de los inputs */
   .formulario label {
     display: block;
     margin-bottom: .5rem;
+    
   }
   label{ 
     display: block; 
+    
    }
 
   /* inputs */
@@ -24,21 +27,16 @@
     border-radius: 0.25rem;
     border:  0.125rem solid #45A196;
     box-sizing: border-box;
-    text-align: start;
     font-size: 16px;
-    
   }
    textarea{
     width: 95%;
-    height: 3rem;
     padding: 0.8rem;
     margin-bottom: 0.98rem;
     background-color: var(--primary-3, #f4ffff);
     border-radius: 0.25rem;
     border:  0.125rem solid #45A196;
     box-sizing: border-box;
-    text-align: start;
-    font-size: 16px;
     font-size: 16px;
     height: 12rem;
     width: 95%;
@@ -57,6 +55,7 @@
     -moz-transform: skew(-20deg);
     -o-transform: skew(-20deg);
     box-shadow: 2px 2px 2px 1px rgba(1, 26, 23, 0.4);
+    
    
     
   }

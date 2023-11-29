@@ -5,55 +5,74 @@ import './Contacto.css'
 const Contacto = () => {
 
 //----- estados para trabajar los valores del formulario
-  const[nombre,setNombre]= useState("")
-  const[email,setEmail]= useState("")
-  const[telefono,setTelefono]= useState("")
-  const[mensaje,setMensaje]= useState("")
- //---- funcion manejadora del form y evitar la recarga del formulario---
-const handlerForm =(e)=>{
-  e.preventDefault();
+  const[nombre,setNombre]= useState("");
+  const[email,setEmail]= useState("");
+  const[telefono,setTelefono]= useState("");
+  const[mensaje,setMensaje]= useState("");
 
- 
+//------------Manjera los errores al no llenar correctamente el form-------------
+  const [error, setError] = useState("");
+
+ //--------------- FUNCION Y VALIDACIÓN ----------------
+  const handlerForm =(e)=>{
+    e.preventDefault();
+
+//------------------ VERIFICA QUE LSO CAMPOS ESTEN COMPLETOS ------------------
+
+    if(!nombre || !email || !telefono || !mensaje){
+      //setError("Por Favor completa todos los campos );
+      alert("Por Favor completa todos los campos correctamente")
+    }
+    if (telefono ) {
+      
+    }
+
    //! PARA SETEAR 
    setNombre("");
    setEmail("");
    setTelefono("");
    setMensaje("");
+   setError("");
 }
 
   return (
     <div className="conteiner-contacto">
-      <div className='tituleConteiner'>Contacto</div>
+        <div className='tituleConteiner'>Contacto</div>
 
-      <div className='mensajes-texto'>
-        <p>Completá el siguiente formulario y empezá a planificar tu próximo evento.</p>
-      </div>
+        <div className='mensajes-texto'>
+          <p>Completá el siguiente formulario y empezá a planificar tu próximo evento.</p>
+        </div>
 
-      <form className='formulario'  onSubmit={handlerForm}>
+        <form className='formulario'  onSubmit={handlerForm}>
 
-        <label htmlFor="nombre"><b>Nombre*</b></label>
-        <input type="text" id="nombre" value={nombre} onChange={(e)=>setNombre(e.target.value)} placeholder='Ingresá tun nombre' />
+          <label htmlFor="nombre"><b>Nombre*</b></label>
+          <input type="text" id="nombre" value={nombre} onChange={(e)=>setNombre(e.target.value)} placeholder='Ingresá tun nombre' />
 
-        <label htmlFor="email"><b>Correo electronico*</b></label>
-        <input type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Ingresá tu e-mail'/>
+          <label htmlFor="email"><b>Correo electronico*</b></label>
+          <input type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Ingresá tu e-mail'/>
 
-        <label htmlFor="telefono"><b>Telefono*</b></label>
-        <input type="number" id="telefono" value={telefono} onChange={(e)=>setTelefono(e.target.value)}  placeholder='Ingresá tu teléfono (o WhatsApp)'/>
+          <label htmlFor="telefono"><b>Telefono*</b></label>
+          <input type="number" id="telefono" value={telefono} onChange={(e)=>setTelefono(e.target.value)}  placeholder='Ingresá tu teléfono (o WhatsApp)'/>
         
-        <ul className='mensajes-texto'>
+          <ul className='mensajes-texto'>
             <p><b>En el siguiente espacio nos gustaría que nos cuentes: </b></p>
               <li> - qué mobiliario te interesa.</li>
               <li> - qué tipo de evento querés realizar.</li>
               <li> - cuántas personas son. </li>
               <li> - cuándo y en qué lugar se realizará (salón de evento, casa particular, SUM, etc.)</li>
-        </ul>
+          </ul>
 
-        <label htmlFor="mensaje"><b>Mensaje*</b></label>
-        <textarea className='mensaje-conteiner 'value={mensaje} onChange={(e)=>setMensaje(e.target.value)} placeholder='Contanos sobre tu evento'/>
+          <label htmlFor="mensaje"><b>Mensaje*</b></label>
+          <textarea className='mensaje-conteiner 'value={mensaje} onChange={(e)=>setMensaje(e.target.value)} placeholder='Contanos sobre tu evento'/>
         
-        <button className="contacto-button" type='submit'> 
-          <div className="contacto-button-text">ENVIAR</div>
-        </button>
+          <button className="contacto-button" type='submit'> 
+            <div className="contacto-button-text">ENVIAR</div>
+          </button>
+
+            {
+              error && <p style={{color:"red"}}>{error}</p>
+            }
+
       </form>
 
       <div className='mensajes-texto'>
