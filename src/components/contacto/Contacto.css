@@ -9,7 +9,7 @@
   /* etiquetas de los inputs */
   .formulario label {
     display: block;
-    margin-bottom: .5rem;
+    margin: 1rem 0 .2rem;
     
   }
   label{ 
@@ -22,7 +22,7 @@
     width: 95%;
     height: 3rem;
     padding: 0.8rem;
-    margin-bottom: 0.98rem;
+    margin: 0.rem 0 1rem 0;
     background-color: var(--primary-3, #f4ffff);
     border-radius: 0.25rem;
     border:  0.125rem solid #45A196;
@@ -31,8 +31,7 @@
   }
    textarea{
     width: 95%;
-    padding: 0.8rem;
-    margin-bottom: 0.98rem;
+    padding: 2rem;
     background-color: var(--primary-3, #f4ffff);
     border-radius: 0.25rem;
     border:  0.125rem solid #45A196;
@@ -41,6 +40,18 @@
     height: 12rem;
     width: 95%;
   }
+
+  .span{
+    font-size: 12px;
+    color: red;
+    display: block;
+    text-align: unset;
+    max-width: 90%;
+  }
+  .mensajes-texto{
+    margin: 1rem 0 0.5rem 0;
+   }
+
   ::placeholder {
     font-size: 15px;
   }
@@ -70,27 +81,33 @@
     line-height: 19.6px; /* 140% */
     letter-spacing: 1.25px;
   }
+ 
 
 /*-------------------------------- MEDIA QUERY --------------------------------*/
 
   @media (max-width: 768px) {
      .mensajes-texto{
-      font-size: smaller;
+      font-size: 14ipx;
+      
      }
 
     .formulario input {
-      font-size: 13px;
+      font-size: 15px;
     }
     ::placeholder{
-        font-size: 11px;
+        font-size: 13px;
     }
     textarea{
-      font-size: 13px;
+      font-size: 15px;
   }
   .contacto-button{
     width: 92%;
   }
   .contacto-button-text{
     text-align: center;
+  }
+  .span{
+    font-size: 11px;
+    color: red;
   }
 }
