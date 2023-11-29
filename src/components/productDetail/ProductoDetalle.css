@@ -12,8 +12,9 @@
 .producto-detalle-container {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 20px;
 	padding: 16px 40px;
+	align-self: stretch;
 }
 
 .producto-detalle-galery {
@@ -24,10 +25,12 @@
 .producto-detalle {
 	background-color: var(--light-gray);
 	min-height: 100%;
+	/* width: 52%; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	line-height: 28px; /* 175% */
+	align-self: stretch;
 }
 .producto-description {
 	padding: 30px;
@@ -64,8 +67,8 @@
 
 @media (min-width: 768px) {
 	.producto-detalle-galery {
-		width: 40%;
-		min-height: 100%;
+		max-width: 45%;
+		/* min-height: 100%; */
 	}
 
 	.producto-detalle-container {

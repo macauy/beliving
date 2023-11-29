@@ -1,13 +1,15 @@
 import QuestionBar from "../../common/questionBar/QuestionBar";
 import Button from "../../icons/Button/Button";
-import Slider from "../slider/Slider";
+// import Slider from "../slider/Slider";
+import ThumbsSlider from "../slider/ThumbsSlider";
 import "./ProductoDetalle.css";
 import { useLocation } from "react-router-dom";
 
 const ProductoDetalle = () => {
 	const location = useLocation();
 
-	const { name, description, price } = location.state;
+	const { name, description, price, items } = location.state;
+	console.log(items);
 
 	return (
 		<div>
@@ -16,19 +18,21 @@ const ProductoDetalle = () => {
 			</div>
 			<div className="producto-detalle-container">
 				<section className="producto-detalle-galery">
-					<Slider slides={1} />
+					<ThumbsSlider />
 				</section>
 				<section className="producto-detalle">
 					<div className="producto-description">
 						<p>{description}</p>
-						<p>Incluye:</p>
-						<ul>
-							<li>1 sillón doble con respaldo</li>
-							<li>1 puff doble</li>
-							<li>6 puffs </li>
-							<li>almohadón</li>
-							<li>plato de sitio</li>
-						</ul>
+						{items && (
+							<>
+								<p>Incluye:</p>
+								<ul>
+									{items.map((item) => (
+										<li key={item}>{item}</li>
+									))}
+								</ul>
+							</>
+						)}
 						<p>
 							Para reservar, consultanos por WhatsApp o pedí tu cotización
 							haciendo click en el siguiente botón.

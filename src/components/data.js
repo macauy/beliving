@@ -26,31 +26,58 @@ export const livings = [
 		description: "Juego de muebles para 10 personas",
 		price: "$ 10.000",
 		url: "/productos/LivingModerno.webp",
+		items: [
+			"1 sillón de ecocuero blanco, doble y con respaldo",
+			"1 puff doble de ecocuero blanco",
+			"6 puffs de ecocuero blanco",
+			"1 mesa de madera blanca",
+			"Almohadón decorativo",
+			"Plato de sitio decorativo",
+		],
 	},
 	{
 		name: "Industrial",
 		description: "Juego de muebles para 10 personas",
 		price: "$ 9.000",
 		url: "/productos/LivingIndustrial.webp",
+		items: [
+			"1 sillón de tres cuerpos, de hierro negro y madera color roble",
+			"1 banqueta de 3 cuerpos, de hierro negro y madera color roble",
+			"4 cubos, de hierro negro y madera color roble",
+			"1 mesa, de hierro negro y madera color roble",
+			"Almohadón decorativo",
+			"Plato de sitio decorativo",
+		],
 	},
 	{
 		name: "Rústico",
 		description: "Juego de muebles para 10 personas",
 		price: "$ 10.000",
 		url: "/productos/LivingRustico.webp",
+		items: [
+			"1 mesa de madera, en color roble o blanca",
+			"Sillón, puffs, sillas y cubos (pueden ser distintas combinaciones)",
+			"Almohadón decorativo",
+			"Plato de sitio decorativo",
+		],
 	},
 	{
 		name: "Infantil",
 		description: "Mini living para 10 niños",
 		price: "$ 5.000",
 		url: "/productos/LivingInfantil.webp",
+		items: [
+			"18 puffs de ecocuero en varios colores",
+			"1 tablón de madera con caballetes en hierro y mantel de material tropical mecánico en color blanco ",
+		],
 	},
 ];
 
 export const otrosProductos = [
 	{
 		name: "Barra para tragos",
-		description: "Barra móvil reforzada",
+		description:
+			"Barra alta, móvil, reforzada, de madera  varillada y en color roble.",
 		price: "$ 8.000",
 		url: "/productos/BarraTragos.webp",
 	},
@@ -59,16 +86,21 @@ export const otrosProductos = [
 		description: "Barra alta con 4 banquetas",
 		price: "$ 7.000",
 		url: "/productos/BarraAlta.webp",
+		items: [
+			"Mesa alta de hierro negro y madera color roble",
+			"4 banquetas altas de hierro negro y madera color roble",
+		],
 	},
 	{
 		name: "Sillas Country",
-		description: "Sillas tipo country plegables",
+		description:
+			"Sillas estilo country, de madera, en color blancas y plegables.",
 		price: "$ 300",
 		url: "/productos/SillasCountry.webp",
 	},
 	{
 		name: "Tablones y manteles",
-		description: "Tablones y manteles blancos o negros",
+		description: "Tablones de madera con caballetes de hierro.",
 		price: "$ 300",
 		url: "/productos/MesasManteles.webp",
 	},
@@ -80,7 +112,7 @@ export const otrosProductos = [
 	},
 	{
 		name: "Mesa civil",
-		description: "Mesa para ceremonia",
+		description: "Mesa de madera en color roble con patas de hierro negro.",
 		price: "$ 5.000",
 		url: "/productos/MesaCivil.webp",
 	},

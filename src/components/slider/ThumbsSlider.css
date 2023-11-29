@@ -1,0 +1,22 @@
+.thumbs-swiper-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.thumbs-swiper-galery {
+	max-width: 500px;
+	max-height: 500px;
+}
+
+.thumbs-swiper-thumbs {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	max-height: 100px;
+}
+
+.thumbs-swiper-thumb {
+	max-width: 100px;
+}
