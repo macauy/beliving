@@ -22,6 +22,7 @@ export const pictures = [
 
 export const livings = [
 	{
+		id: 1,
 		name: "Moderno",
 		description: "Juego de muebles para 10 personas",
 		price: "$ 10.000",
@@ -34,8 +35,17 @@ export const livings = [
 			"Almohadón decorativo",
 			"Plato de sitio decorativo",
 		],
+		pictures: [
+			{ id: 1, imgUrl: "/productos/LivingModerno/1.webp" },
+			{ id: 2, imgUrl: "/productos/LivingModerno/2.webp" },
+			{ id: 3, imgUrl: "/productos/LivingModerno/3.webp" },
+			{ id: 4, imgUrl: "/productos/LivingModerno/4.webp" },
+			{ id: 5, imgUrl: "/productos/LivingModerno/5.webp" },
+			{ id: 6, imgUrl: "/productos/LivingModerno/6.webp" },
+		],
 	},
 	{
+		id: 2,
 		name: "Industrial",
 		description: "Juego de muebles para 10 personas",
 		price: "$ 9.000",
@@ -48,8 +58,15 @@ export const livings = [
 			"Almohadón decorativo",
 			"Plato de sitio decorativo",
 		],
+		pictures: [
+			{ id: 1, imgUrl: "/productos/LivingIndustrial/1.webp" },
+			{ id: 2, imgUrl: "/productos/LivingIndustrial/2.webp" },
+			{ id: 3, imgUrl: "/productos/LivingIndustrial/3.webp" },
+			{ id: 4, imgUrl: "/productos/LivingIndustrial/4.webp" },
+		],
 	},
 	{
+		id: 3,
 		name: "Rústico",
 		description: "Juego de muebles para 10 personas",
 		price: "$ 10.000",
@@ -60,8 +77,17 @@ export const livings = [
 			"Almohadón decorativo",
 			"Plato de sitio decorativo",
 		],
+		pictures: [
+			{ id: 1, imgUrl: "/productos/LivingRustico/1.webp" },
+			{ id: 2, imgUrl: "/productos/LivingRustico/2.webp" },
+			{ id: 3, imgUrl: "/productos/LivingRustico/3.webp" },
+			{ id: 4, imgUrl: "/productos/LivingRustico/4.webp" },
+			{ id: 5, imgUrl: "/productos/LivingRustico/5.webp" },
+			{ id: 6, imgUrl: "/productos/LivingRustico/6.webp" },
+		],
 	},
 	{
+		id: 4,
 		name: "Infantil",
 		description: "Mini living para 10 niños",
 		price: "$ 5.000",
@@ -70,18 +96,34 @@ export const livings = [
 			"18 puffs de ecocuero en varios colores",
 			"1 tablón de madera con caballetes en hierro y mantel de material tropical mecánico en color blanco ",
 		],
+		pictures: [
+			{ id: 1, imgUrl: "/productos/LivingInfantil/0.webp" },
+			{ id: 2, imgUrl: "/productos/LivingInfantil/1.webp" },
+			{ id: 3, imgUrl: "/productos/LivingInfantil/2.webp" },
+			{ id: 4, imgUrl: "/productos/LivingInfantil/3.webp" },
+			{ id: 5, imgUrl: "/productos/LivingInfantil/4.webp" },
+			{ id: 6, imgUrl: "/productos/LivingInfantil/5.webp" },
+		],
 	},
 ];
 
 export const otrosProductos = [
 	{
+		id: 1,
 		name: "Barra para tragos",
 		description:
 			"Barra alta, móvil, reforzada, de madera  varillada y en color roble.",
 		price: "$ 8.000",
 		url: "/productos/BarraTragos.webp",
+		pictures: [
+			{ id: 1, imgUrl: "/productos/BarraTragos/1.webp" },
+			{ id: 2, imgUrl: "/productos/BarraTragos/2.webp" },
+			{ id: 3, imgUrl: "/productos/BarraTragos/3.webp" },
+		],
 	},
+
 	{
+		id: 2,
 		name: "Barritas altas y banquetas",
 		description: "Barra alta con 4 banquetas",
 		price: "$ 7.000",
@@ -90,30 +132,55 @@ export const otrosProductos = [
 			"Mesa alta de hierro negro y madera color roble",
 			"4 banquetas altas de hierro negro y madera color roble",
 		],
+		pictures: [{ id: 1, imgUrl: "/productos/BarraAlta/1.webp" }],
 	},
 	{
+		id: 3,
 		name: "Sillas Country",
 		description:
 			"Sillas estilo country, de madera, en color blancas y plegables.",
 		price: "$ 300",
 		url: "/productos/SillasCountry.webp",
+		pictures: [
+			{ id: 1, imgUrl: "/productos/SillasCountry/1.webp" },
+			{ id: 2, imgUrl: "/productos/SillasCountry/2.webp" },
+			{ id: 3, imgUrl: "/productos/SillasCountry/3.webp" },
+			{ id: 4, imgUrl: "/productos/SillasCountry/4.webp" },
+			{ id: 5, imgUrl: "/productos/SillasCountry/5.webp" },
+		],
 	},
 	{
+		id: 4,
 		name: "Tablones y manteles",
 		description: "Tablones de madera con caballetes de hierro.",
 		price: "$ 300",
 		url: "/productos/MesasManteles.webp",
+		pictures: [
+			{ id: 1, imgUrl: "/productos/MesasManteles/1.webp" },
+			{ id: 2, imgUrl: "/productos/MesasManteles/2.webp" },
+			{ id: 3, imgUrl: "/productos/MesasManteles/3.webp" },
+			{ id: 4, imgUrl: "/productos/MesasManteles/4.webp" },
+			{ id: 5, imgUrl: "/productos/MesasManteles/5.webp" },
+		],
 	},
 	{
+		id: 5,
 		name: "Jenga gigante",
 		description: "Juego de madera",
 		price: "$ 10.000",
 		url: "/productos/JengaGigante.webp",
+		pictures: [
+			{ id: 1, imgUrl: "/productos/Jenga/1.webp" },
+			{ id: 2, imgUrl: "/productos/Jenga/2.webp" },
+			{ id: 3, imgUrl: "/productos/Jenga/3.webp" },
+		],
 	},
 	{
+		id: 6,
 		name: "Mesa civil",
 		description: "Mesa de madera en color roble con patas de hierro negro.",
 		price: "$ 5.000",
 		url: "/productos/MesaCivil.webp",
+		pictures: [{ id: 1, imgUrl: "/productos/MesaCivil/1.webp" }],
 	},
 ];

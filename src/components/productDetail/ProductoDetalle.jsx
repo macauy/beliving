@@ -3,13 +3,12 @@ import Button from "../../icons/Button/Button";
 // import Slider from "../slider/Slider";
 import ThumbsSlider from "../slider/ThumbsSlider";
 import "./ProductoDetalle.css";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const ProductoDetalle = () => {
 	const location = useLocation();
 
-	const { name, description, price, items } = location.state;
-	console.log(items);
+	const { name, description, price, items, pictures } = location.state;
 
 	return (
 		<div>
@@ -18,7 +17,7 @@ const ProductoDetalle = () => {
 			</div>
 			<div className="producto-detalle-container">
 				<section className="producto-detalle-galery">
-					<ThumbsSlider />
+					<ThumbsSlider pictures={pictures} />
 				</section>
 				<section className="producto-detalle">
 					<div className="producto-description">
@@ -33,7 +32,7 @@ const ProductoDetalle = () => {
 								</ul>
 							</>
 						)}
-						<p>
+						<p className="producto-detalle-contacto-desktop">
 							Para reservar, consultanos por WhatsApp o pedí tu cotización
 							haciendo click en el siguiente botón.
 						</p>
@@ -48,6 +47,12 @@ const ProductoDetalle = () => {
 						</div>
 					</div>
 				</section>
+			</div>
+			<div className="producto-detalle-contacto">
+				<p>
+					Para reservar, consultanos por <b>WhatsApp</b> o
+					<NavLink to={"/Contacto"}> pedí tu cotización</NavLink>.
+				</p>
 			</div>
 			<section className="producto-detalle-footer">
 				<QuestionBar />
