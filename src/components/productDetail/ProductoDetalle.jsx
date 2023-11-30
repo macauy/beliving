@@ -1,3 +1,4 @@
+import Navegacion from "../../common/navegacion/Navegacion";
 import QuestionBar from "../../common/questionBar/QuestionBar";
 import Button from "../../icons/Button/Button";
 // import Slider from "../slider/Slider";
@@ -8,10 +9,12 @@ import { NavLink, useLocation } from "react-router-dom";
 const ProductoDetalle = () => {
 	const location = useLocation();
 
-	const { name, description, price, items, pictures } = location.state;
+	const { name, category, description, price, items, pictures } =
+		location.state;
 
 	return (
 		<div>
+			<Navegacion category={category} name={name}></Navegacion>
 			<div className="producto-detalle-title">
 				<h1>{name}</h1>
 			</div>
