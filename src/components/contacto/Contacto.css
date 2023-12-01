@@ -66,9 +66,6 @@
     -moz-transform: skew(-20deg);
     -o-transform: skew(-20deg);
     box-shadow: 2px 2px 2px 1px rgba(1, 26, 23, 0.4);
-    
-   
-    
   }
   .contacto-button-text {
     color: var(--primary-3, #F4FAFA);

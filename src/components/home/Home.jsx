@@ -5,6 +5,8 @@ import Productos from "../productos/Productos";
 import { Link } from "react-router-dom";
 import IconWhatsapp from "../../icons/IconWhatsapp/IconWhatsapp";
 import QuestionBar from "../../common/questionBar/QuestionBar";
+import QuienesSomos from "../quienes somos/QuienesSomos";
+import Opiniones from "../../opiniones/Opiniones";
 
 const Home = () => {
 	return (
@@ -71,9 +73,12 @@ const Home = () => {
 				<Galery></Galery>
 			</section>
 			<section>
+				<QuienesSomos/>
+			</section>
+			<section>
 				<Productos />
 			</section>
-
+			
 			<section className="home-question-bar">
 				<QuestionBar />
 			</section>

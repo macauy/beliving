@@ -1,0 +1,118 @@
+
+.seccin-reseas {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px;
+  position: relative;
+}
+
+.seccin-reseas .frame {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 0px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.seccin-reseas .text-wrapper {
+  color: var(--black);
+  font-family: var(--h2-font-family);
+  font-size: var(--h2-font-size);
+  font-style: var(--h2-font-style);
+  font-weight: var(--h2-font-weight);
+  letter-spacing: var(--h2-letter-spacing);
+  line-height: var(--h2-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.seccin-reseas .div {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 100px;
+  padding: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.seccin-reseas .quote {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  position: relative;
+}
+
+.seccin-reseas .quotes-illustration {
+  height: 96px !important;
+  left: -60px !important;
+  position: absolute !important;
+  top: -80px !important;
+  width: 96px !important;
+}
+
+.seccin-reseas .quotes-close-device-desktop {
+  height: 96px !important;
+  left: 311px !important;
+  position: absolute !important;
+  top: 176px !important;
+  width: 96px !important;
+}
+
+.seccin-reseas .frame-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.seccin-reseas .text-wrapper-2 {
+  color: var(--black);
+  font-family: var(--subtitle-1-font-family);
+  font-size: var(--subtitle-1-font-size);
+  font-style: var(--subtitle-1-font-style);
+  font-weight: var(--subtitle-1-font-weight);
+  letter-spacing: var(--subtitle-1-letter-spacing);
+  line-height: var(--subtitle-1-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.seccin-reseas .stars-instance {
+  flex: 0 0 auto !important;
+  position: relative !important;
+}
+
+.seccin-reseas .p {
+  align-self: stretch;
+  color: var(--black);
+  font-family: var(--body-1-font-family);
+  font-size: var(--body-1-font-size);
+  font-style: var(--body-1-font-style);
+  font-weight: var(--body-1-font-weight);
+  letter-spacing: var(--body-1-letter-spacing);
+  line-height: var(--body-1-line-height);
+  position: relative;
+}
+
+.seccin-reseas .quotes-close-device-desktop-instance {
+  height: 96px !important;
+  left: 310px !important;
+  position: absolute !important;
+  top: 176px !important;
+  width: 96px !important;
+}
