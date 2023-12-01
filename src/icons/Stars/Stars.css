@@ -1,0 +1,11 @@
+.stars {
+    align-items: flex-start;
+    display: inline-flex;
+    position: relative;
+  }
+  
+  .stars .ic-sharp-star {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
