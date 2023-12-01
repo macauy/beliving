@@ -23,6 +23,7 @@ export const pictures = [
 export const livings = [
 	{
 		id: 1,
+		category: "Livings",
 		name: "Moderno",
 		description: "Juego de muebles para 10 personas",
 		price: "$ 10.000",
@@ -46,6 +47,7 @@ export const livings = [
 	},
 	{
 		id: 2,
+		category: "Livings",
 		name: "Industrial",
 		description: "Juego de muebles para 10 personas",
 		price: "$ 9.000",
@@ -67,6 +69,7 @@ export const livings = [
 	},
 	{
 		id: 3,
+		category: "Livings",
 		name: "Rústico",
 		description: "Juego de muebles para 10 personas",
 		price: "$ 10.000",
@@ -88,6 +91,7 @@ export const livings = [
 	},
 	{
 		id: 4,
+		category: "Livings",
 		name: "Infantil",
 		description: "Mini living para 10 niños",
 		price: "$ 5.000",
@@ -110,6 +114,7 @@ export const livings = [
 export const otrosProductos = [
 	{
 		id: 1,
+		category: "Productos",
 		name: "Barra para tragos",
 		description:
 			"Barra alta, móvil, reforzada, de madera  varillada y en color roble.",
@@ -124,6 +129,7 @@ export const otrosProductos = [
 
 	{
 		id: 2,
+		category: "Productos",
 		name: "Barritas altas y banquetas",
 		description: "Barra alta con 4 banquetas",
 		price: "$ 7.000",
@@ -136,6 +142,7 @@ export const otrosProductos = [
 	},
 	{
 		id: 3,
+		category: "Productos",
 		name: "Sillas Country",
 		description:
 			"Sillas estilo country, de madera, en color blancas y plegables.",
@@ -151,6 +158,7 @@ export const otrosProductos = [
 	},
 	{
 		id: 4,
+		category: "Productos",
 		name: "Tablones y manteles",
 		description: "Tablones de madera con caballetes de hierro.",
 		price: "$ 300",
@@ -165,6 +173,7 @@ export const otrosProductos = [
 	},
 	{
 		id: 5,
+		category: "Productos",
 		name: "Jenga gigante",
 		description: "Juego de madera",
 		price: "$ 10.000",
@@ -177,6 +186,7 @@ export const otrosProductos = [
 	},
 	{
 		id: 6,
+		category: "Productos",
 		name: "Mesa civil",
 		description: "Mesa de madera en color roble con patas de hierro negro.",
 		price: "$ 5.000",
