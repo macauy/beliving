@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navegacion from "../../common/navegacion/Navegacion";
 import QuestionBar from "../../common/questionBar/QuestionBar";
 import Button from "../../icons/Button/Button";
@@ -5,31 +6,52 @@ import Button from "../../icons/Button/Button";
 import ThumbsSlider from "../slider/ThumbsSlider";
 import "./ProductoDetalle.css";
 import { NavLink, useLocation } from "react-router-dom";
-
+import { livings } from "../data.js";
+import { otrosProductos } from "../data.js";
 const ProductoDetalle = () => {
 	const location = useLocation();
+	const productoIn = location.state;
 
-	const { name, category, description, price, items, pictures } =
-		location.state;
+	const [producto, setProducto] = useState(productoIn);
 
+	let productos = producto.category === "Livings" ? livings : otrosProductos;
+
+	let index = productos.findIndex((item) => item.id == producto.id);
+
+	const previo = () => {
+		if (index == 0) index = productos.length - 1;
+		else index--;
+		setProducto(productos[index]);
+	};
+	const siguiente = () => {
+		if (index == productos.length - 1) index = 0;
+		else index++;
+		setProducto(productos[index]);
+	};
 	return (
 		<div>
-			<Navegacion category={category} name={name}></Navegacion>
 			<div className="producto-detalle-title">
-				<h1>{name}</h1>
+				<h1>{producto.name}</h1>
 			</div>
+			<Navegacion
+				category={producto.category}
+				name={producto.name}
+				previo={previo}
+				siguiente={siguiente}
+			></Navegacion>
+
 			<div className="producto-detalle-container">
 				<section className="producto-detalle-galery">
-					<ThumbsSlider pictures={pictures} />
+					<ThumbsSlider pictures={producto.pictures} />
 				</section>
 				<section className="producto-detalle">
 					<div className="producto-description">
-						<p>{description}</p>
-						{items && (
+						<p>{producto.description}</p>
+						{producto.items && (
 							<>
 								<p>Incluye:</p>
 								<ul>
-									{items.map((item) => (
+									{producto.items.map((item) => (
 										<li key={item}>{item}</li>
 									))}
 								</ul>
@@ -42,7 +64,7 @@ const ProductoDetalle = () => {
 					</div>
 					<div className="producto-price">
 						<div>
-							<h3>{price} *</h3>
+							<h3>{producto.price} *</h3>
 							<p>*No incluye costo de envío</p>
 						</div>
 						<div className="producto-price-button">

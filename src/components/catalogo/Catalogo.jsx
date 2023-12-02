@@ -14,7 +14,7 @@ const Catalogo = () => {
 				<h2 className="catalogo-subtitle">LIVINGS</h2>
 				<div className="cards-container">
 					{livings.map((item) => (
-						<Card producto={item} key={item.name} />
+						<Card producto={item} key={item.id} />
 					))}
 				</div>
 			</section>
@@ -22,7 +22,7 @@ const Catalogo = () => {
 				<h2 className="catalogo-subtitle">OTROS PRODUCTOS</h2>
 				<div className="cards-container">
 					{otrosProductos.map((item) => (
-						<Card producto={item} key={item.name} />
+						<Card producto={item} key={item.id} />
 					))}
 				</div>
 			</section>

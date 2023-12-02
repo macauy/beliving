@@ -40,7 +40,7 @@ export default function ThumbsSlider({ pictures }) {
 				}}
 				onSwiper={setThumbsSwiper}
 				spaceBetween={10}
-				slidesPerView={5}
+				slidesPerView={4}
 				freeMode={true}
 				watchSlidesProgress={true}
 				modules={[FreeMode, Navigation, Thumbs]}
