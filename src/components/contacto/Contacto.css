@@ -1,6 +1,6 @@
 .conteiner-contacto {
 	padding: 0.25rem 2.5rem;
-	max-width: 85%;
+	/* max-width: 85%; */
 	margin: auto;
 	justify-content: space-between;
 }
@@ -34,7 +34,6 @@ textarea {
 	box-sizing: border-box;
 	font-size: 16px;
 	height: 12rem;
-	width: 95%;
 }
 
 .span {
@@ -57,7 +56,7 @@ textarea {
 	margin-top: 20px;
 	display: flex;
 	justify-content: flex-end;
-	width: 94%;
+	width: 90%;
 	margin: 1rem 0 0.5rem 0;
 	/* background-color: #45a196;
     border: 2px solid var(--primary, );
@@ -72,6 +71,10 @@ textarea {
 /*-------------------------------- MEDIA QUERY --------------------------------*/
 
 @media (max-width: 768px) {
+	.conteiner-contacto {
+		padding: 0.25rem 1rem;
+	}
+
 	.mensajes-texto {
 		font-size: 14ipx;
 	}
@@ -85,12 +88,15 @@ textarea {
 	textarea {
 		font-size: 15px;
 	}
+
 	.contacto-button {
-		width: 92%;
+		justify-content: center;
 	}
-	.contacto-button-text {
-		text-align: center;
+
+	.contacto-button button {
+		width: 90%;
 	}
+
 	.span {
 		font-size: 11px;
 		color: red;

@@ -1,5 +1,4 @@
 .tituleConteiner {
-	
 	padding: 0.25rem 2.5rem;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -38,7 +37,6 @@
 .respuesta-desktop {
 	background: var(--light-gray, #f4fafa);
 	padding: 16px;
-	
 }
 
 .respuesta-desktop {
@@ -72,6 +70,10 @@
 		font-size: 1rem;
 		line-height: 1.75rem;
 		letter-spacing: 0.4px;
+	}
+
+	.mensajes-texto {
+		padding: 20px 16px;
 	}
 }
 

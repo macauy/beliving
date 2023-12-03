@@ -1,93 +1,109 @@
 .section-quienes-conteiner {
-    display: flex;
-    align-items: center;
-    background-color:  var(--light-green);
-    height: 20rem;
-    width: 100%;
-    margin: 0 0 1.5rem 0;
-  }
-  .section-quienes-conteiner .quienes-img-conteiner{
-    display: flex;
-    height: 20rem;
-    width: 90%;
-    height: 100;
-    padding-left: 2rem;
-    
-  }
-  .img-quienessomos{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-  }
-  .quienes-texto-conteiner{
-    font-family: "Montserrat", sans-serif;
-    color: var(--black);
-    margin: 2rem;
-    padding: .5rem;
-    width: 90%;
-   
-  }
-  .quienes-texto-conteiner .quienes-antetitulo{
-    font-size: 1.5rem;
-	  font-weight: 500;
-    gap: 50px;
-    padding: 7.6px 0px;
-    
-  }
-  .quienes-texto{
-    padding: .5rem;
-	  font-size: 1.rem;
-	  font-style: normal;
-	  font-weight: 100;
-    text-align: start;
-    line-height: 1.4;
-    margin-top: 1rem;
-    width: 95%;
-    color: var(--black);
-   
-  }
- 
-  /*-------------------- MEDIA QUERIES ------------------------*/
+	display: flex;
+	align-items: center;
+	background-color: var(--light-green);
+	height: 20rem;
+	width: 100%;
+	margin: 0 0 1.5rem 0;
+}
+.section-quienes-conteiner .quienes-img-conteiner {
+	display: flex;
+	height: 20rem;
+	width: 90%;
+	height: 100;
+	padding-left: 2rem;
+}
+.img-quienessomos {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.quienes-texto-conteiner {
+	font-family: "Montserrat", sans-serif;
+	color: var(--black);
+	margin: 2rem;
+	padding: 0.5rem;
+	width: 90%;
+}
+.quienes-texto-conteiner .quienes-antetitulo {
+	font-size: 1.5rem;
+	font-weight: 500;
+	gap: 50px;
+	padding: 7.6px 0px;
+}
+.quienes-texto {
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 100;
+	text-align: start;
+	line-height: 1.4;
+	margin-top: 1rem;
+	width: 95%;
+	color: var(--black);
+}
+
+.quienes-somos-mobile {
+	display: none;
+}
+
+/*-------------------- MEDIA QUERIES ------------------------*/
 
 @media (max-width: 768px) {
+	.section-quienes-conteiner {
+		display: block;
+		height: 100%;
+		width: 100%;
+		margin: 0 0 2rem 0;
+		padding: 0;
+	}
 
-.section-quienes-conteiner{
-  display: block; 
-  height: 100%;
-  width: 100%;
-  margin: 0 0 2rem 0;
-  padding: 0;
-  }
-  .section-quienes-conteiner .quienes-img-conteiner{
-    padding-left: 1rem;
-    width: 100%;
-    transform: skewY(5deg);
-    transform-origin: left top;
+	.section-quienes-conteiner .quienes-img-conteiner {
+		display: none;
+	}
 
-  }
-  .img-quienessomos{
-    width: 100%;
-    height: 90%;
-    margin: 0;
-  
-    
-  }
-  .quienes-texto-conteiner{
-    width: 100%;
-    padding-left: 1rem;
-    margin: 1rem;
-  }
-  .quienes-texto-conteiner .quienes-antetitulo{
-    font-weight: 400;
-    padding: .6rem 1rem;
-    font-size: 1.4rem;
+	.quienes-texto-conteiner {
+		width: 100%;
+		padding-left: 1rem;
+		margin: 1rem;
+	}
+	.quienes-texto-conteiner .quienes-antetitulo {
+		font-weight: 400;
+		padding: 0.6rem 1rem;
+		font-size: 1.4rem;
+	}
+	.quienes-texto {
+		padding: 0.7rem;
+		text-align: start;
+		line-height: 1.4;
+		font-size: 0.94rem;
+	}
 
-  }
-  .quienes-texto{
-    padding: .7rem;
-    text-align: start;
-    line-height: 1.4;
-    font-size: 0.94rem;
+	.quienes-somos-mobile {
+		width: 100%;
+		height: 336px;
+	}
 
-  }
+	.quienes-somos-image-container-mobile {
+		width: 100%;
+		height: 336px;
+		position: relative;
+		overflow: hidden;
+		background: url("/quienes.jpeg") center / cover,
+			lightgray 0px -97px / 100% 133.929% no-repeat;
+	}
+
+	.quienes-somos-image-container-mobile:after {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 90%;
+		left: -10%;
+		height: 30%;
+		width: 150%;
+		background: var(--light-green);
+		-webkit-transform: rotate(5deg);
+		-moz-transform: rotate(5deg);
+		transform: rotate(5deg);
+	}
 }
