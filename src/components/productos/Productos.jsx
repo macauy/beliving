@@ -17,7 +17,7 @@ const Productos = () => {
 			</section>
 			<section className="productos-button-container">
 				<Link to={"catalogo"}>
-					<Button type="variant-2" text="VER TODOS"></Button>
+					<Button style="variant-2" text="VER TODOS"></Button>
 				</Link>
 			</section>
 		</div>

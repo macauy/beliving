@@ -1,89 +1,155 @@
 //mport { useState } from "react";
-import { Formik, useFormik } from "formik";
+import { useFormik } from "formik";
 import * as Yup from "yup"; //siempre se importa asi ---para mprotar todo (*) de la libreria yup y dale un nombre Yup
-import './Contacto.css'
+import "./Contacto.css";
+import Button from "../../icons/Button/Button";
 
 const Contacto = () => {
+	// const submitForm = (values) => {
+	// 	Formik;
+	// };
 
-  const submitForm = (values)=>{Formik};
+	const { handleSubmit, handleChange, handleReset, errors, values } = useFormik(
+		{
+			initialValues: {
+				nombre: "",
+				email: "",
+				telefono: "",
+				mensaje: "",
+			},
+			onSubmit: (data, { resetForm }) => {
+				console.log(data);
 
-  const{handleSubmit, handleChange, handleReset, errors,values }= useFormik({
-  
-    initialValues:{
-      nombre: "",
-      email: "",
-      telefono: "",
-      mensaje: ""
-    },
-    onSubmit: (data)=>{console.log(data)},
+				resetForm({
+					values: {
+						nombre: "",
+						email: "",
+						telefono: "",
+						mensaje: "",
+					},
+				});
+			},
 
-//?--------------- esquema de validacion Yup -----------------------------
-   
-validationSchema: Yup.object({ // se agregan todos los inputs a validar
-        nombre: Yup.string().required("Campo obligatorio").min(3, "Debe tener al menos 3 caractares"),
-        email: Yup.string().email("No es un email valido").required("Campo obligatorio"),
-        telefono: Yup.number().typeError("No es un número valido").required("Campo obligatorio").min(9, "Debe tener al menos 10 números"),
-        mensaje: Yup.string().required("Campo obligatorio").min(15, "Debe de tener al menos 15 caracteres")
-    }),
-    validateOnChange:false,
-  });
+			//?--------------- esquema de validacion Yup -----------------------------
 
- console.log({errors, values});
+			validationSchema: Yup.object({
+				// se agregan todos los inputs a validar
+				nombre: Yup.string().required("Campo obligatorio"),
+				email: Yup.string()
+					.email("No es un email valido")
+					.required("Campo obligatorio"),
+				telefono: Yup.number()
+					.typeError("No es un número valido")
+					.required("Campo obligatorio")
+					.min(9, "Debe tener al menos 10 números"),
+				mensaje: Yup.string().required("Campo obligatorio"),
+			}),
+			validateOnChange: false,
+		}
+	);
 
-  return (
-    <div className="conteiner-contacto">
-        <div className='tituleConteiner'>Contacto</div>
+	console.log({ errors });
 
-        <div className='mensajes-texto'>
-          <p>Completá el siguiente formulario y empezá a planificar tu próximo evento.</p>
-        </div>
+	return (
+		<div className="conteiner-contacto">
+			<div className="tituleConteiner">Contacto</div>
 
-{/* ------------------------------------ FORMULARIO ----------------------------------------*/}
-        
-        <form className='formulario' onSubmit={handleSubmit} onReset={handleReset}>
+			<div className="mensajes-texto">
+				<p>
+					Completá el siguiente formulario y empezá a planificar tu próximo
+					evento.
+				</p>
+			</div>
 
-          <label htmlFor="nombre"><b>Nombre*</b></label>
-          <input type="text" value={values.nombre} name="nombre" onChange={handleChange} placeholder='Ingresá tu nombre' />
-            <span className="span">{errors.nombre}</span>
+			{/* ------------------------------------ FORMULARIO ----------------------------------------*/}
 
-          <label htmlFor="email"><b>Correo electronico*</b></label>
-          <input type="text" value={values.email} name="email"  onChange={handleChange} placeholder='Ingresá tu e-mail'/>
-            <span className="span">{errors.email}</span>
-          
-          <label htmlFor="telefono"><b>Telefono*</b></label>
-          <input type="text" value={values.telefono} name="telefono" onChange={handleChange} placeholder='Ingresá tu teléfono (o WhatsApp)'/>
-            <span className="span" >{errors.telefono}</span>
+			<form
+				className="formulario"
+				onSubmit={handleSubmit}
+				onReset={handleReset}
+			>
+				<label htmlFor="nombre">
+					<b>Nombre*</b>
+				</label>
+				<input
+					type="text"
+					value={values.nombre}
+					name="nombre"
+					onChange={handleChange}
+					placeholder="Ingresá tu nombre"
+				/>
+				<span className="span">{errors.nombre}</span>
 
-{/* ------------------------------------ INSTRUCCIONES PARA MANDAR MENSAJE ----------------------------------------*/}
-         
-          <ul className='mensajes-texto'>
-            <p><b>En el siguiente espacio nos gustaría que nos cuentes: </b></p>
-              <li> - qué mobiliario te interesa.</li>
-              <li> - qué tipo de evento querés realizar.</li>
-              <li> - cuántas personas son. </li>
-              <li> - cuándo y en qué lugar se realizará (salón de evento, casa particular, SUM, etc.)</li>
-          </ul>
-{/* ------------------------------------ CAJA DE TEXTO DEL MENSAJE ----------------------------------------*/}
+				<label htmlFor="email">
+					<b>Correo electronico*</b>
+				</label>
+				<input
+					type="text"
+					value={values.email}
+					name="email"
+					onChange={handleChange}
+					placeholder="Ingresá tu e-mail"
+				/>
+				<span className="span">{errors.email}</span>
 
-          <label htmlFor="mensaje"><b>Mensaje*</b></label>
-          <textarea className='mensaje-conteiner' value={values.mensaje} name="mensaje" onChange={handleChange} placeholder='Contanos sobre tu evento'/>
-              <span className="span">{errors.mensaje}</span>
+				<label htmlFor="telefono">
+					<b>Telefono*</b>
+				</label>
+				<input
+					type="text"
+					value={values.telefono}
+					name="telefono"
+					onChange={handleChange}
+					placeholder="Ingresá tu teléfono (o WhatsApp)"
+				/>
+				<span className="span">{errors.telefono}</span>
 
-{/* ------------------------------------ BOTON ENVIAR ----------------------------------------*/}
-            
-          <button className="contacto-button" type='submit' > 
-            <div className="contacto-button-text">ENVIAR</div>
-          </button>
-      </form>
+				{/* ------------------------------------ INSTRUCCIONES PARA MANDAR MENSAJE ----------------------------------------*/}
 
-      <div className='mensajes-texto'>
-        <p>¡Nos contactaremos con vos a la brevedad! Recordá que también podés contactarnos por <b>WhatsApp.</b></p>
-      </div>
-    </div>
-  )
-}
+				<ul className="mensajes-texto">
+					<p>
+						<b>En el siguiente espacio nos gustaría que nos cuentes: </b>
+					</p>
+					<li> - qué mobiliario te interesa.</li>
+					<li> - qué tipo de evento querés realizar.</li>
+					<li> - cuántas personas son. </li>
+					<li>
+						{" "}
+						- cuándo y en qué lugar se realizará (salón de evento, casa
+						particular, SUM, etc.)
+					</li>
+				</ul>
+				{/* ------------------------------------ CAJA DE TEXTO DEL MENSAJE ----------------------------------------*/}
 
- /*
+				<label htmlFor="mensaje">
+					<b>Mensaje*</b>
+				</label>
+				<textarea
+					className="mensaje-conteiner"
+					value={values.mensaje}
+					name="mensaje"
+					onChange={handleChange}
+					placeholder="Contanos sobre tu evento"
+				/>
+				<span className="span">{errors.mensaje}</span>
+
+				{/* ------------------------------------ BOTON ENVIAR ----------------------------------------*/}
+				<div className="contacto-button">
+					<Button style="default" text="ENVIAR" type="submit"></Button>
+				</div>
+			</form>
+
+			<div className="mensajes-texto">
+				<p>
+					¡Nos contactaremos con vos a la brevedad! Recordá que también podés
+					contactarnos por <b>WhatsApp.</b>
+				</p>
+			</div>
+		</div>
+	);
+};
+
+/*
  import { useState } from "react";
 import './Contacto.css'
 
@@ -179,6 +245,6 @@ const Contacto = () => {
       mensaje: mensaje;
     })
 
-*/ 
+*/
 
-export default Contacto
+export default Contacto;

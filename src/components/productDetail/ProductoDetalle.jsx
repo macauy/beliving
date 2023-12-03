@@ -68,7 +68,7 @@ const ProductoDetalle = () => {
 							<p>*No incluye costo de envío</p>
 						</div>
 						<div className="producto-price-button">
-							<Button type="default" text="COTIZAR"></Button>
+							<Button style="default" text="COTIZAR"></Button>
 						</div>
 					</div>
 				</section>

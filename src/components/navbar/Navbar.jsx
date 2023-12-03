@@ -32,10 +32,10 @@ const Navbar = () => {
 				onClick={toggleMenu}
 				className={`menu-container ${isOpen ? "open" : " "}`}
 			>
-				<li onClick={cerrarMenu}>
+				<li onClick={cerrarMenu} className="menu-item">
 					<NavLink to={"/Catalogo"}>Catálogo</NavLink>
 				</li>
-				<li onClick={cerrarMenu}>
+				<li onClick={cerrarMenu} className="menu-item">
 					<NavLink to={"/PreguntasFrecuentes"}>Preguntas frecuentes</NavLink>
 				</li>
 				<li onClick={cerrarMenu}>

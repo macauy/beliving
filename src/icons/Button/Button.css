@@ -43,3 +43,11 @@
 .button.variant-2 .button-text {
 	color: var(--black);
 }
+
+.button.default:hover {
+	background-color: var(--dark-green);
+}
+
+.button.variant-2:hover {
+	background: var(--light-green, #c9e8e4);
+}

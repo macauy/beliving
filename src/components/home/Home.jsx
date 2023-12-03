@@ -29,7 +29,7 @@ const Home = () => {
 				</section>
 				<section className="home-button-container">
 					<Link to={"catalogo"}>
-						<Button type="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
+						<Button style="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
 					</Link>
 				</section>
 			</div>
@@ -63,7 +63,7 @@ const Home = () => {
 						</section>
 						<section className="home-button-container">
 							<Link to={"catalogo"}>
-								<Button type="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
+								<Button style="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
 							</Link>
 						</section>
 					</div>
@@ -73,15 +73,15 @@ const Home = () => {
 				<Galery></Galery>
 			</section>
 			<section>
-				<QuienesSomos/>
+				<QuienesSomos />
 			</section>
 			<section>
 				<Productos />
 			</section>
 			<section>
-				<Opiniones/>
+				<Opiniones />
 			</section>
-			
+
 			<section className="home-question-bar">
 				<QuestionBar />
 			</section>
