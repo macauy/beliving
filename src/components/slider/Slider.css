@@ -57,3 +57,13 @@ body {
 	box-shadow: 2px 4px 2px 1px rgba(1, 26, 23, 0.2);
 	font-weight: bolder;
 }
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+	border-radius: 24px;
+	border: 2px solid var(--Primary, #45a196);
+	background: var(--primary-15, #c9e8e4);
+
+	/* Elevation 2 */
+	box-shadow: 2px 4px 2px 1px rgba(1, 26, 23, 0.2);
+}
