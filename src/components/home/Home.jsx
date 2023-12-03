@@ -78,7 +78,8 @@ const Home = () => {
 			<section>
 				<Productos />
 			</section>
-			<section>{/* <Opiniones /> */}</section>
+			<section> <Opiniones />
+			</section>
 
 			<section className="home-question-bar">
 				<QuestionBar />

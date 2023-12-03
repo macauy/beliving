@@ -1,0 +1,14 @@
+.quotes-illustration {
+    height: 96px;
+    position: relative;
+    width: 96px;
+  }
+  
+  .quotes-illustration-close .vector {
+    height: 57px;
+    left: 12px;
+    position: absolute;
+    top: 18px;
+    width: 72px;
+    transform: rotate(180deg)
+  }
