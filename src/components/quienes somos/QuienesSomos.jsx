@@ -6,7 +6,7 @@ const QuienesSomos = () => {
 			<div className="quienes-img-conteiner">
 				<img
 					className="img-quienessomos"
-					src="../../../public/somoscollage.webp"
+					src="../../../public/quienes somos.jpg"
 					alt=""
 				/>
 			</div>
