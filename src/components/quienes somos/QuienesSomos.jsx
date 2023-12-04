@@ -4,11 +4,7 @@ const QuienesSomos = () => {
 	return (
 		<div className="section-quienes-conteiner">
 			<div className="quienes-img-conteiner">
-				<img
-					className="img-quienessomos"
-					src="../../../public/somoscollage.webp"
-					alt=""
-				/>
+				<img className="img-quienessomos" src="/somoscollage.webp" alt="" />
 			</div>
 
 			<div className="hero-mobile">
@@ -30,12 +26,3 @@ const QuienesSomos = () => {
 };
 
 export default QuienesSomos;
-
-
- 
-
-     
-
-
-
-

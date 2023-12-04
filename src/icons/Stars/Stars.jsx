@@ -6,27 +6,27 @@ export const Stars = () => {
 			<img
 				className="ic-sharp-star"
 				alt="Ic sharp star"
-				src="../../../public/ic_sharp-star.svg"
+				src="/ic_sharp-star.svg"
 			/>
 			<img
 				className="ic-sharp-star"
 				alt="Ic sharp star"
-				src="../../../public/ic_sharp-star.svg"
+				src="/ic_sharp-star.svg"
 			/>
 			<img
 				className="ic-sharp-star"
 				alt="Ic sharp star"
-				src="../../../public/ic_sharp-star.svg"
+				src="/ic_sharp-star.svg"
 			/>
 			<img
 				className="ic-sharp-star"
 				alt="Ic sharp star"
-				src="../../../public/ic_sharp-star.svg"
+				src="/ic_sharp-star.svg"
 			/>
 			<img
 				className="ic-sharp-star"
 				alt="Ic sharp star"
-				src="../../../public/ic_sharp-star.svg"
+				src="/ic_sharp-star.svg"
 			/>
 		</div>
 	);
