@@ -6,7 +6,7 @@ const QuienesSomos = () => {
 			<div className="quienes-img-conteiner">
 				<img
 					className="img-quienessomos"
-					src="../../../public/gallery/1.jpg"
+					src="../../../public/somoscollage.webp"
 					alt=""
 				/>
 			</div>
@@ -31,16 +31,7 @@ const QuienesSomos = () => {
 
 export default QuienesSomos;
 
-/*
-  <div className='somos-conteiner'>
-        <div className='somos-infoConteiner'>
-            <h2 className='somos-antetitulo'>Quienes somos...</h2>
-            <p className='somos-texto'>
-           <p>¡Bienvenidos!</p>  Somos Paola y Martin, comenzamos con Be Living hace poco mas de tres años, nos especializamos en el alquiler de mobiliario para fiestas y eventos,  trabajamos muy cerca de nuestros clientes para entender  sus necesidades y ofrecer soluciones prácticas, con el objetivo de superar sus expectativas y asi lograr su satisfacción.
-            </p>
-        </div>
 
-    </div>
  
 
      
@@ -48,5 +39,3 @@ export default QuienesSomos;
 
 
 
-                className="quienes-img"
- */

@@ -7,6 +7,8 @@ import IconWhatsapp from "../../icons/IconWhatsapp/IconWhatsapp";
 import QuestionBar from "../../common/questionBar/QuestionBar";
 import QuienesSomos from "../quienes somos/QuienesSomos";
 import Opiniones from "../opiniones/Opiniones";
+import OpinionMelisa from "../opinionineseach/opinionmelisa/OpinionMelisa";
+import OpinionesSlidermobile from "../opinionesslidermobile/OpinionesSlidermobile";
 
 const Home = () => {
 	return (
@@ -83,6 +85,10 @@ const Home = () => {
 
 			<section className="home-question-bar">
 				<QuestionBar />
+			</section>
+
+			<section>
+				<OpinionesSlidermobile/>
 			</section>
 
 			<IconWhatsapp />

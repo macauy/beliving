@@ -14,7 +14,6 @@ import './Opiniones.css'
         <div className="frame">
           <div className="quote">
           <QuotesIllustration className="quotes-illustration" />
-          {/** <QuotesCloseDeviceDesktop className="quotes-close-device-desktop" />*/}
           <QuotesIllustrationClose className="quotes-illustration-close"/>
 
             <div className="div">

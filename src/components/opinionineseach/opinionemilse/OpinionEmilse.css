@@ -1,0 +1,71 @@
+.opiniones-titular-conteiner{
+  margin: 2rem;
+  padding: .5rem;
+  width: 90%;
+  font-size: 1rem;
+}
+.opiniones-titular-conteiner .opiniones-titular{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.frame {
+align-items: flex-start;
+display: flex;
+gap: 100px;
+padding: 100px;
+position: relative;
+}
+
+.frame .quote {
+align-items: flex-start;
+display: flex;
+flex: 1;
+flex-direction: column;
+flex-grow: 1;
+gap: 10px;
+position: relative;
+}
+
+.frame .quotes-illustration {
+height: 96px ;
+left: -60px ;  position: absolute ;  top: -80px ;  width: 96px ;}
+
+.frame .quotes-illustration-close{
+  height: 57px ;
+  position: absolute ;
+  transform: rotate(180deg);
+  left: 190px ;    top: 210px ;    width: 96px ;}
+
+
+.frame .div {
+align-items: center;
+align-self: stretch;
+display: flex;
+flex: 0 0 auto;
+justify-content: space-between;
+position: relative;
+width: 100%;
+}
+
+.frame .text-wrapper {
+
+position: relative;
+white-space: nowrap;
+width: fit-content;
+}
+
+.frame .stars-instance {
+flex: 0 0 auto ;  position: relative ;}
+
+.frame .p {
+align-self: stretch;
+position: relative;
+font-size: 1.rem;
+font-style: normal;
+font-weight: 100;
+text-align: start;
+line-height: 1.4;
+width: 100%;
+color: var(--black);
+}
