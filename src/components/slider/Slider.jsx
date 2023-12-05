@@ -61,7 +61,7 @@ const Slider = ({ slides }) => {
 			>
 				{pictures.map((item) => (
 					// <Card producto={item} key={item.name} />
-
+					
 					<SwiperSlide key={item.id}>
 						<Zoom>
 						<img src={item.imgUrl} alt="" />
