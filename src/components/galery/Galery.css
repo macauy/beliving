@@ -6,9 +6,8 @@
 .galery {
 	padding: 16px;
 }
-
-.galery ul,
-li {
+/* 
+.galery ul li {
 	list-style: none;
 	display: flex;
 	align-self: center;
@@ -17,7 +16,7 @@ li {
 .galery li {
 	display: inline;
 	align-items: center;
-}
+} */
 .galery img {
 	margin-top: 10px;
 }

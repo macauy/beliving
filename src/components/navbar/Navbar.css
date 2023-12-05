@@ -11,7 +11,7 @@ nav ul {
 	gap: 40px;
 }
 nav ul li {
-	list-style: flex;
+	list-style: none;
 }
 nav ul li a {
 	display: block;

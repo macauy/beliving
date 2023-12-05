@@ -110,12 +110,11 @@ const Contacto = () => {
 					<p>
 						<b>En el siguiente espacio nos gustaría que nos cuentes: </b>
 					</p>
-					<li> - qué mobiliario te interesa.</li>
-					<li> - qué tipo de evento querés realizar.</li>
-					<li> - cuántas personas son. </li>
+					<li> qué mobiliario te interesa.</li>
+					<li> qué tipo de evento querés realizar.</li>
+					<li>cuántas personas son. </li>
 					<li>
-						{" "}
-						- cuándo y en qué lugar se realizará (salón de evento, casa
+						cuándo y en qué lugar se realizará (salón de evento, casa
 						particular, SUM, etc.)
 					</li>
 				</ul>
