@@ -39,6 +39,7 @@
 	text-align: start;
 	line-height: 1.4;
 	margin-top: 1rem;
+	margin-bottom: 40px;
 	width: 95%;
 	color: var(--black);
 }

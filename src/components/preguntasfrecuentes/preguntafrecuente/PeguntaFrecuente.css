@@ -57,6 +57,10 @@
 	margin-bottom: 40px;
 }
 
+.pregunta-arrow-active {
+	transform: rotate(180deg);
+}
+
 @media (max-width: 768px) {
 	.respuesta-desktop {
 		display: none; /* oculta en dispositivos móviles */

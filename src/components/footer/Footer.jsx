@@ -2,8 +2,8 @@ import { IconInstagram } from "../../icons/IconInstagram/IconInstagram";
 import { IconLocation } from "../../icons/IconLocation/IconLocation";
 import { IconMail } from "../../icons/IconMail/IconMail";
 import { IconPhoneNumber } from "../../icons/IconPhoneNumber/IconPhoneNumber";
-import logo1 from "../../../public/logo1.svg";
-import logo2 from "../../../public/logo2.svg";
+import logo1 from "/logo1.svg";
+import logo2 from "/logo2.svg";
 import "./Footer.css";
 
 const Footer = () => {

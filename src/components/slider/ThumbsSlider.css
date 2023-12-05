@@ -2,14 +2,18 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	width: 100%;
 }
 
 .thumbs-swiper-galery {
+	width: 100%;
 	max-width: 500px;
 	max-height: 500px;
 }
 
 .thumbs-swiper-thumbs {
+	width: 100%;
+	max-width: 500px;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 0px;
@@ -20,14 +24,20 @@
 .thumbs-swiper-thumb {
 	max-width: 100px;
 	max-height: 100px;
+	display: flex;
+	justify-content: stretch;
 }
 
 .thumbs-swiper-thumb img {
 	height: 100%;
 	width: 100%;
+	max-width: 100px;
+	max-height: 100px;
+	overflow: visible;
+	padding: 0px;
 }
 
 .swiper-slide-thumb-active {
 	border-radius: 1px;
-	border: 2px solid var(--Primary, #45a196);
+	border: 3px solid var(--Primary, #45a196);
 }

@@ -5,7 +5,7 @@ import { NavHashLink } from "react-router-hash-link";
 import "./Navegacion.css";
 
 export default function Navegacion({ category, name, previo, siguiente }) {
-	const seccion = "/catalogo#" + category; // .toLowerCase();
+	const seccion = "/catalogo#" + category.toLowerCase();
 	return (
 		<div role="presentation" className="navegacion">
 			<Breadcrumbs

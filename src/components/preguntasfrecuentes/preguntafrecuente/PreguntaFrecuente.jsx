@@ -17,7 +17,11 @@ const PreguntaFrecuente = ({ pregunta, respuesta }) => {
 		<div className="pregunta-container" onClick={toggleRespuesta}>
 			<div className="pregunta">
 				{pregunta}
-				<img src="/down.svg" alt="" className="pregunta-arrow" />
+				<img
+					src="/down.svg"
+					alt=""
+					className={`pregunta-arrow ${abierta && "pregunta-arrow-active"}`}
+				/>
 			</div>
 			{abierta && <div className="respuesta-mobile">{respuesta}</div>}
 			<div className={`respuesta-desktop ${abierta ? "abierta" : ""}`}>

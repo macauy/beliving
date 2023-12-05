@@ -4,11 +4,15 @@ const QuienesSomos = () => {
 	return (
 		<div className="section-quienes-conteiner">
 			<div className="quienes-img-conteiner">
+<<<<<<< HEAD
 				<img
 					className="img-quienessomos"
 					src="../../../public/quienes somos.jpg"
 					alt=""
 				/>
+=======
+				<img className="img-quienessomos" src="/somoscollage.webp" alt="" />
+>>>>>>> c47ac263f539eafa6735b78cae8fdb4e40d40d14
 			</div>
 
 			<div className="hero-mobile">
@@ -30,12 +34,3 @@ const QuienesSomos = () => {
 };
 
 export default QuienesSomos;
-
-
- 
-
-     
-
-
-
-
