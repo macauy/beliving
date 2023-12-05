@@ -5,7 +5,7 @@ import Productos from "../productos/Productos";
 import { Link } from "react-router-dom";
 import IconWhatsapp from "../../icons/IconWhatsapp/IconWhatsapp";
 import QuestionBar from "../../common/questionBar/QuestionBar";
-import QuienesSomos from "../quienes somos/QuienesSomos";
+import QuienesSomos from "../quienessomos/QuienesSomos";
 import Opiniones from "../opiniones/Opiniones";
 // import OpinionMelisa from "../opinionineseach/opinionmelisa/OpinionMelisa";
 import OpinionesSlidermobile from "../opinionesslidermobile/OpinionesSlidermobile";
