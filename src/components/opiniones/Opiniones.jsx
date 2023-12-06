@@ -1,6 +1,5 @@
 import { QuotesIllustration } from "../../icons/QuotesIllustration/QuotesIllustration";
 import { QuotesIllustrationClose } from "../../icons/QuotesIllustration/QuoteIllustrationClose";
-//import { QuotesCloseDeviceDesktop } from "./QuotesCloseDeviceDesktop";
 import { Stars } from "../../icons/Stars/Stars";
 import "./Opiniones.css";
 
