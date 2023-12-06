@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {QuotesIllustrationClose} from '../../../icons/QuotesIllustration/QuoteIllustrationClose'
 import {Stars} from '../../../icons/Stars/Stars'
 import './OpinionEmilse.css'

@@ -18,12 +18,13 @@ const OpinionesSlidermobile = () => {
   return (
     <div >
       
-      <Swiper
+      <Swiper 
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={20}
         pagination={{
           clickable: true,
         }}
+      
         modules={[Pagination]}
         className="mySwiper"
       >
@@ -34,10 +35,13 @@ const OpinionesSlidermobile = () => {
         <SwiperSlide>
               <OpinionMaria/>
         </SwiperSlide>
+
         <SwiperSlide>
               <OpinionEmilse/>
         </SwiperSlide>
+        
       </Swiper>
+
     </div>
   )
 }
