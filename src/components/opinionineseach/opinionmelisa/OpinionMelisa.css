@@ -1,67 +1,74 @@
-.each-conteiner{
-  align-items: center;
+.conteiner-each{
   height: 80%;
   width: 80%;
-  display:flex;
-  background-color: rgb(32, 88, 69);
 }
-
-.each-conteiner .frame-each {
-display: flex;
- height: 100%;
- width: 100%;
- padding: 2rem 10rem;
-  background-color: rgb(218, 255, 180);
+.frame-each {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 3rem 1rem;
+  margin: 2rem;
+  width: 100%;
 } 
+.quote-each {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 
- .frame-each.quote-each {
-background-color: rgb(114, 114, 255);
-height: 90%;
-width: 100%;
 }
- .quotes-illustration-each {
-  top: 0;
-  left: -50rem;
-  width: 10%;
-  height: 10%;
-  z-index: 1;
+.quotes-illustration {
+  top: -45px;
+  left: -25px;
+  width: fit-content;
+  position: absolute;
+ 
 }
-
 .quotes-illustration-close{
-  
-  top: 5rem;
-  left: 0;
-  width: 25%;
-  height: 25%;
-  z-index: 6;
-  transform: rotate(180deg);
+	transform: rotate(180deg);
+	width: fit-content;
 }
 
- .div-each {
+.div-each {
   align-items: center;
   align-self: stretch;
   display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: fit-content;
+}
+.frame-each .text-wrapper-each {
+  width: fit-content;
+  position: relative;
   
-  width: 50%;
-  background-color: chartreuse;
-  margin: 3rem 1rem .6rem 0rem;
 }
-.text-wrapper-each {
-	position: relative;
-	white-space: nowrap;
-}
-.stars-instance-each {
-  flex: 0 0 auto ;  position: relative;
+.frame-each .stars-instance-each {
+  position: relative;
+  width: 120px;
 }
 
- .p-each {
-	align-self: stretch;
-	font-size: .9rem;
-	font-style: normal;
-	font-weight: 100;
-	text-align: start;
-	line-height: 1.5;
-	width: 90%;
-	color: var(--black);;
-  background-color: floralwhite;
+ .frame-each .p-each {
+  font-size: .9rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.4;
+  color: var(--black);
+  padding:  1rem 2%;
+  width: 90%;
+}
+
+@media (min-width: 970px) {
+
+  .conteiner-each{
+    display: none;
+  }
+
+  
 }

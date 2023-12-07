@@ -85,12 +85,12 @@ const Home = () => {
 				<Opiniones />
 			</section>
 
-			<section className="home-question-bar">
-				<QuestionBar />
-			</section>
-
 			<section>
 				<OpinionesSlidermobile />
+			</section>
+
+			<section className="home-question-bar">
+				<QuestionBar />
 			</section>
 
 			<IconWhatsapp />

@@ -8,23 +8,22 @@ import './OpinionMelisa.css'
 const OpinionMelisa = () => {
 
 return (
-<div className='each-conteiner'>
+<div className='conteiner-each'>
     <div className='frame-each'>
         <div className="quote-each">
-        <QuotesIllustrationClose className="quotes-illustration-close-each"/>
+        <QuotesIllustration className="quotes-illustration"/>
             <div className="div-each">
-                <div className="text-wrapper-each">Melisa C.
+                <div className="text-wrapper-each"><b>Melisa C.</b>
                 </div>
-                    <Stars className="stars-instance-each"/>
+                    <Stars className="stars-instance"/>
             </div>
             <p className="p-each">
                 Positivo: Calidad, Capacidad de respuesta, Precio, Profesionalismo
             <br />
                 Excelente atención, los living y cada detalles en perfectas condiciones. Super recomendables 🤗
             </p>
-            <QuotesIllustrationClose className="quotes-illustration-close-"/>
-
         </div>
+        <QuotesIllustrationClose className="quotes-illustration-close"/>
 
     </div>
 

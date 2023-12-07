@@ -20,7 +20,7 @@ const OpinionesSlidermobile = () => {
       
       <Swiper 
         slidesPerView={1}
-        spaceBetween={20}
+        spaceBetween={30}
         pagination={{
           clickable: true,
         }}
