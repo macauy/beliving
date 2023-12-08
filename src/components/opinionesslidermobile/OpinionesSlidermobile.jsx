@@ -1,10 +1,5 @@
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 import { Pagination } from 'swiper/modules';
 import '../opinionineseach/opinionmelisa/OpinionMelisa'
 import OpininonMelisa from '../opinionineseach/opinionmelisa/OpinionMelisa'
@@ -12,11 +7,12 @@ import '../opinionineseach/opinionmaria/OpinionMaria'
 import OpinionMaria from '../opinionineseach/opinionmaria/OpinionMaria';
 import '../opinionineseach/opinionemilse/OpinionEmilse'
 import OpinionEmilse from '../opinionineseach/opinionemilse/OpinionEmilse';
-
+import "swiper/css";
+import './OpinionesSlidermobile.css'
 
 const OpinionesSlidermobile = () => {
   return (
-    <div >
+    <div className='slider-opinions'>
       
       <Swiper 
         slidesPerView={1}
@@ -26,17 +22,17 @@ const OpinionesSlidermobile = () => {
         }}
       
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper-slider-opinions"
       >
-        <SwiperSlide> 
+        <SwiperSlide className='slide-opinion'> 
               <OpininonMelisa/>
         </SwiperSlide>
         
-        <SwiperSlide>
+        <SwiperSlide className='slide-opinion'>
               <OpinionMaria/>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className='slide-opinion'>
               <OpinionEmilse/>
         </SwiperSlide>
         
