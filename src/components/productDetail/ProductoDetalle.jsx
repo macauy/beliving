@@ -8,6 +8,7 @@ import "./ProductoDetalle.css";
 import { NavLink, useLocation } from "react-router-dom";
 import { livings } from "../data.js";
 import { otrosProductos } from "../data.js";
+
 const ProductoDetalle = () => {
 	const location = useLocation();
 	const productoIn = location.state;

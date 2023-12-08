@@ -109,6 +109,30 @@ export const livings = [
 			{ id: 6, imgUrl: "/productos/LivingInfantil/6.webp" },
 		],
 	},
+	{
+		id: 5,
+		category: "Livings",
+		name: "Black & White",
+		description: "Juego de living para 10 personas",
+		price: "$ 12.500",
+		url: "/productos/LivingBlackWhite/1.webp",
+		items: [
+			"1 sillón de ecocuero blanco, doble y con respaldo",
+			"6 puffs individuales de ecocuero blancos y negros",
+			"1 puff doble de ecocuero blanco",
+			"1 mesa de madera blanca",
+			"almohadón decorativo",
+			"plato de sitio decorativo",
+		],
+		pictures: [
+			{ id: 1, imgUrl: "/productos/LivingBlackWhite/1.webp" },
+			{ id: 2, imgUrl: "/productos/LivingBlackWhite/2.webp" },
+			{ id: 3, imgUrl: "/productos/LivingBlackWhite/3.webp" },
+			{ id: 4, imgUrl: "/productos/LivingBlackWhite/4.webp" },
+			{ id: 5, imgUrl: "/productos/LivingBlackWhite/5.webp" },
+			{ id: 6, imgUrl: "/productos/LivingBlackWhite/6.webp" },
+		],
+	},
 ];
 
 export const otrosProductos = [

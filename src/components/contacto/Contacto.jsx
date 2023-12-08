@@ -40,8 +40,7 @@ const Contacto = () => {
 					.required("Campo obligatorio"),
 				telefono: Yup.number()
 					.typeError("No es un número valido")
-					.required("Campo obligatorio")
-					.min(9, "Debe tener al menos 10 números"),
+					.required("Campo obligatorio"),
 				mensaje: Yup.string().required("Campo obligatorio"),
 			}),
 			validateOnChange: false,

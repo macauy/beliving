@@ -20,6 +20,7 @@
 .producto-detalle-galery {
 	width: 100%;
 	min-height: 100%;
+	margin-bottom: 30px;
 }
 
 .producto-detalle {
@@ -127,6 +128,7 @@
 	.producto-detalle-galery {
 		max-width: 45%;
 		/* min-height: 100%; */
+		margin-bottom: 0px;
 	}
 
 	.producto-detalle-container {

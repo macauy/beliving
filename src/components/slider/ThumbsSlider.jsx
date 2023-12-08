@@ -10,22 +10,27 @@ import "swiper/css/thumbs";
 import "./ThumbsSlider.css";
 
 // import required modules
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Navigation, Pagination, Thumbs } from "swiper/modules";
 
 export default function ThumbsSlider({ pictures }) {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
+	const width = window.innerWidth;
+	const isPag = width < 1024;
 	return (
 		<div className="thumbs-swiper-container">
 			<Swiper
 				style={{
 					"--swiper-navigation-color": "#fff",
-					"--swiper-pagination-color": "#fff",
+					"--swiper-pagination-color": "var(--primary)",
 				}}
 				spaceBetween={10}
 				navigation={false}
 				thumbs={{ swiper: thumbsSwiper }}
-				modules={[FreeMode, Navigation, Thumbs]}
+				modules={[FreeMode, Navigation, Thumbs, Pagination]}
+				centeredSlides={true}
+				loop={true}
+				pagination={isPag && { clickable: true }}
 				className="mySwiper2 thumbs-swiper-galery"
 			>
 				{pictures.map((item) => (
