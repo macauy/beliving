@@ -1,38 +1,40 @@
-.conteiner-each{
-  height: 80%;
-  width: 80%;
+.conteiner-each {
+  height: 100%;
+  width: 100%;
+  align-content: center;
 }
 .frame-each {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 3rem 1rem;
   margin: 2rem;
-  width: 100%;
-} 
+  width: fit-content;
+  align-items: end;
+}
 .quote-each {
   align-items: flex-start;
   align-self: center;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 10px;
   position: relative;
-  width: 100%;
-  height: 100%;
-
+  width: 70%;
+  height: 50%;
+  padding: 1rem 0rem;
+  margin: 1rem ;
 }
 .quotes-illustration {
-  top: -45px;
-  left: -25px;
+  left: -65px;
+  top: -40px;
   width: fit-content;
   position: absolute;
- 
+  height: 70px;
 }
-.quotes-illustration-close{
-	transform: rotate(180deg);
-	width: fit-content;
+.quotes-illustration-close {
+  transform: rotate(180deg);
+  height: 70px;
+  align-self: flex-end;
 }
 
 .div-each {
@@ -43,32 +45,28 @@
   justify-content: space-between;
   position: relative;
   width: fit-content;
+  gap: 1rem;
 }
 .frame-each .text-wrapper-each {
   width: fit-content;
   position: relative;
-  
 }
 .frame-each .stars-instance-each {
   position: relative;
   width: 120px;
 }
-
- .frame-each .p-each {
-  font-size: .9rem;
+.frame-each .p-each {
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 100;
   line-height: 1.4;
   color: var(--black);
-  padding:  1rem 2%;
+  padding: 1rem 2%;
   width: 90%;
 }
 
 @media (min-width: 970px) {
-
-  .conteiner-each{
+  .conteiner-each {
     display: none;
   }
-
-  
 }

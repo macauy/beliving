@@ -12,7 +12,7 @@ import './OpinionesSlidermobile.css'
 
 const OpinionesSlidermobile = () => {
   return (
-    <div className='slider-opinions'>
+    <div className='slider-opinions-conteiner'>
       
       <Swiper 
         slidesPerView={1}
