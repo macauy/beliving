@@ -7,6 +7,7 @@ import Contacto from "./components/contacto/Contacto";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Catalogo from "./components/catalogo/Catalogo";
 import ProductoDetalle from "./components/productDetail/ProductoDetalle";
+import IconWhatsapp from "./icons/IconWhatsapp/IconWhatsapp";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					<Route path="/Contacto" element={<Contacto />} />
 					<Route path="/ProductoDetalle" element={<ProductoDetalle />} />
 				</Routes>
+				<IconWhatsapp />
 				<Footer />
 			</BrowserRouter>
 		</>

@@ -5,21 +5,19 @@
 	align-items: center;
 	gap: 10px;
 	padding: 16px;
+	border-radius: 8px;
+	border: 2px solid var(--primary-80, #6ab4ab);
 }
 
 .question-bar span {
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 16px; /* 133.333% */
-	letter-spacing: 0.12px;
+	line-height: 22px;
+	letter-spacing: 0.35px;
 }
 
 .question-bar a {
 	color: var(--Hyperlink, #539ac6);
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 16px;
-	letter-spacing: 0.12px;
+	line-height: 22px;
+	letter-spacing: 0.35px;
 	text-decoration-line: underline;
 }
 

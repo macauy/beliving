@@ -1,5 +1,5 @@
 .productos {
-	background-color: var(--light-green);
+	/* background-color: var(--light-green); */
 	display: flex;
 	padding: 24px 16px;
 	flex-direction: column;

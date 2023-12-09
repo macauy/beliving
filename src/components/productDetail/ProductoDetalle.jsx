@@ -76,7 +76,8 @@ const ProductoDetalle = () => {
 			</div>
 			<div className="producto-detalle-contacto">
 				<p>
-					Para reservar, consultanos por <b>WhatsApp</b> o
+					Para reservar, consultar sobre el envío o disponibilidad,{" "}
+					<a href="">contactanos</a> o
 					<NavLink to={"/Contacto"}> pedí tu cotización</NavLink>.
 				</p>
 			</div>

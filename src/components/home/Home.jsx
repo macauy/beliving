@@ -3,7 +3,6 @@ import Button from "../../icons/Button/Button";
 import Galery from "../galery/Galery";
 import Productos from "../productos/Productos";
 import { Link } from "react-router-dom";
-import IconWhatsapp from "../../icons/IconWhatsapp/IconWhatsapp";
 import QuestionBar from "../../common/questionBar/QuestionBar";
 import QuienesSomos from "../quienessomos/QuienesSomos";
 import Opiniones from "../opiniones/Opiniones";
@@ -92,8 +91,6 @@ const Home = () => {
 			<section className="home-question-bar">
 				<QuestionBar />
 			</section>
-
-			<IconWhatsapp />
 		</main>
 	);
 };
