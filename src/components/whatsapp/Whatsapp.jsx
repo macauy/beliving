@@ -1,8 +1,10 @@
-import React from 'react'
 
 const Whatsapp = () => {
+  window.open("https://wa.me/529611650194", "_blank");
   return (
-	<div>Whatsapp</div>
+        <>
+        <a href="" target="_blank" rel="" onClick={Whatsapp}></a> 
+        </>
   )
 }
 
