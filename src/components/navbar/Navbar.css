@@ -5,6 +5,7 @@
 	background-color: var(--white);
 	padding: 12px 29px 12px 40px;
 	box-shadow: 0px 1px 6px 1px rgba(69, 161, 150, 0.2);
+	width: 100%;
 }
 nav ul {
 	display: flex;
