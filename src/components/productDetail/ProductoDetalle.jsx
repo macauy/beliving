@@ -8,6 +8,7 @@ import "./ProductoDetalle.css";
 import { NavLink, useLocation } from "react-router-dom";
 import { livings } from "../data.js";
 import { otrosProductos } from "../data.js";
+import Whatsapp from "../whatsapp/Whatsapp.jsx";
 
 const ProductoDetalle = () => {
 	const location = useLocation();
@@ -77,7 +78,7 @@ const ProductoDetalle = () => {
 			<div className="producto-detalle-contacto">
 				<p>
 					Para reservar, consultar sobre el envío o disponibilidad,{" "}
-					<a href="">contactanos</a> o
+					<a href="" target="" rel="" onClick={Whatsapp}>contactanos</a>  o
 					<NavLink to={"/Contacto"}> pedí tu cotización</NavLink>.
 				</p>
 			</div>

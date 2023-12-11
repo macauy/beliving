@@ -1,6 +1,6 @@
 
 const Whatsapp = () => {
-  window.open("https://wa.me/529611650194");
+  window.open("https://wa.me/5493512550936");
   return (
         <>
        
@@ -10,4 +10,4 @@ const Whatsapp = () => {
 
 export default Whatsapp
 
-/*  <a href="" target="" rel="" onClick={Whatsapp}></a> */
+/*  <a href="" target="" rel="" onClick={Whatsapp}></a>  */
