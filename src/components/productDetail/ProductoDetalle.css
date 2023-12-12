@@ -74,6 +74,7 @@
 .producto-detalle-contacto a {
 	color: var(--Hyperlink, #539ac6);
 	text-decoration-line: underline;
+	cursor: pointer;
 }
 
 .producto-detalle-contacto-desktop {

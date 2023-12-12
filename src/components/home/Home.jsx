@@ -11,8 +11,8 @@ import OpinionesSlidermobile from "../opinionesslidermobile/OpinionesSlidermobil
 
 const Home = () => {
 	return (
-		<main>
-			<div className="hero-mobile">
+		<>
+			<section className="hero-mobile">
 				<section className="home-main">
 					<div className="home-image-container">
 						<div className="home-logo-container">
@@ -33,7 +33,7 @@ const Home = () => {
 						<Button style="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
 					</Link>
 				</section>
-			</div>
+			</section>
 
 			<section className="hero-desktop">
 				<div className="desktop-left">
@@ -91,7 +91,7 @@ const Home = () => {
 			<section className="home-question-bar">
 				<QuestionBar />
 			</section>
-		</main>
+		</>
 	);
 };
 

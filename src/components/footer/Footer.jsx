@@ -36,7 +36,9 @@ const Footer = () => {
 					</span>
 				</div>
 				<div className="footer-item footer-social-media">
-					<span>VISITÁ NUESTRO INSTAGRAM</span>
+					<a href="https://www.instagram.com/belivingcba/" target="blank">
+						<span>VISITÁ NUESTRO INSTAGRAM</span>
+					</a>
 					<IconInstagram className="instagram-icon" />
 				</div>
 			</div>
