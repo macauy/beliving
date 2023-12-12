@@ -6,7 +6,7 @@
 
 .catalogo-title {
 	padding: 16px;
-	padding-top: 32px;
+	padding-top: 30px;
 }
 
 .catalogo-subtitle {
@@ -39,7 +39,7 @@
 	}
 
 	.catalogo-title {
-		padding: 30px 40px 0px 40px;
+		padding: 0px 40px 0px 40px;
 	}
 	.catalogo .catalogo-livings {
 		background-color: var(--light-green);
