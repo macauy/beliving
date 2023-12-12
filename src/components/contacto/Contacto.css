@@ -1,38 +1,43 @@
-.conteiner-contacto {
-	padding: 0.25rem 2.5rem;
-	/* max-width: 85%; */
-	margin: auto;
-	justify-content: space-between;
+.container-contacto {
+	display: flex;
+	/* padding: 112px 0px 40px 0px; */
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	padding: 40px;
 }
+
+.formulario {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
 /* etiquetas de los inputs */
 .formulario label {
 	display: block;
-	margin: 1rem 0 0.2rem;
-}
-label {
-	display: block;
+	margin: 0.5rem 0;
 }
 
 /* inputs */
+
+.formulario input,
+.formulario textarea {
+	width: 100%;
+	background-color: var(--light-gray, #f4ffff);
+	border-radius: 0.25rem;
+	border: 0.125rem solid #45a196;
+	font-size: 16px;
+}
+
 .formulario input {
-	width: 95%;
 	height: 3rem;
 	padding: 0.8rem;
 	margin: 0rem 0 1rem 0;
-	background-color: var(--primary-3, #f4ffff);
-	border-radius: 0.25rem;
-	border: 0.125rem solid #45a196;
-	box-sizing: border-box;
-	font-size: 16px;
 }
+
 textarea {
-	width: 95%;
 	padding: 2rem;
-	background-color: var(--primary-3, #f4ffff);
-	border-radius: 0.25rem;
-	border: 0.125rem solid #45a196;
-	box-sizing: border-box;
-	font-size: 16px;
 	height: 12rem;
 }
 
@@ -41,10 +46,14 @@ textarea {
 	color: red;
 	display: block;
 	text-align: unset;
-	max-width: 90%;
 }
+
 .mensajes-texto {
-	margin: 1rem 0 0.5rem 0;
+	margin: 20px 0;
+}
+
+.mensajes-texto ul {
+	padding-left: 20px;
 }
 
 ::placeholder {
@@ -56,16 +65,7 @@ textarea {
 	margin-top: 20px;
 	display: flex;
 	justify-content: flex-end;
-	width: 90%;
-	margin: 1rem 0 0.5rem 0;
-	/* background-color: #45a196;
-    border: 2px solid var(--primary, );
-    padding: 8px 16px;
-    transform: skew(-20deg);
-    -webkit-transform: skew(-20deg);
-    -moz-transform: skew(-20deg);
-    -o-transform: skew(-20deg);
-    box-shadow: 2px 2px 2px 1px rgba(1, 26, 23, 0.4); */
+	margin-right: 10px;
 }
 
 /*-------------------------------- MEDIA QUERY --------------------------------*/

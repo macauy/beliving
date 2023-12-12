@@ -8,7 +8,7 @@ const Catalogo = () => {
 	return (
 		<div className="catalogo">
 			<Link to={"/catalogo#productos"}></Link>
-			<h1 className="catalogo-title">Conocé nuestras opciones</h1>
+			<h1 className="title catalogo-title">Conocé nuestras opciones</h1>
 
 			<section className="catalogo-livings" id="livings">
 				<h2 className="catalogo-subtitle">LIVINGS</h2>

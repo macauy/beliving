@@ -50,10 +50,10 @@ const Contacto = () => {
 	console.log({ errors });
 
 	return (
-		<div className="conteiner-contacto">
-			<div className="tituleConteiner">Contacto</div>
+		<div className="container-contacto">
+			<h1 className="title">Contacto</h1>
 
-			<div className="mensajes-texto">
+			<div className="">
 				<p>
 					Completá el siguiente formulario y empezá a planificar tu próximo
 					evento.
@@ -105,18 +105,20 @@ const Contacto = () => {
 
 				{/* ------------------------------------ INSTRUCCIONES PARA MANDAR MENSAJE ----------------------------------------*/}
 
-				<ul className="mensajes-texto">
+				<div className="mensajes-texto">
 					<p>
 						<b>En el siguiente espacio nos gustaría que nos cuentes: </b>
 					</p>
-					<li> qué mobiliario te interesa.</li>
-					<li> qué tipo de evento querés realizar.</li>
-					<li>cuántas personas son. </li>
-					<li>
-						cuándo y en qué lugar se realizará (salón de evento, casa
-						particular, SUM, etc.)
-					</li>
-				</ul>
+					<ul>
+						<li> qué mobiliario te interesa.</li>
+						<li> qué tipo de evento querés realizar.</li>
+						<li>cuántas personas son. </li>
+						<li>
+							cuándo y en qué lugar se realizará (salón de evento, casa
+							particular, SUM, etc.)
+						</li>
+					</ul>
+				</div>
 				{/* ------------------------------------ CAJA DE TEXTO DEL MENSAJE ----------------------------------------*/}
 
 				<label htmlFor="mensaje">
