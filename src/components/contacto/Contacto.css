@@ -1,104 +1,159 @@
 .container-contacto {
-	display: flex;
-	/* padding: 112px 0px 40px 0px; */
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 20px;
-	padding: 40px;
+  display: flex;
+  /* padding: 112px 0px 40px 0px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px;
 }
 
 .formulario {
-	width: 100%;
-	max-width: 900px;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* etiquetas de los inputs */
 .formulario label {
-	display: block;
-	margin: 0.5rem 0;
+  display: block;
+  margin: 0.5rem 0;
 }
 
 /* inputs */
 
 .formulario input,
 .formulario textarea {
-	width: 100%;
-	background-color: var(--light-gray, #f4ffff);
-	border-radius: 0.25rem;
-	border: 0.125rem solid #45a196;
-	font-size: 16px;
+  width: 100%;
+  background-color: var(--light-gray, #f4ffff);
+  border-radius: 0.25rem;
+  border: 0.125rem solid #45a196;
+  font-size: 16px;
 }
 
 .formulario input {
-	height: 3rem;
-	padding: 0.8rem;
-	margin: 0rem 0 1rem 0;
+  height: 3rem;
+  padding: 0.8rem;
+  margin: 0rem 0 1rem 0;
 }
 
 textarea {
-	padding: 2rem;
-	height: 12rem;
+  padding: 2rem;
+  height: 12rem;
 }
 
 .span {
-	font-size: 12px;
-	color: red;
-	display: block;
-	text-align: unset;
+  font-size: 12px;
+  color: red;
+  display: block;
+  text-align: unset;
 }
 
 .mensajes-texto {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 .mensajes-texto ul {
-	padding-left: 20px;
+  padding-left: 20px;
 }
 
 ::placeholder {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 /*  botón de enviar */
 .contacto-button {
-	margin-top: 20px;
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
+.info-enviada {
+  display: flex;
+  width: 80%;
+  padding: 0rem 3rem;
+  height: 5rem;
+  text-align: center;
+  margin: 1rem 7rem;
+  gap: 2rem;
+  border-radius: 0.25rem;
+  background: var(--primary-10, #dbf0ed);
+  /* Elevation 1 */
+  box-shadow: 2px 3px 4px 1px rgba(1, 26, 23, 0.2);
+}
+#info-enviada-text{
+	align-self: center;
+	flex: 1 0 0;
+	color: #45A196;
+	/* Body 2 */
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.375rem; /* 157.143% */
+	letter-spacing: 0.02188rem;
+  }
+  .logo-ok{
+	background-color: black;
+	color: maroon;
+  }
 
 /*-------------------------------- MEDIA QUERY --------------------------------*/
 
 @media (max-width: 768px) {
-	.conteiner-contacto {
-		padding: 0.25rem 1rem;
-	}
+  .conteiner-contacto {
+    padding: 0.25rem 1rem;
+  }
 
-	.mensajes-texto {
-		font-size: 14ipx;
-	}
+  .mensajes-texto {
+    font-size: 14ipx;
+  }
 
-	.formulario input {
-		font-size: 15px;
-	}
-	::placeholder {
-		font-size: 13px;
-	}
-	textarea {
-		font-size: 15px;
-	}
+  .formulario input {
+    font-size: 15px;
+  }
+  ::placeholder {
+    font-size: 13px;
+  }
+  textarea {
+    font-size: 15px;
+  }
 
-	.contacto-button {
-		justify-content: center;
-	}
+  .contacto-button {
+    justify-content: center;
+  }
 
-	.contacto-button button {
-		width: 90%;
-	}
+  .contacto-button button {
+    width: 90%;
+  }
 
-	.span {
-		font-size: 11px;
-		color: red;
-	}
+  .span {
+    font-size: 11px;
+    color: red;
+  }
+  .info-enviada {
+    display: flex;
+    width: 90%;
+    padding: 2rem;
+	margin: 1rem;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    gap: 1rem;
+    border-radius: 0.25rem;
+    background: var(--primary-10, #dbf0ed);
+    /* Elevation 1 */
+    box-shadow: 2px 3px 4px 1px rgba(1, 26, 23, 0.2);
+  }
+  #info-enviada-text{
+	flex: 1 0 0;
+	color: var(--Primary, var(--Primary, #45A196));
+	/* Body 2 */
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.375rem; /* 157.143% */
+	letter-spacing: 0.02188rem;
+  }
 }

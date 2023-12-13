@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef,useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup"; //siempre se importa asi (*)---para mprotar todo de la libreria yup y dale un nombre Yup
 import "./Contacto.css";
@@ -6,8 +6,10 @@ import emailjs from "@emailjs/browser";
 import Button from "../../icons/Button/Button";
 
 const Contacto = () => {
-	// Variable con hook useref para usar la funcion onsubmit  --------
+// ------------- Variable con hook useref para usar la funcion onsubmit  --------
 	const formRef = useRef(null); //uso para emailjs
+
+	const [submitted, setSubmitted] = useState(false); // para mensaje de inf enviada
 
 	const { handleSubmit, handleChange, handleReset, errors, values } = useFormik(
 		{
@@ -28,10 +30,12 @@ const Contacto = () => {
 						telefono: "",
 						mensaje: "",
 					},
+					
 				});
+				setSubmitted(true)
 
-				//--------------------- EMAILJS -------- datos que pide  emailjs-------------------------
-				//-------------------    YOUR_SERVICE_ID     'YOUR_TEMPLATE_ID'                  'YOUR_USER_ID'
+//--------------------- EMAILJS -------- datos que pide  emailjs-------------------------
+//-------------------    YOUR_SERVICE_ID     'YOUR_TEMPLATE_ID'                  'YOUR_USER_ID'
 				emailjs
 					.sendForm(
 						"service_puwhspq",
@@ -75,7 +79,7 @@ const Contacto = () => {
 				</p>
 			</div>
 
-			{/* ------------------------------------ FORMULARIO ----------------------------------------*/}
+{/* ------------------------------------ FORMULARIO ----------------------------------------*/}
 
 			<form
 				className="formulario"
@@ -106,7 +110,6 @@ const Contacto = () => {
 					placeholder="Ingresá tu e-mail"
 				/>
 				<span className="span">{errors.email}</span>
-
 				<label htmlFor="telefono">
 					<b>Telefono*</b>
 				</label>
@@ -119,8 +122,7 @@ const Contacto = () => {
 				/>
 				<span className="span">{errors.telefono}</span>
 
-				{/* ------------------------------------ INSTRUCCIONES PARA MANDAR MENSAJE ----------------------------------------*/}
-
+{/* ------------------------------------ INSTRUCCIONES PARA MANDAR MENSAJE ----------------------------------------*/}
 				<div className="mensajes-texto">
 					<p>
 						<b>En el siguiente espacio nos gustaría que nos cuentes: </b>
@@ -135,8 +137,8 @@ const Contacto = () => {
 						</li>
 					</ul>
 				</div>
-				{/* ------------------------------------ CAJA DE TEXTO DEL MENSAJE ----------------------------------------*/}
 
+{/* ------------------------------------ CAJA DE TEXTO DEL MENSAJE ----------------------------------------*/}
 				<label htmlFor="mensaje">
 					<b>Mensaje*</b>
 				</label>
@@ -149,11 +151,18 @@ const Contacto = () => {
 				/>
 				<span className="span">{errors.mensaje}</span>
 
-				{/* ------------------------------------ BOTON ENVIAR ----------------------------------------*/}
+{/* ------------------------------------ BOTON ENVIAR ----------------------------------------*/}
 				<div className="contacto-button">
 					<Button style="default" text="ENVIAR" type="submit"></Button>
 				</div>
 			</form>
+
+{/*---------------------- renderizado de mensaje de informacón enviada ------------------*/}
+			<div className="info-enviada">
+					<a className="logo-ok" href="../../../public/el_ok-circle.svg"></a>
+					{submitted && <p id="info-enviada-text">¡El mensaje fue enviado con éxito!</p>} 
+			</div>
+			
 
 			<div className="mensajes-texto">
 				<p>
