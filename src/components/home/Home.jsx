@@ -8,8 +8,12 @@ import QuienesSomos from "../quienessomos/QuienesSomos";
 import Opiniones from "../opiniones/Opiniones";
 // import OpinionMelisa from "../opinionineseach/opinionmelisa/OpinionMelisa";
 import OpinionesSlidermobile from "../opinionesslidermobile/OpinionesSlidermobile";
+// import { getDocs, collection } from "firebase/firestore";
+// import { db } from "../../firebaseConfig";
 
 const Home = () => {
+	// const test = getDocs(db, "test");
+	// console.log(test);
 	return (
 		<>
 			<section className="hero-mobile">
