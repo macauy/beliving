@@ -7,8 +7,8 @@ import { livings } from "../data.js";
 const Productos = () => {
 	return (
 		<div className="productos">
-			<h1 className="catalogo-title">Conocé nuestras opciones</h1>
-			<section className="catalogo-livings">
+			<h1 className="title-container title">Conocé nuestras opciones</h1>
+			<section className="productos-livings">
 				<div className="products-cards-container">
 					{livings.map((item) => (
 						<Card producto={item} key={item.name} />

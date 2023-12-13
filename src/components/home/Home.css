@@ -1,11 +1,5 @@
 /* Mobile  */
 
-main {
-	max-width: 1440px;
-	margin: 0 auto;
-	border: 1px solid black;
-}
-
 .hero-mobile {
 	background-color: var(--light-green);
 }

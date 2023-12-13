@@ -7,7 +7,7 @@ export const Opiniones = () => {
 	return (
 		<div>
 			<div className="opiniones-titular-conteiner">
-				<h2 className="opiniones-titular">Qué piensan nuestros clientes</h2>
+				<h2 className="title">Qué piensan nuestros clientes</h2>
 			</div>
 
 			<div className="frame">

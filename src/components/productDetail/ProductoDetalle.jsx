@@ -78,8 +78,10 @@ const ProductoDetalle = () => {
 			<div className="producto-detalle-contacto">
 				<p>
 					Para reservar, consultar sobre el envío o disponibilidad,{" "}
-					<a href="" target="" rel="" onClick={Whatsapp}>contactanos</a>  o
-					<NavLink to={"/Contacto"}> pedí tu cotización</NavLink>.
+					<a target="" rel="" onClick={Whatsapp}>
+						contactanos
+					</a>{" "}
+					o<NavLink to={"/Contacto"}> pedí tu cotización</NavLink>.
 				</p>
 			</div>
 			<section className="producto-detalle-footer">
