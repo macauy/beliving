@@ -2,15 +2,14 @@ import { useRef } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup"; //siempre se importa asi (*)---para mprotar todo de la libreria yup y dale un nombre Yup
 import "./Contacto.css";
-import emailjs from '@emailjs/browser'
+import emailjs from "@emailjs/browser";
 import Button from "../../icons/Button/Button";
 
 const Contacto = () => {
 	// Variable con hook useref para usar la funcion onsubmit  --------
-	const formRef = useRef(null) //uso para emailjs
+	const formRef = useRef(null); //uso para emailjs
 
 	const { handleSubmit, handleChange, handleReset, errors, values } = useFormik(
-		
 		{
 			initialValues: {
 				nombre: "",
@@ -18,7 +17,7 @@ const Contacto = () => {
 				telefono: "",
 				mensaje: "",
 			},
-			
+
 			onSubmit: (data, { resetForm }) => {
 				console.log(data);
 
@@ -31,15 +30,21 @@ const Contacto = () => {
 					},
 				});
 
-//--------------------- EMAILJS -------- datos que pide  emailjs-------------------------
-		//-------------------    YOUR_SERVICE_ID     'YOUR_TEMPLATE_ID'                  'YOUR_USER_ID'
-				emailjs.sendForm('service_puwhspq', 'template_16021ml', formRef.current, 'AfmBwnG3dF4tZRZSs')
-				.then((result) => {
-					console.log(result.text);
-				})
-				.catch((error) => {
-					console.log(error.text);
-				});
+				//--------------------- EMAILJS -------- datos que pide  emailjs-------------------------
+				//-------------------    YOUR_SERVICE_ID     'YOUR_TEMPLATE_ID'                  'YOUR_USER_ID'
+				emailjs
+					.sendForm(
+						"service_puwhspq",
+						"template_16021ml",
+						formRef.current,
+						"AfmBwnG3dF4tZRZSs"
+					)
+					.then((result) => {
+						console.log(result.text);
+					})
+					.catch((error) => {
+						console.log(error.text);
+					});
 			},
 
 			//?--------------- esquema de validacion Yup -----------------------------
@@ -56,22 +61,15 @@ const Contacto = () => {
 				mensaje: Yup.string().required("Campo obligatorio"),
 			}),
 			validateOnChange: false,
-			
 		}
 	);
 	console.log({ errors });
-	
+
 	return (
-<<<<<<< HEAD
-		<div className="conteiner-contacto">
-			<div className="tituleConteiner">Contacto</div>
-			<div className="mensajes-texto">
-=======
 		<div className="container-contacto">
 			<h1 className="title">Contacto</h1>
 
 			<div className="">
->>>>>>> 427d98f5cc8677769b3a6192a5d6278613f7d88e
 				<p>
 					Completá el siguiente formulario y empezá a planificar tu próximo
 					evento.
@@ -85,7 +83,6 @@ const Contacto = () => {
 				ref={formRef} // funcion Para emaljs mande los datos que el usuario ingreso
 				onSubmit={handleSubmit}
 				onReset={handleReset}
-				
 			>
 				<label htmlFor="nombre">
 					<b>Nombre*</b>
@@ -168,6 +165,5 @@ const Contacto = () => {
 		</div>
 	);
 };
-
 
 export default Contacto;
