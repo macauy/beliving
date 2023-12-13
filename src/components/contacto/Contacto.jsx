@@ -68,7 +68,6 @@ const Contacto = () => {
 	return (
 		<div className="container-contacto">
 			<h1 className="title">Contacto</h1>
-
 			<div className="">
 				<p>
 					Completá el siguiente formulario y empezá a planificar tu próximo
