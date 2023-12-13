@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Catalogo from "./components/catalogo/Catalogo";
 import ProductoDetalle from "./components/productDetail/ProductoDetalle";
 import Layout from "./layout/Layout";
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 						/>
 						<Route path="/Contacto" element={<Contacto />} />
 						<Route path="/ProductoDetalle" element={<ProductoDetalle />} />
+						<Route path="/dashboard" element={<Dashboard />} />
 						<Route path="*" element={<h1>404 not found</h1>} />
 					</Route>
 				</Routes>
