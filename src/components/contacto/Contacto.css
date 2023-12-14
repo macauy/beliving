@@ -69,11 +69,11 @@ textarea {
 }
 .info-enviada {
   display: flex;
-  width: 80%;
+  width: 50%;
   padding: 0rem 3rem;
-  height: 5rem;
+  height: 3.4rem;
   text-align: center;
-  margin: 1rem 7rem;
+  margin: .5rem 7rem;
   gap: 2rem;
   border-radius: 0.25rem;
   background: var(--primary-10, #dbf0ed);
@@ -94,8 +94,8 @@ textarea {
 
   }
   .logo-ok{
-	background-color: black;
-	color: maroon;
+    height: 60%;
+    align-self: center;
   }
 
 /*-------------------------------- MEDIA QUERY --------------------------------*/
@@ -135,10 +135,10 @@ textarea {
     display: flex;
     width: 90%;
     padding: 2rem;
-	margin: 1rem;
+	  margin: 1rem .1rem;
     justify-content: center;
     align-items: center;
-	text-align: center;
+	  text-align: center;
     gap: 1rem;
     border-radius: 0.25rem;
     background: var(--primary-10, #dbf0ed);
@@ -157,4 +157,10 @@ textarea {
 	line-height: 1.375rem; /* 157.143% */
 	letter-spacing: 0.02188rem;
   }
+
+  .logo-ok{
+    height: 1.8rem;
+    align-self: center;
+  }
+  
 }

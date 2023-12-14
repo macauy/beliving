@@ -158,10 +158,10 @@ const Contacto = () => {
 			</form>
 
 {/*---------------------- renderizado de mensaje de informacón enviada ------------------*/}
-			<div className="info-enviada">
-					<a className="logo-ok" href="../../../public/el_ok-circle.svg"></a>
-					{submitted && <p id="info-enviada-text">¡El mensaje fue enviado con éxito!</p>} 
-			</div>
+			
+					
+					{submitted && <div className="info-enviada"><img className="logo-ok" src="../../../public/el_ok-circle.svg" alt="" /><p id="info-enviada-text">¡El mensaje fue enviado con éxito!</p></div> } 
+			
 			
 
 			<div className="mensajes-texto">
