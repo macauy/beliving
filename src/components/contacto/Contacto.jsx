@@ -55,14 +55,14 @@ const Contacto = () => {
 
 			validationSchema: Yup.object({
 				// se agregan todos los inputs a validar
-				nombre: Yup.string().required("Campo obligatorio"),
+				nombre: Yup.string().required("Error message"),
 				email: Yup.string()
 					.email("No es un email valido")
-					.required("Campo obligatorio"),
+					.required ( "Error message"),
 				telefono: Yup.number()
 					.typeError("No es un número valido")
-					.required("Campo obligatorio"),
-				mensaje: Yup.string().required("Campo obligatorio"),
+					.required("Error message"),
+				mensaje: Yup.string().required("Error message"),
 			}),
 			validateOnChange: false,
 		}
@@ -90,7 +90,7 @@ const Contacto = () => {
 				<label htmlFor="nombre">
 					<b>Nombre*</b>
 				</label>
-				<input
+				<input 
 					type="text"
 					value={values.nombre}
 					name="nombre"
@@ -147,7 +147,7 @@ const Contacto = () => {
 					value={values.mensaje}
 					name="mensaje"
 					onChange={handleChange}
-					placeholder="Contanos sobre tu evento"
+					placeholder = "Contanos sobre tu evento"
 				/>
 				<span className="span">{errors.mensaje}</span>
 
