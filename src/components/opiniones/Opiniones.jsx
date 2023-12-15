@@ -5,7 +5,7 @@ import "./Opiniones.css";
 
 export const Opiniones = () => {
 	return (
-		<div>
+		<div className="opiniones">
 			<div className="opiniones-titular-conteiner">
 				<h2 className="title">Qué piensan nuestros clientes</h2>
 			</div>
@@ -40,9 +40,8 @@ export const Opiniones = () => {
 					<QuotesIllustrationClose className="quotes-illustration-close" />
 				</div>
 				<div className="quote">
-					
 					<div className="div">
-					<QuotesIllustration className="quotes-illustration" />
+						<QuotesIllustration className="quotes-illustration" />
 						<div className="text-wrapper">Emilse G.</div>
 						<Stars className="stars-instance" />
 					</div>
