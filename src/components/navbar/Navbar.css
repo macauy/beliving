@@ -6,8 +6,14 @@
 	padding: 12px 29px 12px 40px;
 	box-shadow: 0px 1px 6px 1px rgba(69, 161, 150, 0.2);
 	width: 100%;
+	height: 72px;
+	position: fixed;
+	top: 0px;
 }
 
+.menu-container {
+	/* width: 90%; */
+}
 .navbar ul {
 	display: flex;
 	transition: transform 0.3s ease-in-out;
@@ -80,8 +86,12 @@
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 0px;
+		height: 56px;
 	}
 
+	.menu-container {
+		width: 100%;
+	}
 	.navbar .nav-title {
 		display: flex;
 		width: 100%;
@@ -108,5 +118,7 @@
 		flex-direction: column;
 		transform: translateX(0);
 		padding: 10px;
+		background-color: var(--light-gray);
+		gap: 10px;
 	}
 }

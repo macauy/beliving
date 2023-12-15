@@ -137,6 +137,8 @@
 	}
 	.hero-desktop {
 		display: flex;
+		position: relative;
+		z-index: -1;
 	}
 
 	.home-question-bar {

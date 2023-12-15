@@ -1,4 +1,11 @@
 .main-layout {
 	max-width: 1440px;
 	margin: 0 auto;
+	margin-top: 56px;
+}
+
+@media (min-width: 768px) {
+	.main-layout {
+		margin-top: 72px;
+	}
 }

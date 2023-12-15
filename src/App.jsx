@@ -8,6 +8,7 @@ import Catalogo from "./components/catalogo/Catalogo";
 import ProductoDetalle from "./components/productDetail/ProductoDetalle";
 import Layout from "./layout/Layout";
 import Dashboard from "./components/dashboard/Dashboard";
+import IconWhatsapp from "./icons/IconWhatsapp/IconWhatsapp";
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 						{/* <Route path="*" element={<h1>404 not found</h1>} /> */}
 					</Route>
 				</Routes>
+				<IconWhatsapp />
 				<Footer />
 			</BrowserRouter>
 		</>

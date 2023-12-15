@@ -51,3 +51,7 @@
 .button.variant-2:hover {
 	background: var(--light-green, #c9e8e4);
 }
+
+.button-text {
+	font-family: "Montserrat", sans-serif;
+}

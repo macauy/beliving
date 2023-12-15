@@ -28,24 +28,23 @@ const Navbar = () => {
 					<Hamburger color="#45a196" toggled={isOpen} toggle={setOpen} />
 				</div>
 			</div>
-			<ul
-				onClick={toggleMenu}
-				className={`menu-container ${isOpen ? "open" : " "}`}
-			>
-				<li onClick={cerrarMenu} className="menu-item">
-					<NavLink to={"/Catalogo"}>Catálogo</NavLink>
-				</li>
-				<li onClick={cerrarMenu} className="menu-item">
-					<NavLink to={"/PreguntasFrecuentes"}>Preguntas frecuentes</NavLink>
-				</li>
-				<li onClick={cerrarMenu}>
-					<NavLink to={"Contacto"}>
-						<div className="navbar-button">
-							<div className="navbar-button-text">CONTACTO</div>
-						</div>
-					</NavLink>
-				</li>
-			</ul>
+			<div className="menu-container">
+				<ul onClick={toggleMenu} className={`${isOpen ? "open" : " "}`}>
+					<li onClick={cerrarMenu} className="menu-item">
+						<NavLink to={"/Catalogo"}>Catálogo</NavLink>
+					</li>
+					<li onClick={cerrarMenu} className="menu-item">
+						<NavLink to={"/PreguntasFrecuentes"}>Preguntas frecuentes</NavLink>
+					</li>
+					<li onClick={cerrarMenu}>
+						<NavLink to={"Contacto"}>
+							<div className="navbar-button">
+								<div className="navbar-button-text">CONTACTO</div>
+							</div>
+						</NavLink>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	);
 };

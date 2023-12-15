@@ -9,6 +9,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { livings } from "../data.js";
 import { otrosProductos } from "../data.js";
 import Whatsapp from "../whatsapp/Whatsapp.jsx";
+import { Link } from "react-router-dom";
 
 const ProductoDetalle = () => {
 	const location = useLocation();
@@ -70,7 +71,9 @@ const ProductoDetalle = () => {
 							<p>*No incluye costo de envío</p>
 						</div>
 						<div className="producto-price-button">
-							<Button style="default" text="COTIZAR"></Button>
+							<Link to={"/Contacto"}>
+								<Button style="default" text="COTIZAR"></Button>
+							</Link>
 						</div>
 					</div>
 				</section>

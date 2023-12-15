@@ -4,6 +4,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 16px;
+	margin-bottom: 24px;
 }
 
 .products-cards-container {
@@ -16,7 +17,7 @@
 }
 
 .productos-button-container {
-	padding: 16px;
+	padding: 12px 0px 24px 0px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
