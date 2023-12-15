@@ -9,12 +9,9 @@ export const Opiniones = () => {
 			<div className="opiniones-titular-conteiner">
 				<h2 className="title">Qué piensan nuestros clientes</h2>
 			</div>
-
 			<div className="frame">
 				<div className="quote">
 					<QuotesIllustration className="quotes-illustration" />
-					<QuotesIllustrationClose className="quotes-illustration-close" />
-
 					<div className="div">
 						<div className="text-wrapper">Melisa C.</div>
 						<Stars className="stars-instance" />
@@ -25,12 +22,11 @@ export const Opiniones = () => {
 						Excelente atención, los living y cada detalles en perfectas
 						condiciones. Super recomendables 🤗
 					</p>
+					<QuotesIllustrationClose className="quotes-illustration-close" />
 				</div>
 
 				<div className="quote">
 					<QuotesIllustration className="quotes-illustration" />
-					<QuotesIllustrationClose className="quotes-illustration-close" />
-
 					<div className="div">
 						<div className="text-wrapper">Maria D.</div>
 						<Stars className="stars-instance" />
@@ -41,12 +37,12 @@ export const Opiniones = () => {
 						es excelente! Los precios muuuy acomodados! Lo recomiendo
 						ampliamente. Lo volvería a elegir sin dudar
 					</p>
+					<QuotesIllustrationClose className="quotes-illustration-close" />
 				</div>
 				<div className="quote">
-					<QuotesIllustration className="quotes-illustration" />
-					<QuotesIllustrationClose className="quotes-illustration-close" />
-
+					
 					<div className="div">
+					<QuotesIllustration className="quotes-illustration" />
 						<div className="text-wrapper">Emilse G.</div>
 						<Stars className="stars-instance" />
 					</div>
@@ -55,6 +51,7 @@ export const Opiniones = () => {
 						mejor atención. Sin lugar a duda un cumpleaños feliz. Sigan asi
 						chicos!
 					</p>
+					<QuotesIllustrationClose className="quotes-illustration-close" />
 				</div>
 			</div>
 		</div>

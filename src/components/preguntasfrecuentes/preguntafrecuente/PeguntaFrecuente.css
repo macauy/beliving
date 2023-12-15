@@ -79,6 +79,12 @@
 	.mensajes-texto {
 		padding: 20px 16px;
 	}
+	.tituleConteiner{
+		padding: 1rem;
+	}
+	.preguntas-container{
+		padding: .25rem 1rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -88,5 +94,11 @@
 
 	.pregunta-arrow {
 		display: none;
+	}
+	.tituleConteiner{
+		padding: 1rem;
+	}
+	.preguntas-container{
+		padding: .25rem 1rem;
 	}
 }

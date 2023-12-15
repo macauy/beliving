@@ -7,8 +7,8 @@ const OpinionMaria = () => {
   return (
     <div className="conteiner-each">
       <div className="frame-each">
+      <QuotesIllustration className="quotes-illustration" />
         <div className="quote-each">
-          <QuotesIllustration className="quotes-illustration" />
           <div className="div-each">
             <div className="text-wrapper-each">
               <b>Maria D.</b>
@@ -23,7 +23,6 @@ const OpinionMaria = () => {
           </p>
           <QuotesIllustrationClose className="quotes-illustration-close-each" />
         </div>
-       
       </div>
     </div>
   );

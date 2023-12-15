@@ -1,7 +1,8 @@
 .conteiner-each {
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 80%;
   align-content: center;
+  padding: 0rem 0 0 2rem;
 }
 .frame-each {
   align-items: center;
@@ -19,27 +20,26 @@
   flex: 0 0 auto;
   flex-direction: column;
   position: relative;
-  width: 70%;
-  height: 50%;
-  padding: 1rem 0rem;
+  width: 100%;
+  padding: 1rem;
   margin: 1rem ;
 }
 .quotes-illustration {
-  left: -65px;
-  top: -40px;
-  width: fit-content;
+  left: -40px;
+  top: -35px;
   position: absolute;
+  height: 72px;
   height: 70px;
 }
 .quotes-illustration-close {
   transform: rotate(180deg);
+  width: 72px;
   height: 70px;
   align-self: flex-end;
+  
 }
-
 .div-each {
   align-items: center;
-  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   justify-content: space-between;
@@ -50,6 +50,9 @@
 .frame-each .text-wrapper-each {
   width: fit-content;
   position: relative;
+  margin: 0rem 0.1rem;
+  
+
 }
 .frame-each .stars-instance-each {
   position: relative;

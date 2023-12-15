@@ -7,8 +7,8 @@ const OpinionMelisa = () => {
   return (
     <div className="conteiner-each">
       <div className="frame-each">
+      <QuotesIllustration className="quotes-illustration" />
         <div className="quote-each">
-          <QuotesIllustration className="quotes-illustration" />
           <div className="div-each">
             <div className="text-wrapper-each">
               <b>Melisa C.</b>

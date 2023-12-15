@@ -45,7 +45,7 @@ const Slider = ({ slides }) => {
 				pagination={{
 					clickable: true,
 				}}
-				navigation={false}
+				navigation={true}
 				modules={[Pagination, Navigation]}
 				className="mySwiper"
 				style={{

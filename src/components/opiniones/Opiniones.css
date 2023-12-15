@@ -3,11 +3,15 @@
 	padding: 0.5rem;
 	width: 90%;
 	font-size: 1rem;
+	background-color: #F4FAFA;
+	align-items: center;
 }
 .opiniones-titular-conteiner .opiniones-titular {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 100;
 	font-style: normal;
+	align-items: center;
+	
 }
 .frame {
 	align-items: flex-start;
@@ -16,6 +20,7 @@
 	padding: 100px;
 	position: relative;
 	flex-wrap: wrap;
+	background-color: #F4FAFA;
 }
 
 .frame .quote {
@@ -29,20 +34,21 @@
 }
 
 .frame .quotes-illustration {
-	height: 96px;
+	height: 72px;
+	width: 70px;
 	left: -60px;
 	position: absolute;
 	top: -80px;
-	width: 96px;
+	
 }
-
 .frame .quotes-illustration-close {
-	height: 57px;
+	height: 72px;
+	width: 70px;
 	position: absolute;
 	transform: rotate(180deg);
 	left: 190px;
 	top: 210px;
-	width: 96px;
+	
 }
 
 .frame .div {
@@ -87,6 +93,7 @@
 	.opiniones-titular-conteiner {
 		margin: 1rem 2rem;
 		padding: 0.5rem;
+		background-color: #f4fafa;;
 		
 	}
 	.frame {
