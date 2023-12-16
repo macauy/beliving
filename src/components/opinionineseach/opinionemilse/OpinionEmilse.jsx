@@ -1,5 +1,7 @@
-import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
-import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
+//import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
+//import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
+import QuotesIllustrationMobile from '../../../icons/QuotesIllustrationMobile/QuotesIllustrationMobile'
+import QuotesIllustrationMobileClose from '../../../icons/QuotesIllustrationMobileClose/QuotesIllustrationMobileClose';
 import { Stars } from "../../../icons/Stars/Stars";
 import "./OpinionEmilse.css";
 
@@ -7,7 +9,7 @@ const OpinionEmilse = () => {
   return (
     <div className="conteiner-each">
       <div className="frame-each">
-      <QuotesIllustration className="quotes-illustration" />
+          <QuotesIllustrationMobile className='quotes-illustrationMobile' />
         <div className="quote-each">
           <div className="div-each">
             <div className="text-wrapper-each">
@@ -21,7 +23,7 @@ const OpinionEmilse = () => {
             chicos!
           </p>
         </div>
-        <QuotesIllustrationClose className="quotes-illustration-close-each" />
+        <QuotesIllustrationMobileClose className="quotes-illustrationMobileClose"  />
       </div>
     </div>
   );

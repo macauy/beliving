@@ -1,5 +1,7 @@
-import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
-import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
+//import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
+//import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
+import QuotesIllustrationMobileClose from '../../../icons/QuotesIllustrationMobileClose/QuotesIllustrationMobileClose';
+import QuotesIllustrationMobile from '../../../icons/QuotesIllustrationMobile/QuotesIllustrationMobile'
 import { Stars } from "../../../icons/Stars/Stars";
 import "./OpinionMaria.css";
 
@@ -7,7 +9,7 @@ const OpinionMaria = () => {
   return (
     <div className="conteiner-each">
       <div className="frame-each">
-      <QuotesIllustration className="quotes-illustration" />
+      <QuotesIllustrationMobile className="quotes-illustrationMobile" />
         <div className="quote-each">
           <div className="div-each">
             <div className="text-wrapper-each">
@@ -22,7 +24,7 @@ const OpinionMaria = () => {
             ampliamente. Lo volvería a elegir sin dudar
           </p>
         </div>
-        <QuotesIllustrationClose className="quotes-illustration-close-each" />
+        <QuotesIllustrationMobileClose className="quotes-illustrationMobileClose" />
       </div>
     </div>
   );

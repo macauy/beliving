@@ -1,42 +1,34 @@
 .conteiner-each {
-  height: 90%;
-  width: 80%;
+  height: 70%;
+  width: 100%;
   align-content: center;
-  padding: 0rem 0 0 2rem;
+  padding: 0rem 0 0 3rem;
 }
 .frame-each {
   align-items: center;
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin: 2rem;
+  margin: 1rem;
   width: fit-content;
-  align-items: end;
 }
 .quote-each {
-  align-items: flex-start;
-  align-self: center;
   display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
-  position: relative;
   width: 100%;
-  padding: 1rem;
-  margin: 1rem ;
+  padding: 0 0 0 .8rem;
+  margin: .2rem ;
+  align-items: flex-start;
 }
-.quotes-illustration {
-  left: -40px;
-  top: -35px;
-  position: absolute;
-  height: 72px;
-  height: 70px;
-}
-.quotes-illustration-close {
-  transform: rotate(180deg);
-  width: rem;
-  height: 2rem;
-  left: -30rem
+.quotes-illustrationMobile {
+  align-self: flex-start;
+  margin: -1rem -2rem;
+  padding: 0 0 0 1rem;
   
+}
+.quotes-illustrationMobileClose {
+  align-self: flex-end;
+  padding: 0 1rem 0 0;
+  margin: 0 1rem 0 0;
 }
 .div-each {
   align-items: center;
@@ -50,7 +42,7 @@
 .frame-each .text-wrapper-each {
   width: fit-content;
   position: relative;
-  margin: 0rem 0.1rem;  
+  margin: .5rem 0.2rem; 
 
 }
 .frame-each .stars-instance-each {

@@ -1,14 +1,16 @@
 import { Stars } from "../../../icons/Stars/Stars";
-import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
-import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
+import QuotesIllustrationMobile from '../../../icons/QuotesIllustrationMobile/QuotesIllustrationMobile'
+import QuotesIllustrationMobileClose from '../../../icons/QuotesIllustrationMobileClose/QuotesIllustrationMobileClose'
+//import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
+//import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
 import "./OpinionMelisa.css";
 
 const OpinionMelisa = () => {
   return (
     <div className="conteiner-each">
       <div className="frame-each">
-        <QuotesIllustration className="quotes-illustration" />
         <div className="quote-each">
+        <QuotesIllustrationMobile className="quotes-illustrationMobile" />
           <div className="div-each">
             <div className="text-wrapper-each">
               <b>Melisa C.</b>
@@ -22,8 +24,9 @@ const OpinionMelisa = () => {
             condiciones. Super recomendables 🤗
           </p>
         </div>
-        <QuotesIllustrationClose className="quotes-illustration-close-each" />
+        <QuotesIllustrationMobileClose className="quotes-illustrationMobileClose" />
       </div>
+
     </div>
   );
 };
