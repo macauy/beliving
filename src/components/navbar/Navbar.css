@@ -11,6 +11,10 @@
 	top: 0px;
 }
 
+.navbar > * {
+	position: unset;
+}
+
 .menu-container {
 	/* width: 90%; */
 }
@@ -19,6 +23,7 @@
 	transition: transform 0.3s ease-in-out;
 	gap: 40px;
 	align-items: center;
+	position: static;
 }
 
 .navbar ul li {

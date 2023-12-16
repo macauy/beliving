@@ -20,7 +20,7 @@ const Navbar = () => {
 		<nav className="navbar">
 			<div className="nav-title">
 				<Link to={"/"}>
-					<div id="logo" className="logo">
+					<div id="logo" className="logo" onClick={cerrarMenu}>
 						<img src="/BL.svg" alt="" />
 					</div>
 				</Link>
