@@ -55,14 +55,14 @@ const Contacto = () => {
 
 			validationSchema: Yup.object({
 				// se agregan todos los inputs a validar
-				nombre: Yup.string().required("Error message"),
+				nombre: Yup.string().required("Este campo es obligatorio."),
 				email: Yup.string()
-					.email("No es un email valido")
-					.required ( "Error message"),
+					.email("Esta dirección de e-mail no es válida.")
+					.required ( "Este campo es obligatorio."),
 				telefono: Yup.number()
-					.typeError("No es un número valido")
-					.required("Error message"),
-				mensaje: Yup.string().required("Error message"),
+					.typeError("Este campo debe incluir solo números.")
+					.required("Este campo es obligatorio."),
+				mensaje: Yup.string().required("Este campo es obligatorio."),
 			}),
 			validateOnChange: false,
 		}

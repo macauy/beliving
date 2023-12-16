@@ -1,13 +1,13 @@
 import { Stars } from "../../../icons/Stars/Stars";
 import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
-import { QuotesIllustrationClose } from "../../../icons/QuotesIllustration/QuoteIllustrationClose";
+import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
 import "./OpinionMelisa.css";
 
 const OpinionMelisa = () => {
   return (
     <div className="conteiner-each">
       <div className="frame-each">
-      <QuotesIllustration className="quotes-illustration" />
+        <QuotesIllustration className="quotes-illustration" />
         <div className="quote-each">
           <div className="div-each">
             <div className="text-wrapper-each">
@@ -21,8 +21,8 @@ const OpinionMelisa = () => {
             Excelente atención, los living y cada detalles en perfectas
             condiciones. Super recomendables 🤗
           </p>
-          <QuotesIllustrationClose className="quotes-illustration-close-each" />
         </div>
+        <QuotesIllustrationClose className="quotes-illustration-close-each" />
       </div>
     </div>
   );

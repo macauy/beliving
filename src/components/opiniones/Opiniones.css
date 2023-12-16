@@ -1,10 +1,13 @@
 .opiniones {
 	background-color: var(--light-gray);
+	align-items: center;
+	padding: 0 0 0 2rem;
+	place-items: center;
 }
 
-.opiniones-titular-conteiner {
-	margin: 2rem;
-	padding: 0.5rem;
+.opiniones .opiniones-titular-conteiner {
+	margin: 1rem;
+	padding: 0.5rem -1rem;
 	width: 90%;
 	font-size: 1rem;
 	align-items: center;
@@ -35,19 +38,18 @@
 }
 
 .frame .quotes-illustration {
-	height: 72px;
-	width: 70px;
-	left: -60px;
+	height: 100%;
+	width: 100%;
+	left: -50px;
 	position: absolute;
-	top: -80px;
+	top: -70px;
 }
 .frame .quotes-illustration-close {
-	height: 72px;
-	width: 70px;
+	height: 100%;
+	width: 90%;
 	position: absolute;
 	transform: rotate(180deg);
-	left: 190px;
-	top: 210px;
+	top: 60px;
 }
 
 .frame .div {
@@ -64,6 +66,9 @@
 	position: relative;
 	white-space: nowrap;
 	width: fit-content;
+	font-weight: 500;
+	
+
 }
 
 .frame .stars-instance {

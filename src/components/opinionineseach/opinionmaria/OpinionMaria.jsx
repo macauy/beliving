@@ -1,4 +1,4 @@
-import { QuotesIllustrationClose } from "../../../icons/QuotesIllustration/QuoteIllustrationClose";
+import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
 import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
 import { Stars } from "../../../icons/Stars/Stars";
 import "./OpinionMaria.css";
@@ -21,8 +21,8 @@ const OpinionMaria = () => {
             es excelente! Los precios muuuy acomodados! Lo recomiendo
             ampliamente. Lo volvería a elegir sin dudar
           </p>
-          <QuotesIllustrationClose className="quotes-illustration-close-each" />
         </div>
+        <QuotesIllustrationClose className="quotes-illustration-close-each" />
       </div>
     </div>
   );

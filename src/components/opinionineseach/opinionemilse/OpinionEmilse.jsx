@@ -1,5 +1,5 @@
 import { QuotesIllustration } from "../../../icons/QuotesIllustration/QuotesIllustration";
-import { QuotesIllustrationClose } from "../../../icons/QuotesIllustration/QuoteIllustrationClose";
+import { QuotesIllustrationClose } from "../../../icons/QuotesIllustrationClose/QuoteIllustrationClose";
 import { Stars } from "../../../icons/Stars/Stars";
 import "./OpinionEmilse.css";
 
@@ -20,8 +20,8 @@ const OpinionEmilse = () => {
             mejor atención. Sin lugar a duda un cumpleaños feliz. Sigan asi
             chicos!
           </p>
-          <QuotesIllustrationClose className="quotes-illustration-close-each" />
         </div>
+        <QuotesIllustrationClose className="quotes-illustration-close-each" />
       </div>
     </div>
   );
