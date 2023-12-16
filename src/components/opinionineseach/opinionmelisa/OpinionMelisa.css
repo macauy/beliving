@@ -37,7 +37,7 @@
   justify-content: space-between;
   position: relative;
   width: fit-content;
-  gap: 1rem;
+  gap: .2rem;
 }
 .frame-each .text-wrapper-each {
   width: fit-content;
