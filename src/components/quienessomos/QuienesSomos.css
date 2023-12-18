@@ -25,18 +25,16 @@
 	width: 90%;
 }
 .quienes-texto-conteiner .quienes-antetitulo {
-	font-size: 1.9rem;
-	font-weight: 500;
+	/* font-size: 1.9rem; */
+	/* font-weight: 500; */
 	gap: 50px;
 	padding: 7.6px 0px;
 }
 .quienes-texto {
 	padding: 0.5rem;
 	font-size: 1rem;
-	font-style: normal;
-	font-weight: 100;
 	text-align: start;
-	line-height: 1.875rem;
+	line-height: 1.75rem;
 	margin-top: 1rem;
 	margin-bottom: 40px;
 	width: 95%;

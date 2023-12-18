@@ -17,7 +17,7 @@ const QuienesSomos = () => {
 				<div className="quienes-somos-image-container-mobile"></div>
 			</div>
 			<div className="quienes-texto-conteiner">
-				<h3 className="quienes-antetitulo">Quiénes somos</h3>
+				<h3 className="quienes-antetitulo title">Quiénes somos</h3>
 				<p className="quienes-texto">
 					<b>¡Bienvenidos!</b> Somos Paola y Martin, comenzamos con Be Living
 					hace poco mas de tres años, nos especializamos en el alquiler de
