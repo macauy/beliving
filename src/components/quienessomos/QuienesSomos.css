@@ -81,12 +81,12 @@
 
 	.quienes-somos-mobile {
 		width: 100%;
-		height: 336px;
+		height: 26rem;
 	}
 
 	.quienes-somos-image-container-mobile {
 		width: 100%;
-		height: 336px;
+		height: 29rem;
 		position: relative;
 		overflow: hidden;
 		background: url("/quienes.jpeg") center / cover,
