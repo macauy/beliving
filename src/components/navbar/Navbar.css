@@ -9,7 +9,6 @@
 	height: 100%;
 	position: fixed;
 	top: 0px;
-	z-index: 100;
 }
 
 .navbar > * {
@@ -72,7 +71,6 @@
 	-webkit-transform: skew(20deg);
 	-moz-transform: skew(20deg);
 	-o-transform: skew(20deg);
-
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 19.6px; /* 140% */
@@ -90,7 +88,7 @@
 	.navbar .botonburguer {
 		display: flex;
 		align-items: center;
-		z-index: 100;
+		
 	}
 
 	.navbar {
@@ -98,11 +96,12 @@
 		align-items: flex-start;
 		padding: 0px;
 		height: 56px;
+		z-index: 100;
 	}
 
 	.menu-container {
 		width: 100%;
-		z-index: 100;
+	
 	}
 	.navbar .nav-title {
 		display: flex;
@@ -110,6 +109,7 @@
 		padding: 4px 8px 4px 16px;
 		justify-content: space-between;
 		align-items: center;
+		
 	}
 
 	.navbar ul {
@@ -132,6 +132,6 @@
 		padding: 10px;
 		background-color: var(--light-gray);
 		gap: 10px;
-		z-index: 100;
+		
 	}
 }
