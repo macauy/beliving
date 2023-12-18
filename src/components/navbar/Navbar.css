@@ -6,7 +6,7 @@
 	padding: 12px 29px 12px 40px;
 	box-shadow: 0px 1px 6px 1px rgba(69, 161, 150, 0.2);
 	width: 100%;
-	height: 100%;
+	height: 4.5rem;
 	position: fixed;
 	top: 0px;
 }
@@ -36,7 +36,7 @@
 	display: block;
 	text-decoration: none;
 	color: var(--black);
-	padding: 10px;
+	padding: 0.625rem;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 28px; /* 175% */
@@ -88,7 +88,6 @@
 	.navbar .botonburguer {
 		display: flex;
 		align-items: center;
-		
 	}
 
 	.navbar {
@@ -101,7 +100,6 @@
 
 	.menu-container {
 		width: 100%;
-	
 	}
 	.navbar .nav-title {
 		display: flex;
@@ -109,9 +107,7 @@
 		padding: 4px 8px 4px 16px;
 		justify-content: space-between;
 		align-items: center;
-		
 	}
-
 	.navbar ul {
 		display: none;
 		width: 100%;
@@ -123,7 +119,6 @@
 	.navbar ul li a {
 		align-items: center;
 	}
-
 	.navbar .open {
 		display: flex;
 		align-items: center;

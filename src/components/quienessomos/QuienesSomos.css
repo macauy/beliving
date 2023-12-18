@@ -2,15 +2,14 @@
 	display: flex;
 	align-items: center;
 	background-color: var(--light-green);
-	height: 20rem;
+	height: 26.25rem;
 	width: 100%;
 	margin: 0 0 1.5rem 0;
 }
 .section-quienes-conteiner .quienes-img-conteiner {
 	display: flex;
-	height: 20rem;
+	height: 100%;
 	width: 90%;
-	height: 100;
 	padding-left: 2rem;
 }
 .img-quienessomos {
@@ -26,7 +25,7 @@
 	width: 90%;
 }
 .quienes-texto-conteiner .quienes-antetitulo {
-	font-size: 1.5rem;
+	font-size: 1.9rem;
 	font-weight: 500;
 	gap: 50px;
 	padding: 7.6px 0px;
@@ -37,7 +36,7 @@
 	font-style: normal;
 	font-weight: 100;
 	text-align: start;
-	line-height: 1.4;
+	line-height: 1.875rem;
 	margin-top: 1rem;
 	margin-bottom: 40px;
 	width: 95%;
