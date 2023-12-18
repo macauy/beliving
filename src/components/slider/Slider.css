@@ -69,3 +69,6 @@ body {
 :root {
 	--swiper-navigation-sides-offset: 20px;
 }
+.swiper-pagination-bullet{
+	display: none;
+}

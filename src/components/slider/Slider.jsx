@@ -44,6 +44,7 @@ const Slider = ({ slides }) => {
 				loop={true}
 				pagination={{
 					clickable: true,
+					
 				}}
 				navigation={true}
 				modules={[Pagination, Navigation]}
@@ -55,7 +56,7 @@ const Slider = ({ slides }) => {
 					// "--swiper-pagination-bullet-inactive-opacity": "1",
 					// "--swiper-pagination-bullet-size": "10px",
 
-					// "--swiper-pagination-bullet-horizontal-gap": "6px",
+					 //"--swiper-pagination-bullet-horizontal-gap": "6px",
 				}}
 			>
 				{pictures.map((item) => (
