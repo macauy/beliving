@@ -54,6 +54,11 @@
 	line-height: 19.6px;
 }
 
+.home-description p {
+	line-height: 22px; /* 157.143% */
+	letter-spacing: 0.35px;
+}
+
 .home-button-container {
 	padding: 8px 16px 40px 16px;
 	display: flex;

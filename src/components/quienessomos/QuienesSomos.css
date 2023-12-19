@@ -73,6 +73,7 @@
 		padding: 0px 0px 40px 0px;
 		flex-direction: column;
 		justify-content: center;
+		width: 100%;
 	}
 
 	.quienes-title {
