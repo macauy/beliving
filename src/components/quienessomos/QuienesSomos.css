@@ -45,6 +45,10 @@
 	align-items: center;
 }
 
+.quienes-texto p {
+	line-height: 28px; /* 175% */
+}
+
 .quienes-somos-mobile {
 	display: none;
 }
@@ -104,5 +108,11 @@
 		-moz-transform: rotate(5deg);
 		transform: rotate(5deg);
 		z-index: 3;
+	}
+}
+
+@media (max-width: 1024px) {
+	.section-quienes-container {
+		gap: 20px;
 	}
 }

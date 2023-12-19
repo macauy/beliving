@@ -9,6 +9,7 @@
 	height: 4.5rem;
 	position: fixed;
 	top: 0px;
+	z-index: 100;
 }
 
 .navbar > * {
@@ -95,11 +96,11 @@
 		align-items: flex-start;
 		padding: 0px;
 		height: 56px;
-		z-index: 100;
 	}
 
 	.menu-container {
 		width: 100%;
+		margin-top: -2px;
 	}
 	.navbar .nav-title {
 		display: flex;
@@ -127,6 +128,5 @@
 		padding: 10px;
 		background-color: var(--light-gray);
 		gap: 10px;
-		
 	}
 }
