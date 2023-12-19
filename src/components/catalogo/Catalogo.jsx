@@ -1,6 +1,7 @@
 import "./Catalogo.css";
 import Card from "../card/Card";
 import { Link } from "react-router-dom";
+import { Skeleton } from "@mui/material";
 
 import { useState, useEffect } from "react";
 import { getDocs, collection } from "firebase/firestore";
@@ -9,6 +10,8 @@ import { db } from "../../firebaseConfig";
 const Catalogo = () => {
 	const [livings, setLivings] = useState([]);
 	const [productos, setProductos] = useState([]);
+
+	let arr = [1, 2, 3, 4];
 
 	useEffect(() => {
 		let items = collection(db, "livings");
@@ -39,19 +42,47 @@ const Catalogo = () => {
 
 			<section className="catalogo-livings" id="livings">
 				<h2 className="catalogo-subtitle">LIVINGS</h2>
-				<div className="cards-container">
-					{livings.map((item) => (
-						<Card producto={item} key={item.id} />
-					))}
-				</div>
+				{livings.length > 0 ? (
+					<div className="cards-container">
+						{livings.map((item) => (
+							<Card producto={item} key={item.id} />
+						))}
+					</div>
+				) : (
+					<div className="cards-container">
+						{arr.map((e) => {
+							return (
+								<div key={e} className="skeleton">
+									<Skeleton variant="rounded" width={200} height={150} />
+									<Skeleton variant="text" width={200} height={100} />
+									<Skeleton variant="rounded" width={200} height={25} />
+								</div>
+							);
+						})}
+					</div>
+				)}
 			</section>
 			<section className="catalogo-otros" id="productos">
 				<h2 className="catalogo-subtitle">OTROS PRODUCTOS</h2>
-				<div className="cards-container">
-					{productos.map((item) => (
-						<Card producto={item} key={item.id} />
-					))}
-				</div>
+				{productos.length > 0 ? (
+					<div className="cards-container">
+						{productos.map((item) => (
+							<Card producto={item} key={item.id} />
+						))}
+					</div>
+				) : (
+					<div className="cards-container">
+						{arr.map((e) => {
+							return (
+								<div key={e} className="skeleton">
+									<Skeleton variant="rounded" width={200} height={150} />
+									<Skeleton variant="text" width={200} height={100} />
+									<Skeleton variant="rounded" width={200} height={25} />
+								</div>
+							);
+						})}
+					</div>
+				)}
 			</section>
 		</div>
 	);

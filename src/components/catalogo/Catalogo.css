@@ -33,6 +33,11 @@
 	margin: 0 auto;
 }
 
+.skeleton {
+	display: flex;
+	flex-direction: column;
+}
+
 @media (min-width: 768px) {
 	.catalogo {
 		gap: 30px;
