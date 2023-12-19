@@ -45,9 +45,8 @@ const Slider = ({ slides }) => {
 				loop={true}
 				pagination={{
 					clickable: true,
-					
 				}}
-				navigation={true}
+				navigation={width > 768}
 				modules={[Pagination, Navigation]}
 				className="mySwiper"
 				style={{
@@ -56,17 +55,20 @@ const Slider = ({ slides }) => {
 					// "--swiper-pagination-bullet-inactive-color": "#999999",
 					// "--swiper-pagination-bullet-inactive-opacity": "1",
 					// "--swiper-pagination-bullet-size": "10px",
-
-					 //"--swiper-pagination-bullet-horizontal-gap": "6px",
+					//"--swiper-pagination-bullet-horizontal-gap": "6px",
 				}}
 			>
 				{pictures.map((item) => (
 					// <Card producto={item} key={item.name} />
 
 					<SwiperSlide key={item.id}>
-						<Zoom >
+						{width > 768 ? (
+							<Zoom>
+								<img src={item.imgUrl} alt="" />
+							</Zoom>
+						) : (
 							<img src={item.imgUrl} alt="" />
-						</Zoom>
+						)}
 					</SwiperSlide>
 				))}
 			</Swiper>
