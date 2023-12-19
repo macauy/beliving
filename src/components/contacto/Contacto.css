@@ -105,6 +105,11 @@ textarea {
 
 	.mensajes-texto {
 		font-size: 14px;
+		padding: 0px;
+	}
+
+	.formulario {
+		padding-bottom: 12px;
 	}
 
 	.formulario input {
