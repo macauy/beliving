@@ -72,10 +72,3 @@ body {
 .swiper-pagination-bullet{
 	display: none;
 }
-
-@media (max-width: 970px) {
-	.zoom-container{
-		display: none;
-	}
-	
-}

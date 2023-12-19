@@ -64,7 +64,7 @@ const Slider = ({ slides }) => {
 					// <Card producto={item} key={item.name} />
 
 					<SwiperSlide key={item.id}>
-						<Zoom className="zoom-container" >
+						<Zoom >
 							<img src={item.imgUrl} alt="" />
 						</Zoom>
 					</SwiperSlide>
