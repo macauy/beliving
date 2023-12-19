@@ -3,10 +3,9 @@ export const pictures = [
 	{ id: 3, imgUrl: "/gallery/3ok.webp" },
 	{ id: 2, imgUrl: "/gallery/2ok.webp" },
 	{ id: 11, imgUrl: "/gallery/11ok.webp"},
-	{ id: 4, imgUrl: "/gallery/4ok.webp" },
 	{ id: 1, imgUrl: "/gallery/1ok.webp" },
-	{ id: 7, imgUrl: "/gallery/7ok.webp" },
 	{ id: 8, imgUrl: "/gallery/8ok.webp" },
+	{ id: 4, imgUrl: "/gallery/4ok.webp" },
 	{ id: 9, imgUrl: "/gallery/9ok.webp" },
 	
 ];
