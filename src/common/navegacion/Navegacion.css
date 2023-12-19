@@ -23,6 +23,10 @@
 }
 
 @media (max-width: 768px) {
+	.navegacion {
+		padding: 0px 16px;
+	}
+
 	.navegacion-siguiente {
 		display: none;
 	}
