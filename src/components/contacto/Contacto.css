@@ -50,10 +50,6 @@ textarea {
 	text-align: unset;
 }
 
-.mensajes-texto {
-	margin: 20px 0;
-}
-
 .mensajes-texto ul {
 	padding-left: 20px;
 }
@@ -108,7 +104,7 @@ textarea {
 	}
 
 	.mensajes-texto {
-		font-size: 14ipx;
+		font-size: 14px;
 	}
 
 	.formulario input {
