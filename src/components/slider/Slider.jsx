@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation"; // para poner o quitar flechas de navegacion o ya en return en navegation lo dejamos en false (navigation={false})
 import "./Slider.css";
 import { pictures } from "../data.js";
+
 //------------------ZOOM-----------------
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";

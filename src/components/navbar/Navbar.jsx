@@ -21,7 +21,7 @@ const Navbar = () => {
 			<div className="nav-title">
 				<Link to={"/"}>
 					<div id="logo" className="logo" onClick={cerrarMenu}>
-						<img src="/BL.svg" alt="" />
+						<img className="bl-logo"  src="/BL.svg" alt="" />
 					</div>
 				</Link>
 				<div id="botonburguer" className="botonburguer">

@@ -129,4 +129,7 @@
 		background-color: var(--light-gray);
 		gap: 10px;
 	}
+	.bl-logo{
+			width: 3rem;
+	}
 }
