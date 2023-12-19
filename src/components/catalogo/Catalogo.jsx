@@ -18,6 +18,7 @@ const Catalogo = () => {
 			});
 			setLivings(livings.sort((a, b) => a.id - b.id));
 		});
+		console.log("trayendo livings");
 	}, []);
 
 	useEffect(() => {
@@ -28,6 +29,7 @@ const Catalogo = () => {
 			});
 			setProductos(productos.sort((a, b) => a.id - b.id));
 		});
+		console.log("trayendo productos");
 	}, []);
 
 	return (

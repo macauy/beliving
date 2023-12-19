@@ -37,6 +37,7 @@ export default function Navegacion({ category, name, previo, siguiente }) {
 						fontSize: "14px",
 						lineHeight: "22px",
 						letterSpacing: "0.35px",
+						fontWeight: "bold",
 					}}
 				>
 					{name}

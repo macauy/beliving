@@ -34,7 +34,7 @@ const ProductoDetalle = () => {
 	return (
 		<div>
 			<div className="producto-detalle-title">
-				<h1>{producto.name}</h1>
+				<h1 className="title">{producto.name}</h1>
 			</div>
 			<Navegacion
 				category={producto.category}
