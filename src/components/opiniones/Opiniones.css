@@ -12,6 +12,7 @@
 	font-size: 1rem;
 	align-items: center;
 }
+
 .opiniones-titular-conteiner .opiniones-titular {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 100;
@@ -22,7 +23,7 @@
 	align-items: flex-start;
 	display: flex;
 	gap: 5rem;
-	padding: 3rem 2.5rem 7rem 5.5rem;
+	padding: 3rem 2.5rem 9rem 5.5rem;
 	position: relative;
 	flex-wrap: wrap;
 }
@@ -85,13 +86,10 @@
 *******************************************************************************************************************
 */
 
-@media (max-width: 970px) {
-	.opiniones-titular-conteiner {
-		margin: .5rem 1rem;
-		padding: 0.5rem;
-		background-color: #f4fafa;
-	}
+@media (max-width: 768px) {
+
 	.frame {
 		display: none;
 	}
+
 }
