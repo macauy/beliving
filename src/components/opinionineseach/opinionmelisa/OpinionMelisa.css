@@ -47,7 +47,7 @@
 }
 .frame-each .stars-instance-each {
   position: relative;
-  width: 120px;
+ 
 }
 .frame-each .p-each {
   font-size: 0.9rem;
@@ -55,7 +55,7 @@
   font-weight: 100;
   line-height: 1.4;
   color: var(--black);
-  padding: 1rem 2%;
+  padding: 1rem ;
   width: 90%;
 }
 /*----------------@MEDIA QUERY -- se quita esconde al llegar a 970px*/

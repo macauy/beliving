@@ -3,11 +3,9 @@
 	align-items: center;
 	place-items: center;
 }
-
-.opiniones .opiniones-titular-conteiner {
-	margin: 1rem;
-	padding: .5rem 1.5rem;
-	padding-bottom: 3rem;
+.opiniones-titular-conteiner {
+	padding: 1rem 2.5rem;
+	padding-bottom: 2rem;
 	width: 100%;
 	font-size: 1rem;
 	align-items: center;
@@ -33,13 +31,13 @@
 	flex: 1;
 	flex-direction: column;
 	flex-grow: 1;
-	gap: 10px;
+	gap: .6rem;
 	position: relative;
 }
 .frame .quotes-illustration {
 	height: 100%;
 	width: 100%;
-	left: -50px;
+	left: -3rem;
 	position: absolute;
 	top: -70px;
 }
@@ -57,7 +55,7 @@
 	flex: 0 0 auto;
 	justify-content: space-between;
 	position: relative;
-	width: 100%;
+	
 }
 .frame .text-wrapper {
 	position: relative;
@@ -87,6 +85,12 @@
 */
 
 @media (max-width: 768px) {
+	.opiniones .opiniones-titular-conteiner {
+		padding: 0 1rem 0 0;
+		padding-bottom: 2rem;
+		font-size: 1rem;
+		align-items: center;
+	}
 
 	.frame {
 		display: none;
