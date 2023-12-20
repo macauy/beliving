@@ -160,4 +160,8 @@ textarea {
 		line-height: 1.375rem; /* 157.143% */
 		letter-spacing: 0.02188rem;
 	}
+
+	.logo-ok {
+		height: 40%;
+	}
 }
