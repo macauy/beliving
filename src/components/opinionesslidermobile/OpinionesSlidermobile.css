@@ -19,3 +19,8 @@
 	padding-bottom: 0rem;
 }
 
+@media (min-width: 768px) {
+	.slider-opinions-conteiner{
+		display: none;
+	}
+}

@@ -3,7 +3,7 @@
 	align-items: center;
 	place-items: center;
 }
-.opiniones-titular-conteiner {
+.title-conteiner {
 	padding: 1rem 2.5rem;
 	padding-bottom: 2rem;
 	width: 100%;
@@ -11,7 +11,7 @@
 	align-items: center;
 }
 
-.opiniones-titular-conteiner .opiniones-titular {
+.title-conteiner .opiniones-titular {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 100;
 	font-style: normal;
@@ -85,7 +85,7 @@
 */
 
 @media (max-width: 768px) {
-	.opiniones .opiniones-titular-conteiner {
+	.opiniones .title-conteiner {
 		padding: 0 1rem 0 0;
 		padding-bottom: 2rem;
 		font-size: 1rem;
