@@ -2,8 +2,6 @@ import "./Card.css";
 import { Link } from "react-router-dom";
 
 const Card = ({ producto }) => {
-	console.log("en card");
-	console.log(producto, "producto");
 	return (
 		<Link to={"/ProductoDetalle"} state={producto}>
 			<div className="card">

@@ -14,25 +14,35 @@ const Catalogo = () => {
 	let arr = [1, 2, 3, 4];
 
 	useEffect(() => {
-		let items = collection(db, "livings");
-		getDocs(items).then((res) => {
-			let livings = res.docs.map((item) => {
-				return { ...item.data() };
+		let localLivings = JSON.parse(localStorage.getItem("LIVINGS")) ?? [];
+		if (localLivings.length > 0) {
+			setLivings(localLivings);
+		} else {
+			let items = collection(db, "livings");
+			getDocs(items).then((res) => {
+				let livings = res.docs.map((item) => {
+					return { ...item.data() };
+				});
+				setLivings(livings.sort((a, b) => a.id - b.id));
+				localStorage.setItem("LIVINGS", JSON.stringify(livings));
 			});
-			setLivings(livings.sort((a, b) => a.id - b.id));
-		});
-		console.log("trayendo livings");
+		}
 	}, []);
 
 	useEffect(() => {
-		let items = collection(db, "productos");
-		getDocs(items).then((res) => {
-			let productos = res.docs.map((item) => {
-				return { ...item.data() };
+		let localProductos = JSON.parse(localStorage.getItem("PRODUCTOS")) ?? [];
+		if (localProductos.length > 0) {
+			setProductos(localProductos);
+		} else {
+			let items = collection(db, "productos");
+			getDocs(items).then((res) => {
+				let productos = res.docs.map((item) => {
+					return { ...item.data() };
+				});
+				setProductos(productos.sort((a, b) => a.id - b.id));
+				localStorage.setItem("PRODUCTOS", JSON.stringify(productos));
 			});
-			setProductos(productos.sort((a, b) => a.id - b.id));
-		});
-		console.log("trayendo productos");
+		}
 	}, []);
 
 	return (
