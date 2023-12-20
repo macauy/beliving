@@ -43,9 +43,7 @@ const Slider = ({ slides }) => {
 				spaceBetween={20}
 				centeredSlides={true}
 				loop={true}
-				pagination={{
-					clickable: true,
-				}}
+				pagination={false}
 				navigation={width > 768}
 				modules={[Pagination, Navigation]}
 				className="mySwiper"

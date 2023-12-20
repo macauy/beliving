@@ -13,8 +13,6 @@ const Dashboard = () => {
 	};
 
 	const loadProducts = () => {
-		console.log("load productos");
-		console.log(otrosProductos);
 		otrosProductos.forEach((item) => {
 			let refProducts = collection(db, "productos");
 			addDoc(refProducts, item);
