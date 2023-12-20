@@ -160,7 +160,7 @@ const Contacto = () => {
 {/*---------------------- renderizado de mensaje de informacón enviada ------------------*/}
 			
 					
-					{submitted && <div className="info-enviada"><img className="logo-ok" src="../../../public/el_ok-circle.svg" alt="" /><p id="info-enviada-text">¡El mensaje fue enviado con éxito!</p></div> } 
+					{submitted && <div className="info-enviada"><img className="logo-ok" src="/el_ok-circle.svg" alt="" /><p id="info-enviada-text">¡El mensaje fue enviado con éxito!</p></div> } 
 			
 			
 
