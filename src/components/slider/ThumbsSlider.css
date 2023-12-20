@@ -43,7 +43,7 @@
 	border: 3px solid var(--Primary, #45a196);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	.thumbs-swiper-thumbs {
 		display: none;
 	}

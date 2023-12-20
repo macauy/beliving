@@ -22,7 +22,7 @@
 	text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.navegacion {
 		padding: 0px 16px;
 	}

@@ -1,10 +1,3 @@
-/* .producto-detalle {
-	display: flex;
-	padding: 32px 0px;
-	flex-direction: column;
-	align-items: center;
-} */
-
 .producto-detalle-title {
 	padding: 32px 16px 16px 16px;
 }
@@ -97,6 +90,10 @@
 		padding: 16px 40px;
 	}
 
+	.producto-detalle {
+		margin: 0px;
+	}
+
 	.producto-description {
 		padding: 30px;
 		gap: 30px;
@@ -131,7 +128,8 @@
 
 @media (min-width: 1024px) {
 	.producto-detalle-galery {
-		max-width: 45%;
+		width: unset;
+		/* max-width: 45%; */
 		/* min-height: 100%; */
 		margin-bottom: 0px;
 	}
