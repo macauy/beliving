@@ -1,14 +1,14 @@
 .opiniones {
 	background-color: var(--light-gray);
 	align-items: center;
-	padding: 0 0 0 2rem;
 	place-items: center;
 }
 
 .opiniones .opiniones-titular-conteiner {
 	margin: 1rem;
-	padding: 0.5rem -1rem;
-	width: 90%;
+	padding: .5rem 1.5rem;
+	padding-bottom: 3rem;
+	width: 100%;
 	font-size: 1rem;
 	align-items: center;
 }
@@ -21,8 +21,8 @@
 .frame {
 	align-items: flex-start;
 	display: flex;
-	gap: 100px;
-	padding: 100px;
+	gap: 5rem;
+	padding: 3rem 2.5rem 7rem 5.5rem;
 	position: relative;
 	flex-wrap: wrap;
 }
@@ -87,7 +87,7 @@
 
 @media (max-width: 970px) {
 	.opiniones-titular-conteiner {
-		margin: 1rem 2rem;
+		margin: .5rem 1rem;
 		padding: 0.5rem;
 		background-color: #f4fafa;
 	}
