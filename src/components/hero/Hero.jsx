@@ -22,7 +22,7 @@ const Hero = () => {
 					</p>
 				</section>
 				<section className="home-button-container">
-					<Link to={"catalogo"}>
+					<Link to={"/catalogo"}>
 						<Button style="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
 					</Link>
 				</section>
@@ -56,8 +56,8 @@ const Hero = () => {
 							</p>
 						</section>
 						<section className="home-button-container">
-							<Link to={"catalogo"}>
-								<Button style="default" text="CONOCÉ NUESTROS LIVINGS"></Button>
+							<Link to={"/catalogo"}>
+								<Button style="default" text="CONOCÉ NUESTROS LIVINGS" />
 							</Link>
 						</section>
 					</div>

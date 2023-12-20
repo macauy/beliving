@@ -21,7 +21,7 @@
 }
 .quotes-illustrationMobile {
   align-self: flex-start;
-  margin: -1rem -2rem;
+  margin: -1rem -3.5rem;
   padding: 0 0 0 1rem;
   
 }
@@ -56,7 +56,7 @@
   line-height: 1.4;
   color: var(--black);
   padding: 1rem ;
-  width: 90%;
+  width: 100%;
 }
 /*----------------@MEDIA QUERY -- se quita esconde al llegar a 970px*/
 @media (min-width: 970px) {
