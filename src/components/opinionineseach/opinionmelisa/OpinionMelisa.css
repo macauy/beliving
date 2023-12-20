@@ -37,7 +37,7 @@
   justify-content: space-between;
   position: relative;
   width: fit-content;
-  gap: .2rem;
+  
 }
 .frame-each .text-wrapper-each {
   width: fit-content;
@@ -49,14 +49,14 @@
   position: relative;
  
 }
-.frame-each .p-each {
+.p-each {
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 100;
   line-height: 1.4;
   color: var(--black);
-  padding: 1rem ;
-  width: 90%;
+  padding: .5rem ;
+  width: 100%;
 }
 /*----------------@MEDIA QUERY -- se quita esconde al llegar a 970px*/
 @media (min-width: 970px) {

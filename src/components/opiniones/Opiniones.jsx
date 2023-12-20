@@ -6,7 +6,7 @@ import "./Opiniones.css";
 export const Opiniones = () => {
 	return (
 		<div className="opiniones">
-			<div className="title-conteiner">
+			<div className=" title-container">
 				<h2 className="title">Qué piensan nuestros clientes</h2>
 			</div>
 			<div className="frame">

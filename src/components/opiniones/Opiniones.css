@@ -3,7 +3,7 @@
 	align-items: center;
 	place-items: center;
 }
-.title-conteiner {
+.title-container {
 	padding: 1rem 2.5rem;
 	padding-bottom: 2rem;
 	width: 100%;
@@ -11,7 +11,7 @@
 	align-items: center;
 }
 
-.title-conteiner .opiniones-titular {
+.title-container .opiniones-titular {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 100;
 	font-style: normal;
