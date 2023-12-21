@@ -18,6 +18,7 @@ const ProductoDetalle = () => {
 
 	const [producto, setProducto] = useState(productoIn);
 	console.log(producto, "producto");
+
 	let productos = producto.category === "Livings" ? livings : otrosProductos;
 
 	let index = productos.findIndex((item) => item.id == producto.id);
@@ -51,7 +52,7 @@ const ProductoDetalle = () => {
 				</section>
 				<section className="producto-detalle">
 					<div className="producto-description">
-						{producto.details.map((item) => (
+						{producto.details?.map((item) => (
 							<div
 								className="producto-description-details"
 								key={item.description}
