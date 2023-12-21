@@ -9,6 +9,8 @@ import ProductoDetalle from "./components/productDetail/ProductoDetalle";
 import Layout from "./layout/Layout";
 import Dashboard from "./components/dashboard/Dashboard";
 import IconWhatsapp from "./icons/IconWhatsapp/IconWhatsapp";
+import Login from "./components/login/Login";
+import Signup from "./components/login/Signup";
 
 function App() {
 	return (
@@ -26,7 +28,9 @@ function App() {
 						<Route path="/Contacto" element={<Contacto />} />
 						<Route path="/ProductoDetalle" element={<ProductoDetalle />} />
 						<Route path="/dashboard" element={<Dashboard />} />
-						{/* <Route path="*" element={<h1>404 not found</h1>} /> */}
+						<Route path="/login" element={<Login />} />
+						<Route path="/signup" element={<Signup />} />
+						<Route path="*" element={<h1>404 not found</h1>} />
 					</Route>
 				</Routes>
 				<IconWhatsapp />
