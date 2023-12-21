@@ -30,7 +30,7 @@
 	padding: 16px;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 20px;
 }
 
 .producto-description ul li {
@@ -99,6 +99,11 @@
 		gap: 30px;
 	}
 
+	.producto-description-details {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 	.producto-price-button {
 		display: block;
 	}

@@ -6,6 +6,7 @@ import { Skeleton } from "@mui/material";
 import { useState, useEffect } from "react";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
+// import { livings, otrosProductos } from "../data";
 
 const Catalogo = () => {
 	const [livings, setLivings] = useState([]);

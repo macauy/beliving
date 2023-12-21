@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const ProductoDetalle = () => {
 	const location = useLocation();
-	const productoIn = location.state;
+	let productoIn = location.state;
 
 	const [producto, setProducto] = useState(productoIn);
 
@@ -31,6 +31,7 @@ const ProductoDetalle = () => {
 		else index++;
 		setProducto(productos[index]);
 	};
+
 	return (
 		<div>
 			<div className="producto-detalle-title">
@@ -49,17 +50,24 @@ const ProductoDetalle = () => {
 				</section>
 				<section className="producto-detalle">
 					<div className="producto-description">
-						<p>{producto.description}</p>
-						{producto.items && (
-							<>
-								<p>Incluye:</p>
-								<ul>
-									{producto.items.map((item) => (
-										<li key={item}>{item}</li>
-									))}
-								</ul>
-							</>
-						)}
+						{producto.details.map((item) => (
+							<div
+								className="producto-description-details"
+								key={item.description}
+							>
+								<p>{item.description}</p>
+								{item.items && (
+									<>
+										<p>Incluye:</p>
+										<ul>
+											{item.items.map((item) => (
+												<li key={item}>{item}</li>
+											))}
+										</ul>
+									</>
+								)}
+							</div>
+						))}
 						<p className="producto-detalle-contacto-desktop">
 							Para reservar, consultanos por WhatsApp o pedí tu cotización
 							haciendo click en el siguiente botón.

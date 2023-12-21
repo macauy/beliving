@@ -1,13 +1,12 @@
 export const pictures = [
-	{ id: 10, imgUrl: "/gallery/10ok.webp"},
+	{ id: 10, imgUrl: "/gallery/10ok.webp" },
 	{ id: 3, imgUrl: "/gallery/3ok.webp" },
 	{ id: 2, imgUrl: "/gallery/2ok.webp" },
-	{ id: 11, imgUrl: "/gallery/11ok.webp"},
+	{ id: 11, imgUrl: "/gallery/11ok.webp" },
 	{ id: 1, imgUrl: "/gallery/1ok.webp" },
 	{ id: 8, imgUrl: "/gallery/8ok.webp" },
 	{ id: 4, imgUrl: "/gallery/4ok.webp" },
 	{ id: 9, imgUrl: "/gallery/9ok.webp" },
-	
 ];
 
 export const livings = [
@@ -16,17 +15,21 @@ export const livings = [
 		category: "Livings",
 		name: "Moderno",
 		title: "Juego de muebles para 10 personas ",
-		description: "Juego de muebles para 10 personas",
+		details: [
+			{
+				description: "Juego de living para 10 personas.",
+				items: [
+					"1 sillón de ecocuero blanco, doble y con respaldo",
+					"1 puff doble de ecocuero blanco",
+					"6 puffs de ecocuero blanco",
+					"1 mesa de madera blanca",
+					"Almohadón decorativo",
+					"Plato de sitio decorativo",
+				],
+			},
+		],
 		price: "$ 10.000",
 		url: "/productos/LivingModerno/1.webp",
-		items: [
-			"1 sillón de ecocuero blanco, doble y con respaldo",
-			"1 puff doble de ecocuero blanco",
-			"6 puffs de ecocuero blanco",
-			"1 mesa de madera blanca",
-			"Almohadón decorativo",
-			"Plato de sitio decorativo",
-		],
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingModerno/1.webp" },
 			{ id: 2, imgUrl: "/productos/LivingModerno/2.webp" },
@@ -41,17 +44,21 @@ export const livings = [
 		category: "Livings",
 		name: "Industrial",
 		title: "Juego de muebles para 10 personas ",
-		description: "Juego de muebles para 10 personas",
+		details: [
+			{
+				description: "Juego de living para 10 personas.",
+				items: [
+					"1 sillón de tres cuerpos, de hierro negro y madera color roble",
+					"1 banqueta de 3 cuerpos, de hierro negro y madera color roble",
+					"4 cubos, de hierro negro y madera color roble",
+					"1 mesa, de hierro negro y madera color roble",
+					"Almohadón decorativo",
+					"Plato de sitio decorativo",
+				],
+			},
+		],
 		price: "$ 9.000",
 		url: "/productos/LivingIndustrial/1.webp",
-		items: [
-			"1 sillón de tres cuerpos, de hierro negro y madera color roble",
-			"1 banqueta de 3 cuerpos, de hierro negro y madera color roble",
-			"4 cubos, de hierro negro y madera color roble",
-			"1 mesa, de hierro negro y madera color roble",
-			"Almohadón decorativo",
-			"Plato de sitio decorativo",
-		],
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingIndustrial/1.webp" },
 			{ id: 2, imgUrl: "/productos/LivingIndustrial/2.webp" },
@@ -64,15 +71,19 @@ export const livings = [
 		category: "Livings",
 		name: "Rústico",
 		title: "Juego de muebles para 10 personas ",
-		description: "Juego de muebles para 10 personas",
+		details: [
+			{
+				description: "Juego de living para 10 personas.",
+				items: [
+					"1 mesa de madera, en color roble o blanca",
+					"Sillón, puffs, sillas y cubos (pueden ser distintas combinaciones)",
+					"Almohadón decorativo",
+					"Plato de sitio decorativo",
+				],
+			},
+		],
 		price: "$ 10.000",
 		url: "/productos/LivingRustico/1.webp",
-		items: [
-			"1 mesa de madera, en color roble o blanca",
-			"Sillón, puffs, sillas y cubos (pueden ser distintas combinaciones)",
-			"Almohadón decorativo",
-			"Plato de sitio decorativo",
-		],
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingRustico/1.webp" },
 			{ id: 2, imgUrl: "/productos/LivingRustico/2.webp" },
@@ -87,13 +98,26 @@ export const livings = [
 		category: "Livings",
 		name: "Infantil",
 		title: "Mini living para 10 niños",
-		description: "Mini living para 10 niños",
-		price: "$ 5.000",
-		url: "/productos/LivingInfantil/1.webp",
-		items: [
-			"18 puffs de ecocuero en varios colores",
-			"1 tablón de madera con caballetes en hierro y mantel de material tropical mecánico en color blanco ",
+		details: [
+			{
+				description: "Mini living para 10 niños. (Costo: $5000)",
+				price: "$5000",
+				items: [
+					"10 puffs de ecocuero en varios colores",
+					"2 mesas de madera blanca",
+				],
+			},
+			{
+				description: "Mini living para 18 niños. (Costo: $9000)",
+				price: "$9000",
+				items: [
+					"18 puffs de ecocuero en varios colores",
+					"1 tablón de madera con caballetes en hierro y mantel de material tropical mecánico en color blanco",
+				],
+			},
 		],
+		price: "$ 5.000 - $ 9.000",
+		url: "/productos/LivingInfantil/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingInfantil/1.webp" },
 			{ id: 2, imgUrl: "/productos/LivingInfantil/2.webp" },
@@ -108,17 +132,21 @@ export const livings = [
 		category: "Livings",
 		name: "Black & White",
 		title: "Juego de muebles para 10 personas ",
-		description: "Juego de living para 10 personas",
+		details: [
+			{
+				description: "Juego de living para 10 personas",
+				items: [
+					"1 sillón de ecocuero blanco, doble y con respaldo",
+					"6 puffs individuales de ecocuero blancos y negros",
+					"1 puff doble de ecocuero blanco",
+					"1 mesa de madera blanca",
+					"almohadón decorativo",
+					"plato de sitio decorativo",
+				],
+			},
+		],
 		price: "$ 12.500",
 		url: "/productos/LivingBlackWhite/1.webp",
-		items: [
-			"1 sillón de ecocuero blanco, doble y con respaldo",
-			"6 puffs individuales de ecocuero blancos y negros",
-			"1 puff doble de ecocuero blanco",
-			"1 mesa de madera blanca",
-			"almohadón decorativo",
-			"plato de sitio decorativo",
-		],
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingBlackWhite/1.webp" },
 			{ id: 2, imgUrl: "/productos/LivingBlackWhite/2.webp" },
@@ -136,8 +164,12 @@ export const otrosProductos = [
 		category: "Productos",
 		name: "Barra para tragos",
 		title: "Barra móvil reforzada",
-		description:
-			"Barra alta, móvil, reforzada, de madera  varillada y en color roble.",
+		details: [
+			{
+				description:
+					"Barra alta, móvil, reforzada, de madera  varillada y en color roble.",
+			},
+		],
 		price: "$ 8.000",
 		url: "/productos/BarraTragos/1.webp",
 		pictures: [
@@ -152,7 +184,15 @@ export const otrosProductos = [
 		category: "Productos",
 		name: "Barritas altas y banquetas",
 		title: "Barra alta con 4 banquetas",
-		description: "Juego para 4 personas.",
+		details: [
+			{
+				description: "Juego para 4 personas",
+				items: [
+					"Mesa alta de hierro negro y madera color roble",
+					"4 banquetas altas de hierro negro y madera color roble",
+				],
+			},
+		],
 		price: "$ 7.000",
 		url: "/productos/BarraAlta/1.webp",
 		items: [
@@ -166,8 +206,12 @@ export const otrosProductos = [
 		category: "Productos",
 		name: "Sillas Country",
 		title: "Sillas tipo country plegables",
-		description:
-			"Sillas estilo country, de madera, en color blancas y plegables.",
+		details: [
+			{
+				description:
+					"Sillas estilo country, de madera, en color blancas y plegables.",
+			},
+		],
 		price: "$ 300",
 		url: "/productos/SillasCountry/1.webp",
 		pictures: [
@@ -183,7 +227,16 @@ export const otrosProductos = [
 		category: "Productos",
 		name: "Tablones y manteles",
 		title: "Tablones y manteles blancos o negros",
-		description: "Tablones de madera con caballetes de hierro. (Costo: $2000)",
+		details: [
+			{
+				description:
+					"Tablones de madera con caballetes de hierro. (Costo: $2000)",
+			},
+			{
+				description:
+					"Manteles de  material tropical mecánico, en colores blanco o negro. (Costo: $1500)",
+			},
+		],
 		price: "$ 300",
 		url: "/productos/MesasManteles/1.webp",
 		pictures: [
@@ -199,7 +252,11 @@ export const otrosProductos = [
 		category: "Productos",
 		name: "Jenga gigante",
 		title: "Juego de madera",
-		description: "Juego de madera",
+		details: [
+			{
+				description: "Juego de madera",
+			},
+		],
 		price: "$ 10.000",
 		url: "/productos/Jenga/1.webp",
 		pictures: [
@@ -213,7 +270,11 @@ export const otrosProductos = [
 		category: "Productos",
 		name: "Mesa civil",
 		title: "Mesa de madera",
-		description: "Mesa de madera en color roble con patas de hierro negro.",
+		details: [
+			{
+				description: "Mesa de madera en color roble con patas de hierro negro.",
+			},
+		],
 		price: "$ 5.000",
 		url: "/productos/MesaCivil/1.webp",
 		pictures: [{ id: 1, imgUrl: "/productos/MesaCivil/1.webp" }],
