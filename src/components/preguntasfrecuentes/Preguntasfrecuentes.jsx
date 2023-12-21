@@ -49,7 +49,7 @@ const Preguntasfrecuentes = () => {
 			</div>
 
 			<div className="mensajes-texto">
-				<p>
+				<p className="texto-info">
 					Si no encontraste la información que necesitabas, podés consultarnos
 					directamente por <b>WhatsApp.</b>{" "}
 				</p>
