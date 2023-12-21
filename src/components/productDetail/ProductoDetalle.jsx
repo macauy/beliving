@@ -14,9 +14,10 @@ import { Link } from "react-router-dom";
 const ProductoDetalle = () => {
 	const location = useLocation();
 	let productoIn = location.state;
+	console.log(productoIn);
 
 	const [producto, setProducto] = useState(productoIn);
-
+	console.log(producto, "producto");
 	let productos = producto.category === "Livings" ? livings : otrosProductos;
 
 	let index = productos.findIndex((item) => item.id == producto.id);
