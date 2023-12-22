@@ -12,7 +12,7 @@ const Productos = () => {
 	const [livings, setLivings] = useState([]);
 	let arr = [1, 2, 3, 4];
 	useEffect(() => {
-		let localLivings = JSON.parse(localStorage.getItem("LIVINGS")) ?? [];
+		let localLivings = JSON.parse(sessionStorage.getItem("LIVINGS")) ?? [];
 		if (localLivings.length > 0) {
 			setLivings(localLivings);
 		} else {
@@ -22,7 +22,7 @@ const Productos = () => {
 					return { ...item.data() };
 				});
 				setLivings(livings.sort((a, b) => a.id - b.id));
-				localStorage.setItem("LIVINGS", JSON.stringify(livings));
+				sessionStorage.setItem("LIVINGS", JSON.stringify(livings));
 			});
 		}
 	}, []);

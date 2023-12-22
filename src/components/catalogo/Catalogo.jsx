@@ -15,7 +15,7 @@ const Catalogo = () => {
 	let arr = [1, 2, 3, 4];
 
 	useEffect(() => {
-		let localLivings = JSON.parse(localStorage.getItem("LIVINGS")) ?? [];
+		let localLivings = JSON.parse(sessionStorage.getItem("LIVINGS")) ?? [];
 		if (localLivings.length > 0) {
 			setLivings(localLivings);
 		} else {
@@ -25,13 +25,13 @@ const Catalogo = () => {
 					return { ...item.data() };
 				});
 				setLivings(livings.sort((a, b) => a.id - b.id));
-				localStorage.setItem("LIVINGS", JSON.stringify(livings));
+				sessionStorage.setItem("LIVINGS", JSON.stringify(livings));
 			});
 		}
 	}, []);
 
 	useEffect(() => {
-		let localProductos = JSON.parse(localStorage.getItem("PRODUCTOS")) ?? [];
+		let localProductos = JSON.parse(sessionStorage.getItem("PRODUCTOS")) ?? [];
 		if (localProductos.length > 0) {
 			setProductos(localProductos);
 		} else {
@@ -41,7 +41,7 @@ const Catalogo = () => {
 					return { ...item.data() };
 				});
 				setProductos(productos.sort((a, b) => a.id - b.id));
-				localStorage.setItem("PRODUCTOS", JSON.stringify(productos));
+				sessionStorage.setItem("PRODUCTOS", JSON.stringify(productos));
 			});
 		}
 	}, []);
