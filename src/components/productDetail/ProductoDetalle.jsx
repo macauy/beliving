@@ -54,7 +54,10 @@ const ProductoDetalle = () => {
 								className="producto-description-details"
 								key={item.description}
 							>
-								<p>{item.description}</p>
+								<p>
+									{item.description}{" "}
+									{item.price && <span>(Costo {item.price})</span>}
+								</p>
 								{item.items && (
 									<>
 										<p>Incluye:</p>

@@ -100,7 +100,8 @@ export const livings = [
 		title: "Mini living para 10 niños",
 		details: [
 			{
-				description: "Mini living para 10 niños. (Costo: $5000)",
+				id: 1,
+				description: "Mini living para 10 niños.",
 				price: "$5000",
 				items: [
 					"10 puffs de ecocuero en varios colores",
@@ -108,7 +109,8 @@ export const livings = [
 				],
 			},
 			{
-				description: "Mini living para 18 niños. (Costo: $9000)",
+				id: 2,
+				description: "Mini living para 18 niños.",
 				price: "$9000",
 				items: [
 					"18 puffs de ecocuero en varios colores",
@@ -212,7 +214,7 @@ export const otrosProductos = [
 					"Sillas estilo country, de madera, en color blancas y plegables.",
 			},
 		],
-		price: "$ 300",
+		price: "$ 300 c/u",
 		url: "/productos/SillasCountry/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/SillasCountry/1.webp" },
@@ -229,17 +231,18 @@ export const otrosProductos = [
 		title: "Tablones y manteles blancos o negros",
 		details: [
 			{
-				description:
-					"Tablones de madera con caballetes de hierro. (Costo: $2000)",
-				price: "$2000",
+				id: 1,
+				description: "Tablones de madera con caballetes de hierro.",
+				price: "$2.000",
 			},
 			{
+				id: 2,
 				description:
-					"Manteles de  material tropical mecánico, en colores blanco o negro. (Costo: $1500)",
-				price: "$1500",
+					"Manteles de  material tropical mecánico, en colores blanco o negro.",
+				price: "$1.500",
 			},
 		],
-		price: "$ 1500",
+		price: "$ 1.500",
 		url: "/productos/MesasManteles/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/MesasManteles/1.webp" },

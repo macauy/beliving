@@ -20,7 +20,7 @@ const Dashboard = () => {
 	};
 
 	return (
-		<>
+		<div style={{ padding: "50px", height: "70vh" }}>
 			<div
 				style={{ display: "flex", justifyContent: "center", margin: "50px" }}
 			>
@@ -31,13 +31,11 @@ const Dashboard = () => {
 			<div
 				style={{ display: "flex", justifyContent: "center", margin: "50px" }}
 			>
-				{/* <Link> */}
 				<div onClick={loadProducts}>
 					<Button style="default" text="Cargar Productos"></Button>
 				</div>
-				{/* </Link> */}
 			</div>
-		</>
+		</div>
 	);
 };
 

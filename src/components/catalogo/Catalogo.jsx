@@ -12,7 +12,7 @@ const Catalogo = () => {
 	const [livings, setLivings] = useState([]);
 	const [productos, setProductos] = useState([]);
 
-	let arr = [1, 2, 3, 4];
+	let arr = [1, 2, 3, 4, 5];
 
 	useEffect(() => {
 		let localLivings = JSON.parse(sessionStorage.getItem("LIVINGS")) ?? [];

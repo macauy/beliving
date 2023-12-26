@@ -24,7 +24,7 @@ const PanelItem = ({ producto, label }) => {
 			{producto.details.length > 1 && (
 				<div className="panel-item-details">
 					{producto.details.map((item) => (
-						<div key={item.description} className="panel-item-detail-item">
+						<div key={item.id} className="panel-item-detail-item">
 							<span>{item.description}</span>
 							<div>
 								Precio: <span>{item.price}</span>
