@@ -1,0 +1,86 @@
+.panel {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.panel-items {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.panel-item {
+	padding: 16px;
+	border-radius: 4px;
+	background: var(--light-green);
+}
+
+.panel-item-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.panel-item-info {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.panel-item-buttons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.panel-button {
+	display: flex;
+	padding: 8px 12px;
+	align-items: center;
+	gap: 4px;
+	border-radius: 24px;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1.25px;
+	cursor: pointer;
+}
+
+.edit-button {
+	color: #437a9c;
+	border: 1px solid var(--Hyperlink, #437a9c);
+	background: #dbe8f0;
+}
+
+.delete-button {
+	color: #d6495a;
+	border: 1px solid var(--Error, #d6495a);
+	background: #faeaec;
+}
+
+.panel-item-details {
+	padding: 16px 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.panel-item-detail-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+}
+
+.panel-item-details-buttons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.panel-button-small {
+	padding: 5px;
+	border-radius: 12px;
+}

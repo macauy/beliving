@@ -10,6 +10,7 @@ import Layout from "./layout/Layout";
 import Dashboard from "./components/dashboard/Dashboard";
 import IconWhatsapp from "./icons/IconWhatsapp/IconWhatsapp";
 import Login from "./components/login/Login";
+import Panel from "./components/panel/Panel";
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 						<Route path="/ProductoDetalle" element={<ProductoDetalle />} />
 						<Route path="/dashboard" element={<Dashboard />} />
 						<Route path="/login" element={<Login />} />
+						<Route path="/panel" element={<Panel />} />
 						<Route path="*" element={<h1>404 not found</h1>} />
 					</Route>
 				</Routes>

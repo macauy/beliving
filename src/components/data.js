@@ -231,13 +231,15 @@ export const otrosProductos = [
 			{
 				description:
 					"Tablones de madera con caballetes de hierro. (Costo: $2000)",
+				price: "$2000",
 			},
 			{
 				description:
 					"Manteles de  material tropical mecánico, en colores blanco o negro. (Costo: $1500)",
+				price: "$1500",
 			},
 		],
-		price: "$ 300",
+		price: "$ 1500",
 		url: "/productos/MesasManteles/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/MesasManteles/1.webp" },
