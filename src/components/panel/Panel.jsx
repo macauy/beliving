@@ -30,16 +30,32 @@ const Panel = () => {
 		});
 	}, []);
 
+	const deleteProduct = (category, id) => {
+		console.log("borrando id", id, " de categoria", category);
+		category == "livings"
+			? setLivings(livings.filter((item) => item.id != id))
+			: setProductos(productos.filter((item) => item.id != id));
+	};
+
 	return (
 		<div className="panel">
 			<h1 className="title">Catálogo</h1>
 
 			<div className="panel-items">
 				{livings.map((item) => (
-					<PanelItem key={item.id} producto={item} label="Living"></PanelItem>
+					<PanelItem
+						key={item.id}
+						producto={item}
+						label="Living"
+						deleteProduct={deleteProduct}
+					></PanelItem>
 				))}
 				{productos.map((item) => (
-					<PanelItem key={item.id} producto={item}></PanelItem>
+					<PanelItem
+						key={item.id}
+						producto={item}
+						deleteProduct={deleteProduct}
+					></PanelItem>
 				))}
 			</div>
 		</div>

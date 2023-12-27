@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Panel.css";
 
-const PanelItemDetail = ({ item, updateItem }) => {
+const PanelItemDetail = ({ item, updateItem, deleteItem }) => {
 	const [price, setPrice] = useState(item.price);
 	const [isReadOnly, setIsReadOnly] = useState(true);
 
@@ -18,6 +18,13 @@ const PanelItemDetail = ({ item, updateItem }) => {
 		updateItem(item.id, price);
 	};
 
+	const handleDelete = () => {
+		let ok = confirm("¿Confirma la eliminación del ítem?");
+		if (ok) {
+			console.log("delete item");
+			deleteItem(item.id);
+		}
+	};
 	return (
 		<div className="panel-item-detail-item">
 			<span>{item.description}</span>
@@ -48,7 +55,10 @@ const PanelItemDetail = ({ item, updateItem }) => {
 				>
 					<img src="./edit-icon.svg" alt="Icono de Editar" />
 				</div>
-				<div className="panel-button delete-button panel-button-small">
+				<div
+					className="panel-button delete-button panel-button-small"
+					onClick={handleDelete}
+				>
 					<img src="./delete-icon.svg" alt="Icono de eliminar" />
 				</div>
 			</div>
