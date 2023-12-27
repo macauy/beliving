@@ -7,9 +7,12 @@ import Button from "../../icons/Button/Button";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebaseConfig";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../../context/UserContext";
+import { useContext } from "react";
 
 const Login = () => {
 	const navigate = useNavigate();
+	const { logIn } = useContext(UserContext);
 
 	const { handleSubmit, handleChange, handleReset, errors, values } = useFormik(
 		{
@@ -27,8 +30,9 @@ const Login = () => {
 					.then((userCredential) => {
 						// Signed in
 						const user = userCredential.user;
-						navigate("/panel");
+						logIn(user);
 						console.log(user);
+						navigate("/panel");
 					})
 					.catch((error) => {
 						const errorCode = error.code;

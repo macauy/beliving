@@ -5,6 +5,10 @@
 	gap: 24px;
 }
 
+.panel-links {
+	display: flex;
+	justify-content: space-between;
+}
 .panel-items {
 	display: flex;
 	flex-direction: column;

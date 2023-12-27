@@ -1,13 +1,17 @@
 import "./Panel.css";
 import PanelItem from "./PanelItem";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
+import { Link } from "react-router-dom";
+import { UserContext } from "../../context/UserContext";
 
 const Panel = () => {
 	const [livings, setLivings] = useState([]);
 	const [productos, setProductos] = useState([]);
+
+	const { logOut } = useContext(UserContext);
 
 	useEffect(() => {
 		let items = collection(db, "livings");
@@ -39,6 +43,12 @@ const Panel = () => {
 
 	return (
 		<div className="panel">
+			<div className="panel-links">
+				<Link to={"/"}>Ir al sitio de BeLiving</Link>
+				<Link to={"/"} onClick={logOut}>
+					Salir
+				</Link>
+			</div>
 			<h1 className="title">Catálogo</h1>
 
 			<div className="panel-items">
