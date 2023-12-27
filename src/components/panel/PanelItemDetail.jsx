@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Panel.css";
 
-const PanelItemDetail = ({ item }) => {
+const PanelItemDetail = ({ item, updateItem }) => {
 	const [price, setPrice] = useState(item.price);
 	const [isReadOnly, setIsReadOnly] = useState(true);
 
@@ -11,12 +11,11 @@ const PanelItemDetail = ({ item }) => {
 
 	const handleChange = (e) => {
 		setPrice(e.target.value);
-		console.log(price, "price del state");
 	};
 
 	const handleSubmit = () => {
-		console.log("guardar dato en base");
 		setIsReadOnly(true);
+		updateItem(item.id, price);
 	};
 
 	return (

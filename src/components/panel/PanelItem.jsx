@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Panel.css";
 import PanelItemDetail from "./PanelItemDetail";
+import { db } from "../../firebaseConfig.js";
+import { doc, updateDoc } from "firebase/firestore";
 
 const PanelItem = ({ producto, label }) => {
 	const [price, setPrice] = useState(producto.price);
@@ -12,12 +14,30 @@ const PanelItem = ({ producto, label }) => {
 
 	const handleChange = (e) => {
 		setPrice(e.target.value);
-		console.log(price, "price del state");
 	};
 
 	const handleSubmit = () => {
-		console.log("guardar dato en base");
 		setIsReadOnly(true);
+
+		let category = producto.category.toLowerCase();
+		let refDoc = doc(db, category, producto.idDB);
+		updateDoc(refDoc, {
+			price: price,
+		});
+	};
+
+	const updateItem = (id, price) => {
+		let category = producto.category.toLowerCase();
+		let refDoc = doc(db, category, producto.idDB);
+
+		let details = producto.details;
+		let index = producto.details.findIndex((item) => item.id == id);
+		if (index >= 0) {
+			details[index].price = price;
+			updateDoc(refDoc, {
+				details: details,
+			});
+		} else console.log("Producto no encontrado. Index: ", index);
 	};
 
 	return (
@@ -60,7 +80,11 @@ const PanelItem = ({ producto, label }) => {
 			{producto.details.length > 1 && (
 				<div className="panel-item-details">
 					{producto.details.map((item) => (
-						<PanelItemDetail key={item.id} item={item}></PanelItemDetail>
+						<PanelItemDetail
+							key={item.id}
+							item={item}
+							updateItem={updateItem}
+						></PanelItemDetail>
 					))}
 				</div>
 			)}
