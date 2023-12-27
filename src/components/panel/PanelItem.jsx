@@ -52,10 +52,8 @@ const PanelItem = ({ producto, label, deleteProduct }) => {
 		let refDoc = doc(db, category, producto.idDB);
 		let details = producto.details;
 		let index = producto.details.findIndex((item) => item.id == id);
-
 		if (index >= 0) {
 			let newDetails = details.filter((item) => item.id != id);
-
 			updateDoc(refDoc, {
 				details: newDetails,
 			});
@@ -70,7 +68,7 @@ const PanelItem = ({ producto, label, deleteProduct }) => {
 					<h2>
 						{label} {producto.name}
 					</h2>
-					<div>
+					<div className="panel-item-info-price">
 						{isReadOnly && <span>Precio: {price}</span>}
 						{!isReadOnly && (
 							<>
