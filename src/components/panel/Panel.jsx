@@ -39,6 +39,8 @@ const Panel = () => {
 		category == "livings"
 			? setLivings(livings.filter((item) => item.id != id))
 			: setProductos(productos.filter((item) => item.id != id));
+		sessionStorage.setItem("LIVINGS", JSON.stringify(livings));
+		sessionStorage.setItem("PRODUCTOS", JSON.stringify(productos));
 	};
 
 	return (
