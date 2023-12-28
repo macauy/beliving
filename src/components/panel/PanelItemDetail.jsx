@@ -28,6 +28,7 @@ const PanelItemDetail = ({ item, updateItem, deleteItem }) => {
 	return (
 		<div className="panel-item-detail-item">
 			<span>{item.description}</span>
+			<div></div>
 			<div>
 				{isReadOnly && <span>Precio: {price}</span>}
 				{!isReadOnly && (
@@ -44,8 +45,12 @@ const PanelItemDetail = ({ item, updateItem, deleteItem }) => {
 				)}
 			</div>
 			{!isReadOnly && (
-				<div className="panel-button ok-button" onClick={handleSubmit}>
+				<div
+					className="panel-button ok-button panel-button-small"
+					onClick={handleSubmit}
+				>
 					<span>OK</span>
+					<img src="./ok.svg" alt="" />
 				</div>
 			)}
 			<div className="panel-item-details-buttons">

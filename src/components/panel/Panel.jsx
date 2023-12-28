@@ -42,33 +42,38 @@ const Panel = () => {
 	};
 
 	return (
-		<div className="panel">
-			<div className="panel-links">
-				<Link to={"/"}>Ir al sitio de BeLiving</Link>
+		<>
+			<div className="panel-header">
+				<h2>Tablero de productos</h2>
 				<Link to={"/"} onClick={logOut}>
-					Salir
+					<span className="panel-link-text">Cerrar sesión</span>{" "}
+					<img src="./logout.svg" alt="" />
 				</Link>
 			</div>
-			<h1 className="title">Catálogo</h1>
-
-			<div className="panel-items">
-				{livings.map((item) => (
-					<PanelItem
-						key={item.id}
-						producto={item}
-						label="Living"
-						deleteProduct={deleteProduct}
-					></PanelItem>
-				))}
-				{productos.map((item) => (
-					<PanelItem
-						key={item.id}
-						producto={item}
-						deleteProduct={deleteProduct}
-					></PanelItem>
-				))}
+			<div className="panel">
+				<div className="panel-title">
+					<h1 className="title">Catálogo</h1>
+					<Link to={"/"}>Ir al sitio de BeLiving</Link>
+				</div>
+				<div className="panel-items">
+					{livings.map((item) => (
+						<PanelItem
+							key={item.id}
+							producto={item}
+							label="Living"
+							deleteProduct={deleteProduct}
+						></PanelItem>
+					))}
+					{productos.map((item) => (
+						<PanelItem
+							key={item.id}
+							producto={item}
+							deleteProduct={deleteProduct}
+						></PanelItem>
+					))}
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

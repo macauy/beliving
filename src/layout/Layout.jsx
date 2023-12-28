@@ -9,7 +9,6 @@ const Layout = () => {
 	return (
 		<>
 			<Navbar />
-
 			<main className="main-layout">
 				<Outlet />
 			</main>

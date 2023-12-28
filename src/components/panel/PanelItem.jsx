@@ -65,9 +65,9 @@ const PanelItem = ({ producto, label, deleteProduct }) => {
 		<div className="panel-item">
 			<div className="panel-item-title">
 				<div className="panel-item-info">
-					<h2>
+					<h3>
 						{label} {producto.name}
-					</h2>
+					</h3>
 					<div className="panel-item-info-price">
 						{isReadOnly && <span>Precio: {price}</span>}
 						{!isReadOnly && (
@@ -85,16 +85,19 @@ const PanelItem = ({ producto, label, deleteProduct }) => {
 					</div>
 					{!isReadOnly && (
 						<div className="panel-button ok-button" onClick={handleSubmit}>
-							<span>OK</span>
+							<span className="panel-button-text">OK</span>{" "}
+							<img src="./ok.svg" alt="" />
 						</div>
 					)}
 				</div>
 				<div className="panel-item-buttons">
 					<div className="panel-button edit-button" onClick={handleEdit}>
-						EDITAR <img src="./edit-icon.svg" alt="Icono de Editar" />
+						<span className="panel-button-text">EDITAR</span>{" "}
+						<img src="./edit-icon.svg" alt="Icono de Editar" />
 					</div>
 					<div className="panel-button delete-button" onClick={handleDelete}>
-						ELIMINAR <img src="./delete-icon.svg" alt="Icono de eliminar" />
+						<span className="panel-button-text">ELIMINAR</span>{" "}
+						<img src="./delete-icon.svg" alt="Icono de eliminar" />
 					</div>
 				</div>
 			</div>

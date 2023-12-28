@@ -1,3 +1,12 @@
+.panel-header {
+	background: var(--light-green, #dbf0ed);
+	display: flex;
+	width: 100%;
+	padding: 24px 40px;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .panel {
 	padding: 40px;
 	display: flex;
@@ -5,10 +14,26 @@
 	gap: 24px;
 }
 
-.panel-links {
+.panel-title {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
+
+.panel-title a {
+	color: var(--Hyperlink, #437a9c);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px; /* 175% */
+	text-decoration-line: underline;
+}
+
+.panel-link-text {
+	color: var(--black);
+	line-height: 28px; /* 175% */
+	text-decoration-line: underline;
+}
+
 .panel-items {
 	display: flex;
 	flex-direction: column;
@@ -18,7 +43,7 @@
 .panel-item {
 	padding: 16px;
 	border-radius: 4px;
-	background: var(--light-green);
+	background: var(--primary-6, #eaf6f4);
 }
 
 .panel-item-title {
@@ -59,7 +84,7 @@
 	border-radius: 24px;
 	font-size: 14px;
 	font-weight: 500;
-	letter-spacing: 1.25px;
+	letter-spacing: 1px;
 	cursor: pointer;
 }
 
@@ -112,27 +137,41 @@
 		padding: 16px;
 	}
 
+	.panel-link-text {
+		display: none;
+	}
+
+	.panel-title {
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.panel-title a {
+		margin-top: 10px;
+	}
+
 	.panel-item-info {
 		flex-direction: column;
-		text-align: start;
+		align-items: flex-start;
 	}
 
 	.panel-item-info-price {
 		text-align: start;
 	}
-	.panel-item-title {
+
+	/* .panel-item-title {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
 		gap: 8px;
-	}
+	} */
 
 	.panel-item-buttons {
-		/* flex-direction: column; */
-		justify-content: center;
-		width: 100%;
-		margin-top: 20px;
+		flex-direction: column;
+		/* justify-content: center; */
+		/* margin-top: 20px; */
 	}
 
 	.panel-button {
@@ -142,13 +181,29 @@
 		border-radius: 16px;
 		font-size: 12px;
 		letter-spacing: 1px;
+		align-self: flex-end;
+	}
+
+	.panel-button-small {
+		align-self: center;
+	}
+
+	.panel-button-text {
+		display: none;
+	}
+
+	.panel-item-details {
+		padding: 16px 0px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 	}
 
 	.panel-item-detail-item {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		align-items: center;
+		align-items: flex-start;
 		margin-top: 20px;
 	}
 

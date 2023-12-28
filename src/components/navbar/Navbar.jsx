@@ -1,9 +1,12 @@
 import { Fade as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { UserContext } from "../../context/UserContext";
 
 const Navbar = () => {
+	const { isAuth } = useContext(UserContext);
+
 	// Hace que elmenu hamburguesa abre y cierre
 	const [isOpen, setOpen] = useState(false);
 
@@ -21,7 +24,7 @@ const Navbar = () => {
 			<div className="nav-title">
 				<Link to={"/"}>
 					<div id="logo" className="logo" onClick={cerrarMenu}>
-						<img className="bl-logo"  src="/BL.svg" alt="" />
+						<img className="bl-logo" src="/BL.svg" alt="" />
 					</div>
 				</Link>
 				<div id="botonburguer" className="botonburguer">
@@ -43,6 +46,13 @@ const Navbar = () => {
 							</div>
 						</NavLink>
 					</li>
+					{isAuth && (
+						<li onClick={cerrarMenu}>
+							<NavLink to={"/panel"}>
+								<img src="./user.svg" alt="" width={"20px"} />
+							</NavLink>
+						</li>
+					)}
 				</ul>
 			</div>
 		</nav>
