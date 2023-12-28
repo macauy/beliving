@@ -25,6 +25,7 @@ const PanelItem = ({ producto, label, deleteProduct }) => {
 		updateDoc(refDoc, {
 			price: price,
 		});
+		sessionStorage.removeItem(category.toUpperCase());
 	};
 
 	const handleDelete = () => {
@@ -45,6 +46,7 @@ const PanelItem = ({ producto, label, deleteProduct }) => {
 			updateDoc(refDoc, {
 				details: details,
 			});
+			sessionStorage.removeItem(category.toUpperCase());
 		} else console.log("Producto no encontrado. Index: ", index);
 	};
 
@@ -58,6 +60,7 @@ const PanelItem = ({ producto, label, deleteProduct }) => {
 				details: newDetails,
 			});
 			setDetails(newDetails);
+			sessionStorage.removeItem(category.toUpperCase());
 		} else console.log("Producto no encontrado. Index: ", index);
 	};
 
