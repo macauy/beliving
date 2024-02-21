@@ -28,7 +28,7 @@ export const livings = [
 				],
 			},
 		],
-		price: "$ 10.000",
+		price: "$ 15.000",
 		url: "/productos/LivingModerno/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingModerno/1.webp" },
@@ -57,7 +57,7 @@ export const livings = [
 				],
 			},
 		],
-		price: "$ 9.000",
+		price: "$ 10.000",
 		url: "/productos/LivingIndustrial/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingIndustrial/1.webp" },
@@ -82,7 +82,7 @@ export const livings = [
 				],
 			},
 		],
-		price: "$ 10.000",
+		price: "$ 15.000",
 		url: "/productos/LivingRustico/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingRustico/1.webp" },
@@ -102,7 +102,7 @@ export const livings = [
 			{
 				id: 1,
 				description: "Mini living para 10 niños.",
-				price: "$5000",
+				price: "$5.000",
 				items: [
 					"10 puffs de ecocuero en varios colores",
 					"2 mesas de madera blanca",
@@ -111,14 +111,14 @@ export const livings = [
 			{
 				id: 2,
 				description: "Mini living para 18 niños.",
-				price: "$9000",
+				price: "$10.000",
 				items: [
 					"18 puffs de ecocuero en varios colores",
 					"1 tablón de madera con caballetes en hierro y mantel de material tropical mecánico en color blanco",
 				],
 			},
 		],
-		price: "$ 5.000 - $ 9.000",
+		price: "$ 5.000 - $ 10.000",
 		url: "/productos/LivingInfantil/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingInfantil/1.webp" },
@@ -147,7 +147,7 @@ export const livings = [
 				],
 			},
 		],
-		price: "$ 12.500",
+		price: "$ 15.000",
 		url: "/productos/LivingBlackWhite/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/LivingBlackWhite/1.webp" },
@@ -195,7 +195,7 @@ export const otrosProductos = [
 				],
 			},
 		],
-		price: "$ 7.000",
+		price: "$ 8.000",
 		url: "/productos/BarraAlta/1.webp",
 		items: [
 			"Mesa alta de hierro negro y madera color roble",
@@ -214,7 +214,7 @@ export const otrosProductos = [
 					"Sillas estilo country, de madera, en color blancas y plegables.",
 			},
 		],
-		price: "$ 300 c/u",
+		price: "$ 500 c/u",
 		url: "/productos/SillasCountry/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/SillasCountry/1.webp" },
@@ -238,11 +238,11 @@ export const otrosProductos = [
 			{
 				id: 2,
 				description:
-					"Manteles de  material tropical mecánico, en colores blanco o negro.",
+					"Manteles de material tropical mecánico, en colores blanco o negro.",
 				price: "$1.500",
 			},
 		],
-		price: "$ 1.500",
+		price: "$ 2.000",
 		url: "/productos/MesasManteles/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/MesasManteles/1.webp" },
@@ -262,7 +262,7 @@ export const otrosProductos = [
 				description: "Juego de madera",
 			},
 		],
-		price: "$ 10.000",
+		price: "$ 3.000",
 		url: "/productos/Jenga/1.webp",
 		pictures: [
 			{ id: 1, imgUrl: "/productos/Jenga/1.webp" },
